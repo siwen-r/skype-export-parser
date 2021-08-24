@@ -1,11 +1,15 @@
 // vuex.d.ts
-import { ComponentCustomProperties } from 'vue'
 import { Store } from 'vuex'
+import { SkypeExport } from '@/types/SkypeExport'
 
 declare module '@vue/runtime-core' {
   // declare your own store states
   interface State {
-    count: number
+    count: number,
+    
+    raw: SkypeExport | undefined
+    userId: string | undefined
+    exportDate: string | Date | undefined
   }
 
   // provide typings for `this.$store`

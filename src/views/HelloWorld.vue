@@ -1,4 +1,5 @@
 <template>
+  <img class="inline" alt="Vue logo" src="./../assets/logo.png" />
   <h1 class="font-black">{{ msg }}</h1>
 
   <p>
