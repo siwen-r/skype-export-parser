@@ -1,5 +1,5 @@
 <template>
-  <h1>{{ msg }}</h1>
+  <h1 class="font-black">{{ msg }}</h1>
 
   <p>
     Recommended IDE setup:
@@ -25,7 +25,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'HelloWorld',
   props: {
-    msg: { type: String, required: true }
+    msg: { type: String, default: 'Hello Vue 3 + TypeScript + Vite' }
   },
   computed: {
     count() { return this.$store.state.count }
