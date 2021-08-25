@@ -9,7 +9,8 @@ export default createStore({
       count: 0,
       raw: undefined,
       userId: undefined,
-      exportDate: undefined  
+      exportDate: undefined,
+      conversations: []
     }
   },
   mutations: {
@@ -20,6 +21,7 @@ export default createStore({
       state.raw = skype
       state.userId = skype.userId
       state.exportDate = skype.exportDate
-    }  
+      state.conversations = skype.conversations
+    }
   }
 })

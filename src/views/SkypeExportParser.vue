@@ -3,17 +3,50 @@
   <br>
   <div>userId: {{ userId }}</div>
   <div>exportDate: {{ exportDate }}</div>
+  <hr/>
+  <div>Metics</div>
+  <div>MessageTypes: {{ messagetypes }}</div>
+  <div>ConversationPartners: {{ conversationPartners }}</div>
+  <hr/>
+  <div>Conversations</div>
+  <div v-for="con in conversations" v-bind:key="con.id">
+    <div class="font-black">{{ con.displayName }} ({{ con.id }})</div>
+    <div v-for="message in con.MessageList" v-bind:key="message.id"><Message :message="message"></Message></div>
+  </div>
 </template>
 
 <script lang="ts">
-import { SkypeExport } from "@/types/SkypeExport";
-import { defineComponent } from "vue";
+import { Conversation, SkypeExport } from '@/types/SkypeExport';
+import { defineComponent } from 'vue';
+import Message from "../components/Message.vue"
 
 export default defineComponent({
   name: "SkypeExportParser",
+  components: {
+    Message
+  },
   computed: {
     userId() { return this.$store.state.userId; },
-    exportDate() { return this.$store.state.exportDate; }
+    exportDate() { return this.$store.state.exportDate; },
+    conversations(): Conversation[] { return this.$store.state.conversations; },
+    messagetypes() {
+      const set = new Set();
+      for(const con of this.conversations) {
+        for(const message of con.MessageList) {
+          set.add(message.messagetype)
+        }
+      }
+
+      return Array.from(set)
+    },
+    conversationPartners() {
+      const set = new Set();
+      for(const con of this.conversations) {
+        set.add(con.displayName)
+      }
+
+      return Array.from(set)
+    }
   },
   methods: {
     loadSkypeUpload(event: any) {
@@ -69,4 +102,7 @@ export default defineComponent({
 </script>
 
 <style scoped>
+* {
+  text-align: left;
+}
 </style>
