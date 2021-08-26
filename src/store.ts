@@ -10,7 +10,11 @@ export default createStore({
       raw: undefined,
       userId: undefined,
       exportDate: undefined,
-      conversations: []
+      conversations: [],
+      skypeEmojis: [
+        // https://support.skype.com/de/faq/FA12330/wie-sieht-die-vollstandige-liste-der-emoticons-aus
+
+      ]
     }
   },
   mutations: {

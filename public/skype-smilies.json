@@ -1,0 +1,4582 @@
+[
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/smile_40x40.gif",
+    "name": "Lächeln",
+    "shortcut": [
+      ":)",
+      ":-)",
+      ":=)",
+      "(Smiley)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/sad_40x40_1.gif",
+    "name": "Traurig",
+    "shortcut": [
+      ":(",
+      ":-(",
+      ":=(",
+      "(sad)",
+      ":<:-<"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/laugh_40x40.gif",
+    "name": "Lachen",
+    "shortcut": [
+      ":D",
+      ":-D",
+      ":=D",
+      ":d",
+      ":-d",
+      ":=d",
+      "(lachen)",
+      ":>",
+      ":->",
+      "(lol)",
+      "(LOL)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cool_40x40.gif",
+    "name": "Cool",
+    "shortcut": [
+      "(cool)",
+      "8-)",
+      "8=)",
+      "B-)",
+      "B=)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyes_40x40.gif",
+    "name": "Herzaugen",
+    "shortcut": [
+      "(hearteyes)",
+      ""
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/stareyes_40x40.gif",
+    "name": "Sternenaugen",
+    "shortcut": [
+      "(stareyes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/like_40x40.gif",
+    "name": "mögen",
+    "shortcut": [
+      "(like)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/unamused_40x40.gif",
+    "name": "Unamused",
+    "shortcut": [
+      "(unamused)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/screenshots/fa12330/emoticons/cryingwhilelaughing_anim.gif",
+    "name": "Vor Lachend weinend",
+    "shortcut": [
+      "(cwl)",
+      "(cryingwithlaughter)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xd_40x40.gif",
+    "name": "Grinsen mit geschlossenen Augen",
+    "shortcut": [
+      "(xd)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/happyface_40x40.gif",
+    "name": "Happy Face",
+    "shortcut": [
+      "(happyface)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/happyeyes_40x40.gif",
+    "name": "Happy Eyes",
+    "shortcut": [
+      "(happyeyes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pensive_40x40.gif",
+    "name": "Pensive",
+    "shortcut": [
+      "(stiftend)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/weary_40x40.gif",
+    "name": "Ernennend",
+    "shortcut": [
+      "(weary)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hysterical_40x40.gif",
+    "name": "Abessisch",
+    "shortcut": [
+      "(werdenical)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/flushed_40x40.gif",
+    "name": "Bereinigung",
+    "shortcut": [
+      "(flushed)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sweatgrinning_40x40.gif",
+    "name": "Sweat Grinning",
+    "shortcut": [
+      "(sweatnervnning)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smileeyes_40x40.gif",
+    "name": "Smileys",
+    "shortcut": [
+      "(smileeyes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/blankface_40x40.gif",
+    "name": "Gesichts ohne Mund",
+    "shortcut": [
+      "(blankface)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/surprised_40x40.gif",
+    "name": "Überrascht",
+    "shortcut": [
+      ":o",
+      ":-o",
+      ":=o",
+      "(überrascht)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/wink_40x40.gif",
+    "name": "Zwinkern",
+    "shortcut": [
+      ";)",
+      ";-)",
+      ";",
+      "=)",
+      "(wink)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/upsidedownface_40x40.gif",
+    "name": "Upside Down Face",
+    "shortcut": [
+      "(upsidedownface)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/disappointed_40x40.gif",
+    "name": "Enttäuscht",
+    "shortcut": [
+      "(enttäuscht)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cry_40x40.gif",
+    "name": "Weinen",
+    "shortcut": [
+      ";(",
+      ";-(",
+      ";",
+      "=(",
+      "(cry)",
+      ":'("
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/loudlycrying_40x40.gif",
+    "name": "Lautes Weinen",
+    "shortcut": [
+      "(loudlycrying)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/shivering_40x40.gif",
+    "name": "Cold Shivering",
+    "shortcut": [
+      "(shivering)",
+      "(cold)",
+      "(freezing)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/sweat_40x40.gif",
+    "name": "Schwitzen",
+    "shortcut": [
+      "(:|",
+      "(sweat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/speechless_40x40.gif",
+    "name": "Sprachlos",
+    "shortcut": [
+      ":|",
+      ":-|",
+      ":=|",
+      "(sprachlos)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/expressionless_40x40.gif",
+    "name": "Ausdruckslos",
+    "shortcut": [
+      "(Ausdruckslos)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/tongueout_40x40.gif",
+    "name": "Frech",
+    "shortcut": [
+      ":P",
+      ":-P",
+      ":=P",
+      ":p",
+      ":-p",
+      ":=p",
+      "(zu",
+      "sprache)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/winktongueout_40x40.gif",
+    "name": "Winkende Zunge herausgewinkte",
+    "shortcut": [
+      "(winktongueout)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/blush_40x40.gif",
+    "name": "Blushing",
+    "shortcut": [
+      ":$",
+      ":-$",
+      ":=$",
+      "(Erröten)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/whew_40x40.gif",
+    "name": "Erleichtert",
+    "shortcut": [
+      "(erleichtert)",
+      "(whew)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/inlove_40x40.gif",
+    "name": "Verliebt",
+    "shortcut": [
+      "(inlove)",
+      "(love)",
+      ":]",
+      ":-]"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/kiss_40x40.gif",
+    "name": "Kuss",
+    "shortcut": [
+      "(kus)",
+      ":*",
+      ":-*",
+      ":=*",
+      "(xo)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/wonder_40x40.gif",
+    "name": "Fragend",
+    "shortcut": [
+      ":^)",
+      "(wonder)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/sleepy_40x40.gif",
+    "name": "Schläfrig",
+    "shortcut": [
+      "|-)",
+      "I-)",
+      "I=)",
+      "(snooze)",
+      "(sleepy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/dull_40x40.gif",
+    "name": "Langweilig",
+    "shortcut": [
+      "|-(",
+      "|",
+      "(",
+      "|=(",
+      "(langweilig)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/yawn_40x40.gif",
+    "name": "Gähnen",
+    "shortcut": [
+      "(yawn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/puke_40x40.gif",
+    "name": "Vomiting",
+    "shortcut": [
+      "(puke)",
+      ":&",
+      ":-&",
+      ":=&",
+      "+o("
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/doh_40x40.gif",
+    "name": "Doh!",
+    "shortcut": [
+      "(doh)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/angryface_40x40.gif",
+    "name": "Verärgert",
+    "shortcut": [
+      "(face)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/angry_40x40.gif",
+    "name": "Wütend",
+    "shortcut": [
+      "(verärgert)",
+      ":@",
+      ":-@",
+      ":=@",
+      "x(",
+      "x-(",
+      "X(",
+      "X-(",
+      "x=(",
+      "X=(",
+      ";@",
+      ";-",
+      "@"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/wasntme_40x40.gif",
+    "name": "Ich war es nicht!",
+    "shortcut": [
+      "(wasntme)",
+      "(wm)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/worry_40x40.gif",
+    "name": "Besorgt",
+    "shortcut": [
+      "(worry)",
+      ":S",
+      ":s",
+      ":-s",
+      ":-S",
+      ":=s",
+      ":=S",
+      "(besorgt)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fearful_40x40.gif",
+    "name": "Beängstigend",
+    "shortcut": [
+      "(ängstigend)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/screamingfear_40x40.gif",
+    "name": "Sich mit Angst vermüllen",
+    "shortcut": [
+      "(vererbungsfear)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/confused_40x40-(1).gif",
+    "name": "Verwirrt",
+    "shortcut": [
+      "(confused)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/veryconfused_40x40.gif",
+    "name": "Sehr verwirrt",
+    "shortcut": [
+      "(sehr",
+      "verwirrt)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/mmm_40x40.gif",
+    "name": "Mmmmm...",
+    "shortcut": [
+      "(mm)",
+      "(mmm)",
+      "(mmmm)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/nerdy_40x40.gif",
+    "name": "Nerdy",
+    "shortcut": [
+      "(nerd)",
+      "8-|",
+      "B-|",
+      "8|",
+      "B|",
+      "8=|",
+      "B=|",
+      "(nerdy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/loveearth_40x40.gif",
+    "name": "Love Earth",
+    "shortcut": [
+      "(loveearth)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rainbowsmile_40x40.gif",
+    "name": "Regenbogen-Lächeln",
+    "shortcut": [
+      "(rainbowsmile)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/lipssealed_40x40.gif",
+    "name": "Meine Lips sind versiegelt",
+    "shortcut": [
+      ":x",
+      ":-x",
+      ":#",
+      ":-#",
+      ":=x",
+      ":=X",
+      ":=#",
+      "(lipssealed)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/devil_40x40.gif",
+    "name": "Teufel",
+    "shortcut": [
+      "(devil)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/angel_40x40.gif",
+    "name": "Engel",
+    "shortcut": [
+      "(angel)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/envy_40x40.gif",
+    "name": "Neidisch",
+    "shortcut": [
+      "(envy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/makeup_40x40.gif",
+    "name": "Schminken",
+    "shortcut": [
+      "(makeup)",
+      "(kate)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/think_40x40.gif",
+    "name": "Nachdenklich",
+    "shortcut": [
+      "(think)",
+      ":-?",
+      ":?",
+      ":=?",
+      "*-)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rofl_40x40.gif",
+    "name": "Lachend über den Boden rollen",
+    "shortcut": [
+      "(rofl)",
+      "(rotfl)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/happy_40x40.gif",
+    "name": "Fröhlich",
+    "shortcut": [
+      "(happy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smirk_40x40.gif",
+    "name": "Schmunzeln",
+    "shortcut": [
+      "(smirk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/nod_40x40.gif",
+    "name": "Nicken",
+    "shortcut": [
+      "(nod)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/shake_40x40.gif",
+    "name": "Schütteln",
+    "shortcut": [
+      "(shake)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/waiting_40x40.gif",
+    "name": "Warten",
+    "shortcut": [
+      "(waiting)",
+      "(forever)",
+      "(ungesperrt)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/emo_40x40.gif",
+    "name": "Emo",
+    "shortcut": [
+      "(emo)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/donttalktome_40x40.gif",
+    "name": "Sprich nicht mit mir",
+    "shortcut": [
+      "(donttalk)",
+      "(donttalktome)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/idea_40x40.gif",
+    "name": "Idee",
+    "shortcut": [
+      "(idea)",
+      ":i",
+      ":I",
+      "*-:)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/talk_40x40.gif",
+    "name": "Sprechen",
+    "shortcut": [
+      "(talk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/swear_40x40.gif",
+    "name": "Schnörörung",
+    "shortcut": [
+      "(sk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/evilgrin_40x40.gif",
+    "name": "Fieses Grinsen",
+    "shortcut": [
+      "]:)>:)",
+      "(zeitkärn)",
+      "(vorn)",
+      "(grin)",
+      "(eg)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/headbang_40x40.gif",
+    "name": "Knallende Kopf auf der Wand",
+    "shortcut": [
+      "(headbang)",
+      "(banghead)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/learn_40x40.gif",
+    "name": "Globale Learning",
+    "shortcut": [
+      "(learn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/headphones_40x40.gif",
+    "name": "Hören über Kopfhörer",
+    "shortcut": [
+      "(headphones)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hungover_40x40.gif",
+    "name": "Morgen nach der Party",
+    "shortcut": [
+      "(morningafter)",
+      "(hungover)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/selfie_40x40.gif",
+    "name": "Selfie",
+    "shortcut": [
+      "(selfie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/shock_40x40.gif",
+    "name": "Spoiler Alert",
+    "shortcut": [
+      "(shock)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ttm_40x40.gif",
+    "name": "Zu viel sprechen",
+    "shortcut": [
+      "",
+      "(ttm)",
+      "(bla)",
+      ""
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dream_40x40.gif",
+    "name": "Träumen",
+    "shortcut": [
+      "(dream)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ill_40x40.gif",
+    "name": "Untere Untere",
+    "shortcut": [
+      "(ill)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tired_40x40.gif",
+    "name": "Müde",
+    "shortcut": [
+      "(tired)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/party_40x40.gif",
+    "name": "Party",
+    "shortcut": [
+      "(party)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bandit_40x40.gif",
+    "name": "Schurke",
+    "shortcut": [
+      "(bandit)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/nazar_40x40.gif",
+    "name": "Vordingen",
+    "shortcut": [
+      "(nazar)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/movember_40x40.gif",
+    "name": "Movember",
+    "shortcut": [
+      "(movember)",
+      "",
+      "(mo)",
+      "(November)",
+      "(zeitstache)",
+      "",
+      "(mustache)",
+      "",
+      "(bowman)",
+      ":{"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilewoman_40x40.gif",
+    "name": "Lächeln Frau",
+    "shortcut": [
+      "(smilewoman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smileman_40x40.gif",
+    "name": "Lächelnde Mann",
+    "shortcut": [
+      "(smileman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilegirl_40x40.gif",
+    "name": "Lächelnde Mädchen",
+    "shortcut": [
+      "(smile",
+      "smile",
+      "smile)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smileboy_40x40.gif",
+    "name": "Lächelnde junge",
+    "shortcut": [
+      "(smileer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilebaby_40x40.gif",
+    "name": "Lächeln, Baby",
+    "shortcut": [
+      "(smilebaby)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mysteryskype_40x40.gif",
+    "name": "Mystery Skype",
+    "shortcut": [
+      "(mysteryskype)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dotdfemale_40x40.gif",
+    "name": "Tag der toten (weiblichen)",
+    "shortcut": [
+      "(dotdfemale)",
+      "(dotdf)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dotdmale_40x40.gif",
+    "name": "Tag der Tote (männlich)",
+    "shortcut": [
+      "(dotdmale)",
+      "(dotdm)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/selfiediwali_40x40.gif",
+    "name": "Selfie Diwali",
+    "shortcut": [
+      "(selfiediwali)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/diwaliselfie_40x40.gif",
+    "name": "Diwali Selfie",
+    "shortcut": [
+      "(diwaliselfie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/steveaoki_40x40.gif",
+    "name": "Steve Aoki",
+    "shortcut": [
+      "(steveaoki)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/aokijump_40x40.gif",
+    "name": "Aoki jump",
+    "shortcut": [
+      "(aokijump)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cakethrow_40x40.gif",
+    "name": "Torte werfen",
+    "shortcut": [
+      "(cakethrow)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/kolony_40x40.gif",
+    "name": "Kolony",
+    "shortcut": [
+      "(kolony)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/joy_40x40.gif",
+    "name": "Freude",
+    "shortcut": [
+      "(joy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/anger_40x40.gif",
+    "name": "Durchserst",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sadness_40x40.gif",
+    "name": "Traurigkeit",
+    "shortcut": [
+      "(sadness)",
+      ""
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/disgust_40x40.gif",
+    "name": "Disgust",
+    "shortcut": [
+      "(disgust)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fear_40x40.gif",
+    "name": "Angst",
+    "shortcut": [
+      "(fear)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hestonfacepalm_40x40.gif",
+    "name": "Heston Facepalm",
+    "shortcut": [
+      "(hestonfacepalm)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heston_40x40.gif",
+    "name": "Heston Blumen ernennen",
+    "shortcut": [
+      "(heston)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/stormtrooper_40x40.gif",
+    "name": "Storm trooper",
+    "shortcut": [
+      "(stormtrooper)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/kyloren_40x40.gif",
+    "name": "Kylo Ren",
+    "shortcut": [
+      "(kyloren)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/captainphasma_40x40.gif",
+    "name": "Kapitän Phasma",
+    "shortcut": [
+      "(kapitänphasma)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/malthe_40x40.gif",
+    "name": "malthe",
+    "shortcut": [
+      "(malthe)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ladyvampire_40x40.gif",
+    "name": "Vampir lady",
+    "shortcut": [
+      "(ladyvamp)",
+      "(ladyvampire)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/vampire_40x40.gif",
+    "name": "Vampir",
+    "shortcut": [
+      "(vampire)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ghost_40x40.gif",
+    "name": "Geist",
+    "shortcut": [
+      "(ghost)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skull_40x40.gif",
+    "name": "Totenkopf",
+    "shortcut": [
+      "(skull)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pumpkin_40x40.gif",
+    "name": "Kürbis",
+    "shortcut": [
+      "(pumpkin)",
+      "(halloween)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/santa_40x40.gif",
+    "name": "Nikolaus",
+    "shortcut": [
+      "(santa)",
+      "(xmas)",
+      "(christmas)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmascwl_40x40.gif",
+    "name": "Xmas, die vor Lachen weinen",
+    "shortcut": [
+      "(xmascwl)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/festiveparty_40x40.gif",
+    "name": "Festliche Party",
+    "shortcut": [
+      "(festiveparty)",
+      "(partyxmas)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/holidayspirit_40x40.gif",
+    "name": "Weihnachtsstimmung",
+    "shortcut": [
+      "(holidayspirit)",
+      "(crazyxmas)",
+      "(crazyermas)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rudolfsurprise_40x40.gif",
+    "name": "Überraschungs-10.",
+    "shortcut": [
+      "(desersurprise)",
+      "(rudolphsurprise)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rudolfidea_40x40.gif",
+    "name": "Idee für Hetke",
+    "shortcut": [
+      "(denkidea)",
+      "(rudolphidea)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmascry_40x40.gif",
+    "name": "Xmas Cry",
+    "shortcut": [
+      "(xmascry)",
+      "(xmascrying)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmassarcastic_40x40.gif",
+    "name": "Xmas Sarcastic",
+    "shortcut": [
+      "(xmasografischecastic)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilemonkey_40x40.gif",
+    "name": "Lächelnde Affe",
+    "shortcut": [
+      "(smilemonkey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sadmonkey_40x40.gif",
+    "name": "Trauriger Affe",
+    "shortcut": [
+      "(sadmonkey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/laughmonkey_40x40.gif",
+    "name": "Lachende Affe",
+    "shortcut": [
+      "(laughmonkey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/coolmonkey_40x40.gif",
+    "name": "Cooler Affe",
+    "shortcut": [
+      "(coolmonkey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyesmonkey_40x40.gif",
+    "name": "Herzaugenaff",
+    "shortcut": [
+      "(hearteyesmonkey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilerobot_40x40.gif",
+    "name": "Lächeln-Roboter",
+    "shortcut": [
+      "(smilerobot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sadrobot_40x40.gif",
+    "name": "Trauriger Roboter",
+    "shortcut": [
+      "(sadrobot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/laughrobot_40x40.gif",
+    "name": "Lachende Roboter",
+    "shortcut": [
+      "(laughrobot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/coolrobot_40x40.gif",
+    "name": "Cooler Roboter",
+    "shortcut": [
+      "(coolrobot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyesrobot_40x40.gif",
+    "name": "Heart Eyes Robot",
+    "shortcut": [
+      "(hearteyesrobot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilecat_40x40.gif",
+    "name": "Lächelnde Katze",
+    "shortcut": [
+      "(smilecat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sadcat_40x40.gif",
+    "name": "Traurige Katze",
+    "shortcut": [
+      "(sadcat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/laughcat_40x40.gif",
+    "name": "Lachende Katze",
+    "shortcut": [
+      "(laughcat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/coolcat_40x40.gif",
+    "name": "Coole Katze",
+    "shortcut": [
+      "(coolcat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyescat_40x40.gif",
+    "name": "Herzaugen katze",
+    "shortcut": [
+      "(hearteyescat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smilekoala_40x40.gif",
+    "name": "Lächeln Koala",
+    "shortcut": [
+      "(smilekoala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sadkoala_40x40.gif",
+    "name": "Sad koala",
+    "shortcut": [
+      "(sadkoala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/laughkoala_40x40.gif",
+    "name": "Lachen koala",
+    "shortcut": [
+      "(laughkoala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/coolkoala_40x40.gif",
+    "name": "Cool koala",
+    "shortcut": [
+      "(coolkoala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyeskoala_40x40.gif",
+    "name": "Herzaugen koala",
+    "shortcut": [
+      "(hearteyeskoala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smiledog_40x40.gif",
+    "name": "Smiley",
+    "shortcut": [
+      "(smiledog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/saddog_40x40.gif",
+    "name": "Sad dog",
+    "shortcut": [
+      "(saddog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/laughdog_40x40.gif",
+    "name": "Lachend Hund",
+    "shortcut": [
+      "(laughdog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cooldog_40x40.gif",
+    "name": "Cooler Hund",
+    "shortcut": [
+      "(cooldog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearteyesdog_40x40.gif",
+    "name": "Herzaugenhund",
+    "shortcut": [
+      "(hearteyesdog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonred_40x40.gif",
+    "name": "Rotes Menüband",
+    "shortcut": [
+      "(redribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonyellow_40x40.gif",
+    "name": "Gelbes Menüband",
+    "shortcut": [
+      "(yellowribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonpurple_40x40.gif",
+    "name": "Violettes Band",
+    "shortcut": [
+      "(purpleribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonpink_40x40.gif",
+    "name": "Rosa Menüband",
+    "shortcut": [
+      "(pinkribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbongreen_40x40.gif",
+    "name": "Grünes Menüband",
+    "shortcut": [
+      "(greenribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonblue_40x40.gif",
+    "name": "Blaues Menüband",
+    "shortcut": [
+      "(blueribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonblack_40x40.gif",
+    "name": "Schwarzes Menüband",
+    "shortcut": [
+      "(blackribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonorange_40x40.gif",
+    "name": "Orange Ribbon",
+    "shortcut": [
+      "(orangeribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartorange_40x40.gif",
+    "name": "Orangenherz",
+    "shortcut": [
+      "(orangeheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartyellow_40x40.gif",
+    "name": "Gelbes Herz",
+    "shortcut": [
+      "(yellowheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartpurple_40x40.gif",
+    "name": "Lila Herz",
+    "shortcut": [
+      "(purpleheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartblack_40x40.gif",
+    "name": "Schwarzes Herz",
+    "shortcut": [
+      "(blackheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartgreen_40x40.gif",
+    "name": "Grünes Herz",
+    "shortcut": [
+      "(greenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heartblue_40x40.gif",
+    "name": "Blaues Herz",
+    "shortcut": [
+      "(blueheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartblack_40x40.gif",
+    "name": "Schwarz gebrochenes Herz",
+    "shortcut": [
+      "(blackbrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartblue_40x40.gif",
+    "name": "Blau gebrochenes Herz",
+    "shortcut": [
+      "(bluebrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartgreen_40x40.gif",
+    "name": "Grünes gebrochenes Herz",
+    "shortcut": [
+      "(greenbrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartorange_40x40.gif",
+    "name": "Orange, gebrochenes Herz",
+    "shortcut": [
+      "(orangebrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartpurple_40x40.gif",
+    "name": "Lila gebrochenes Herz",
+    "shortcut": [
+      "(purplebrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/brokenheartyellow_40x40.gif",
+    "name": "Gelb gebrochenes Herz",
+    "shortcut": [
+      "(yellowbrokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hi_40x40.gif",
+    "name": "Hallo",
+    "shortcut": [
+      "(wave)",
+      "(hi)",
+      "(HI)",
+      "(bye)",
+      "(BYE)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/highfive_40x40.gif",
+    "name": "Abklatschen",
+    "shortcut": [
+      "(highfive)",
+      "(hifive)",
+      "(h5)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/clap_40x40.gif",
+    "name": "Klatschen",
+    "shortcut": [
+      "(clap)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sarcastic_40x40.gif",
+    "name": "Sarcastisch",
+    "shortcut": [
+      "(sarcastisch)",
+      "(sarcasm)",
+      "(slowclap)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/giggle_40x40.gif",
+    "name": "Kichern",
+    "shortcut": [
+      "(chuckle)",
+      "(giggle)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/facepalm_40x40.gif",
+    "name": "Hände vor das Gesicht schlagen",
+    "shortcut": [
+      "(facepalm)",
+      "(fail)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rock_40x40.gif",
+    "name": "Abrocken",
+    "shortcut": [
+      "(rock)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fingerscrossed_40x40.gif",
+    "name": "Daumen drücken",
+    "shortcut": [
+      "(yn)",
+      "(finger)",
+      "(fingerscrossed)",
+      "(Crossedfingers)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/listening_40x40.gif",
+    "name": "Zuhören",
+    "shortcut": [
+      "(listening)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/wait_40x40.gif",
+    "name": "Warte",
+    "shortcut": [
+      "(wait)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/whew_40x40.gif",
+    "name": "Erleichtert",
+    "shortcut": [
+      "(whew)",
+      "(phew)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tmi_40x40.gif",
+    "name": "Zu viele Informationen",
+    "shortcut": [
+      "(tmi)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/call_40x40.gif",
+    "name": "Anrufen",
+    "shortcut": [
+      "(call)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/punch_40x40.gif",
+    "name": "Fausthieb",
+    "shortcut": [
+      "(punch)",
+      "*|",
+      "*-|"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/talktothehand_40x40.gif",
+    "name": "Sprich mit der Hand",
+    "shortcut": [
+      "(talktothehand)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/whistle_40x40.gif",
+    "name": "Pfeifen",
+    "shortcut": [
+      "(whistle)",
+      "(seeti)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/slap_40x40.gif",
+    "name": "Klaps",
+    "shortcut": [
+      "(slap)",
+      "(thappad)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lalala_40x40.gif",
+    "name": "Lalala",
+    "shortcut": [
+      "(lalala)",
+      "(notlistening)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yes_40x40.gif",
+    "name": "Ja",
+    "shortcut": [
+      "(y)",
+      "(Y)",
+      "(yes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/no_40x40.gif",
+    "name": "Nein",
+    "shortcut": [
+      "(n)",
+      "(no)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/handshake_40x40.gif",
+    "name": "Handshake",
+    "shortcut": [
+      "(handshake)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fistbump_40x40.gif",
+    "name": "Fauststoß",
+    "shortcut": [
+      "(fistbump)",
+      "=EE=",
+      "p#d"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/poke_40x40.gif",
+    "name": "Anstupsen",
+    "shortcut": [
+      "(poke)",
+      "(nudge)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/handsinair_40x40.gif",
+    "name": "Hände feiern",
+    "shortcut": [
+      "(celebrate)",
+      "(celebration)",
+      "(handsinair)",
+      "(hia)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearthands_40x40.gif",
+    "name": "Herzhand",
+    "shortcut": [
+      "(hearthands)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/victory_40x40.gif",
+    "name": "Peace-Zeichen",
+    "shortcut": [
+      "(victory)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/noworries_40x40.gif",
+    "name": "Kein Problem",
+    "shortcut": [
+      "(noworries)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ok_40x40.gif",
+    "name": "Okay",
+    "shortcut": [
+      "(ok)",
+      "(OK)",
+      "(okay)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/praying_40x40.gif",
+    "name": "Beten",
+    "shortcut": [
+      "(vorn)",
+      "(ing)",
+      "_/\\\\\\\\_",
+      "(namaste)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/muscle_40x40.gif",
+    "name": "Muskeln",
+    "shortcut": [
+      "(flex)",
+      "(muscle)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/naturescall_40x40.gif",
+    "name": "Notdurft",
+    "shortcut": [
+      "(denk)",
+      "(DENK)",
+      "(naturescall)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/vulcansalute_40x40.gif",
+    "name": "yvouscan salute",
+    "shortcut": [
+      "(vulcansalute)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pointupindex_40x40.gif",
+    "name": "Index nach oben",
+    "shortcut": [
+      "(pointupindex)",
+      "(pointupindexfinger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pointdownindex_40x40.gif",
+    "name": "Backhandindex, der nach unten zeige",
+    "shortcut": [
+      "(pointdownindex)",
+      "(pointdownindexfinger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pointleftindex_40x40.gif",
+    "name": "Backhandindex nach links",
+    "shortcut": [
+      "(pointleftindex)",
+      "(pointleftindexfinger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pointrightindex_40x40.gif",
+    "name": "Backhandindex, der nach rechts zeige",
+    "shortcut": [
+      "(pointrightindex)",
+      "(pointrightindexfinger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/woty_40x40.gif",
+    "name": "Frau des Jahres",
+    "shortcut": [
+      "(woty)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/glassceiling_40x40.gif",
+    "name": "Glas obergrenze",
+    "shortcut": [
+      "(glassceiling)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/deadyes_40x40.gif",
+    "name": "Toter Ja",
+    "shortcut": [
+      "(deadyes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmasyes_40x40.gif",
+    "name": "Xmas ja",
+    "shortcut": [
+      "(xmasys)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dropthemic_40x40.gif",
+    "name": "Abtropfen des Mikrofons",
+    "shortcut": [
+      "(dropthemic)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanshrug_40x40.gif",
+    "name": "Frau schmüll",
+    "shortcut": [
+      "(womanshoi)",
+      "(wshoi)",
+      "(fsh",
+      "verf)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manshrug_40x40.gif",
+    "name": "Mann shklein",
+    "shortcut": [
+      "(mansh",
+      "ab)",
+      "(msh",
+      "neu)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hero_40x40.gif",
+    "name": "Super 18",
+    "shortcut": [
+      "(hero)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mansuperhero_40x40.gif",
+    "name": "Mann, Super-Hero",
+    "shortcut": [
+      "(mansuperhero)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanpregnant_40x40.gif",
+    "name": "Frau",
+    "shortcut": [
+      "(womanpregnant)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/breastfeeding_40x40.gif",
+    "name": "Einsendefeeding",
+    "shortcut": [
+      "(zeitfeeding)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bottlefeeding_40x40.gif",
+    "name": "Abfüllen von Engpässen",
+    "shortcut": [
+      "(Bottlefeeding)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manbottlefeeding_40x40.gif",
+    "name": "Mann, der die Zufuhr von Engpässen ab",
+    "shortcut": [
+      "(manbottlefeeding)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanholdingbaby_40x40.gif",
+    "name": "Frau mit Babys",
+    "shortcut": [
+      "(womanholdingbaby)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manholdingbaby_40x40.gif",
+    "name": "Mann, der das Baby hält",
+    "shortcut": [
+      "(manholdingbaby)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/busyday_40x40.gif",
+    "name": "Ausgefüllter Tag",
+    "shortcut": [
+      "(busyday)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manbusyday_40x40.gif",
+    "name": "Mann beschäftigtEr Tag",
+    "shortcut": [
+      "(manbusyday)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanblowkiss_40x40.gif",
+    "name": "Frau bußt Kuss",
+    "shortcut": [
+      "(womanblowkiss)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manblowkiss_40x40.gif",
+    "name": "Mann bußt Kuss",
+    "shortcut": [
+      "(manblowkiss)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mumanddaughter_40x40.gif",
+    "name": "Denk und Tochter",
+    "shortcut": [
+      "(zu",
+      "diesemanddaughter)",
+      "(womanand",
+      "girl)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/family_40x40.gif",
+    "name": "Familie",
+    "shortcut": [
+      "(family)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/familywomanwomanchild_40x40_1.gif",
+    "name": "Frau mit Kind in der Familie",
+    "shortcut": [
+      "(familywomanwomanchild)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/familymanmanchild_40x40_1.gif",
+    "name": "Family Man Man Child",
+    "shortcut": [
+      "(Familymanchild)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanmechanic_40x40.gif",
+    "name": "Frau 1!",
+    "shortcut": [
+      "(woman",
+      "eine",
+      "Frau)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manmechanic_40x40.gif",
+    "name": "Mann 1: 1",
+    "shortcut": [
+      "(manchanisch)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanfarmer_40x40.gif",
+    "name": "Frau",
+    "shortcut": [
+      "(woman",
+      "farmer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manfarmer_40x40.gif",
+    "name": "Mann",
+    "shortcut": [
+      "(manfarmer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manhiker_40x40.gif",
+    "name": "Mannswander",
+    "shortcut": [
+      "(manhiker)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanhiker_40x40.gif",
+    "name": "Frau, die sich im Senioren- oder Senioren",
+    "shortcut": [
+      "(womanhiker)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manrecycling_40x40.gif",
+    "name": "Mann wiederverwiederverwendung",
+    "shortcut": [
+      "(manrecycling)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanrecycling_40x40.gif",
+    "name": "Frau, die Sie wiederververwiederverwendung",
+    "shortcut": [
+      "(womanrecycling)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanpilot_40x40.gif",
+    "name": "Frau mit Pilot",
+    "shortcut": [
+      "(womanpilot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manpilot_40x40.gif",
+    "name": "Mann mit Pilot",
+    "shortcut": [
+      "(manpilot)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanvrplayer_40x40.gif",
+    "name": "Woman VR player",
+    "shortcut": [
+      "(womanvrplayer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manvrplayer_40x40.gif",
+    "name": "Man VR-Spieler",
+    "shortcut": [
+      "(manvrplayer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanwelder_40x40.gif",
+    "name": "Frau Helfer",
+    "shortcut": [
+      "(womanwelder)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manwelder_40x40.gif",
+    "name": "Mannsvererbung",
+    "shortcut": [
+      "(manwelder)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanartist_40x40.gif",
+    "name": "Künstlerin der Frau",
+    "shortcut": [
+      "(womanartist)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manartist_40x40.gif",
+    "name": "Künstler eines Manns",
+    "shortcut": [
+      "(manartist)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanfirefighter_40x40.gif",
+    "name": "Frau Löscher",
+    "shortcut": [
+      "(womanfirefireer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manfirefighter_40x40.gif",
+    "name": "Mann lösche",
+    "shortcut": [
+      "(manfirefirefireer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanhealthworker_40x40.gif",
+    "name": "Gesundheitsarbeiterin",
+    "shortcut": [
+      "(womanhealthworker)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manhealthworker_40x40.gif",
+    "name": "Medizinischer Mitarbeiter eines Mannes",
+    "shortcut": [
+      "(manhealthworker)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womangraduate_40x40.gif",
+    "name": "Graduierte Frau",
+    "shortcut": [
+      "(womangraduate)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mangraduate_40x40.gif",
+    "name": "Mann mit Abschluss",
+    "shortcut": [
+      "(mangraduate)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/officeworkerfemale_40x40.gif",
+    "name": "Office Workerin weiblich",
+    "shortcut": [
+      "(officeworkerfemale)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/officeworkermale_40x40.gif",
+    "name": "Office Worker Male",
+    "shortcut": [
+      "(officeworkermale)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womangamer_40x40.gif",
+    "name": "Spielerin",
+    "shortcut": [
+      "(womangameer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mangamer_40x40.gif",
+    "name": "Mann, der spielert",
+    "shortcut": [
+      "(zeitmer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanchef_40x40.gif",
+    "name": "Chefin einer Frau",
+    "shortcut": [
+      "(womanerin)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manchef_40x40.gif",
+    "name": "Mann, Chef",
+    "shortcut": [
+      "(manchef)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanteacher_40x40.gif",
+    "name": "Frau Lehrer",
+    "shortcut": [
+      "(womanteacher)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manteacher_40x40.gif",
+    "name": "Lehrer eines Mannes",
+    "shortcut": [
+      "(manteacher)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanpoliceofficer_40x40.gif",
+    "name": "Frau als Polizistin",
+    "shortcut": [
+      "(womanpoliceofficer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manpoliceofficer_40x40.gif",
+    "name": "Mann, Polizist",
+    "shortcut": [
+      "(manpoliceofficer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanastronaut_40x40.gif",
+    "name": "Frau am 8.",
+    "shortcut": [
+      "(womanastronaut)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manastronaut_40x40.gif",
+    "name": "Mann, der",
+    "shortcut": [
+      "(manastronaut)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanjudge_40x40.gif",
+    "name": "Frau, Schiedsrichter",
+    "shortcut": [
+      "(womanjudge)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manjudge_40x40.gif",
+    "name": "Mannsrichter",
+    "shortcut": [
+      "(manjudge)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanscientist_40x40.gif",
+    "name": "Frau",
+    "shortcut": [
+      "(womanscientist)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manscientist_40x40.gif",
+    "name": "Mann 2010",
+    "shortcut": [
+      "(manscientist)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womandeveloper_40x40.gif",
+    "name": "Frau, die Code schreibt",
+    "shortcut": [
+      "(Womandeveloper)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mantechie_40x40.gif",
+    "name": "Mann Techie",
+    "shortcut": [
+      "(mantechie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanaward_40x40.gif",
+    "name": "Frau erhält Auszeichnung",
+    "shortcut": [
+      "(womanaward)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manaward_40x40.gif",
+    "name": "Mann-Auszeichnung",
+    "shortcut": [
+      "(manaward)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womansignlove_40x40.gif",
+    "name": "Frau signieren Love",
+    "shortcut": [
+      "(womansignlove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mansignlove_40x40.gif",
+    "name": "Mann signieren Love",
+    "shortcut": [
+      "(mansignlove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanholdingcat_40x40.gif",
+    "name": "Love cat (weibliche)",
+    "shortcut": [
+      "(womanholdingcat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manholdingcat_40x40.gif",
+    "name": "Love cat (male)",
+    "shortcut": [
+      "(manholdingcat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanholdingdog_40x40.gif",
+    "name": "Love Dog (weiblich)",
+    "shortcut": [
+      "(womanholdingdog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manholdingdog_40x40.gif",
+    "name": "Love Dog (männlich)",
+    "shortcut": [
+      "(manholdingdog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cheerleader_40x40.gif",
+    "name": "Cheerleader",
+    "shortcut": [
+      "(cheerleader)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skip_40x40.gif",
+    "name": "Passend halten",
+    "shortcut": [
+      "(skip)",
+      "(skippingrope)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/synchswim_40x40.gif",
+    "name": "Schwimmen synchronisiert",
+    "shortcut": [
+      "(synchswim)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/suryannamaskar_40x40.gif",
+    "name": "Suryan Namaskar",
+    "shortcut": [
+      "(suryannamaskar)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yoga_40x40.gif",
+    "name": "Yoga",
+    "shortcut": [
+      "(yoga)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/trampoline_40x40.gif",
+    "name": "Durchseringen",
+    "shortcut": [
+      "(denk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/muscleman_40x40.gif",
+    "name": "Muskeln und Fett",
+    "shortcut": [
+      "(Muscleman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/winner_40x40.gif",
+    "name": "Podium",
+    "shortcut": [
+      "(winner)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/running_40x40.gif",
+    "name": "Wird ausgeführt",
+    "shortcut": [
+      "(Running)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanslamdunk_40x40.gif",
+    "name": "Frau, die Basketball spielt",
+    "shortcut": [
+      "(womanslamdunk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/slamdunk_40x40.gif",
+    "name": "Basketball",
+    "shortcut": [
+      "(slamdunk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanfencer_40x40.gif",
+    "name": "Frau zaunten",
+    "shortcut": [
+      "(womanfencer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanridingbike_40x40.gif",
+    "name": "Frau mit Fahrrad fahrend",
+    "shortcut": [
+      "(woman",
+      "unterwegs)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bike_40x40.gif",
+    "name": "Fahrrad",
+    "shortcut": [
+      "(bike)",
+      "(bicycle)",
+      "(sander)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanmotorbike_40x40.gif",
+    "name": "Frau Zunf",
+    "shortcut": [
+      "(woman",
+      "dazu",
+      "8)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manmotorbike_40x40.gif",
+    "name": "Mann 2010",
+    "shortcut": [
+      "(man",
+      "verkn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanfootball_40x40.gif",
+    "name": "Frau beim Spielen von Fußball",
+    "shortcut": [
+      "(womanfootball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bartlett_40x40.gif",
+    "name": "Mann, der Fußball spielt",
+    "shortcut": [
+      "(football)",
+      "(bartlett)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pullshot_40x40.gif",
+    "name": "Kickerschuss",
+    "shortcut": [
+      "(pullshot)",
+      "(shot)",
+      "(denkka)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bowled_40x40.gif",
+    "name": "Bowled",
+    "shortcut": [
+      "(bowled)",
+      "(out)",
+      "(wicket)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fallinlove_40x40.gif",
+    "name": "Sich verlieben",
+    "shortcut": [
+      "(fallinlove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tennisfail_40x40.gif",
+    "name": "Tennis fail",
+    "shortcut": [
+      "(tennisfail)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/target_40x40.gif",
+    "name": "Bogenschießen",
+    "shortcut": [
+      "(target)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/footballfail_40x40.gif",
+    "name": "Fußball nicht spielen",
+    "shortcut": [
+      "(footballfail)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skate_40x40.gif",
+    "name": "Ming",
+    "shortcut": [
+      "(denk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/priidu_40x40.gif",
+    "name": "Mann, der ein Foto aufnimmt",
+    "shortcut": [
+      "(zilmer)",
+      "(priidu)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/toivo_40x40_1.gif",
+    "name": "Ein Mann und sein Hund",
+    "shortcut": [
+      "(toivo)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/grannyscooter_40x40.gif",
+    "name": "Omasen",
+    "shortcut": [
+      "(grannyscooter)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/foreverlove_40x40.gif",
+    "name": "Forever love",
+    "shortcut": [
+      "(foreverlove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/gran_40x40.gif",
+    "name": "Tanzende Oma",
+    "shortcut": [
+      "(gran)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dance_40x40.gif",
+    "name": "Tanzen",
+    "shortcut": [
+      "(zuz)",
+      "\\\\\\\\o/",
+      "\\\\\\\\:d/"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/discodancer_40x40.gif",
+    "name": "Disco-Tänzer",
+    "shortcut": [
+      "(vorz)",
+      "(desdancer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bhangra_40x40.gif",
+    "name": "Bhangra",
+    "shortcut": [
+      "(bhangra)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mariachilove_40x40.gif",
+    "name": "Mariachi love",
+    "shortcut": [
+      "(mariachilove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skipping_40x40.gif",
+    "name": "Hüpfen",
+    "shortcut": [
+      "(skipping)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/manskipping_40x40.gif",
+    "name": "Mann überspringt",
+    "shortcut": [
+      "(manskipping)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/thanks_40x40.gif",
+    "name": "Vielen Dank!",
+    "shortcut": [
+      "(thanks)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bow_40x40.gif",
+    "name": "Verbeugen",
+    "shortcut": [
+      "(bow)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/woman_40x40.gif",
+    "name": "Frau",
+    "shortcut": [
+      "(woman)",
+      "(weiblich)",
+      "(girl)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/man_40x40.gif",
+    "name": "Mann",
+    "shortcut": [
+      "(man)",
+      "(männlich)",
+      "(boy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/gottarun_40x40.gif",
+    "name": "Wird ausgeführt",
+    "shortcut": [
+      "(gott",
+      "vert)",
+      "(gtr)",
+      "(run)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/computerrage_40x40.gif",
+    "name": "Computerfrust",
+    "shortcut": [
+      "(computerrage)",
+      "(typingrage)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tvbinge_40x40.gif",
+    "name": "TV Binge-Zeitfing",
+    "shortcut": [
+      "(tvbinge)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bollylove_40x40.gif",
+    "name": "In Love-Posen",
+    "shortcut": [
+      "(bollylove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/screenshots/fa12330/emoticons/shopping_40_anim_gif.gif",
+    "name": "Mädchen auf Einkaufstour",
+    "shortcut": [
+      "(shopping)",
+      "(shopper)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/nahi_40x40.gif",
+    "name": "Nein!",
+    "shortcut": [
+      "(nahi)",
+      "(naa)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/chappal_40x40.gif",
+    "name": "Glatteschnel",
+    "shortcut": [
+      "(chappal)",
+      "(slipper)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/promise_40x40.gif",
+    "name": "Versprechen",
+    "shortcut": [
+      "(promise)",
+      "(kasamse)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ninja_40x40_1.gif",
+    "name": "Ninja",
+    "shortcut": [
+      "(ninja)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/kaanpakadna_40x40-(1).gif",
+    "name": "Tut mir Leid",
+    "shortcut": [
+      "(kaanpakadna)",
+      "(tut",
+      "uns",
+      "leid)",
+      "(maafi)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/witch_40x40.gif",
+    "name": "Ungeres",
+    "shortcut": [
+      "(vor)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/zombie_40x40.gif",
+    "name": "Zombie",
+    "shortcut": [
+      "(zombie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/zombie_40x40_1.gif",
+    "name": "Wandernmy Walk",
+    "shortcut": [
+      "(denmymymy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/zombiewave_40x40.gif",
+    "name": "Wave",
+    "shortcut": [
+      "(wavewave)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/stop_40x40.gif",
+    "name": "Stopp",
+    "shortcut": [
+      "(stop)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dadtime_40x40.gif",
+    "name": "1.30 Uhr",
+    "shortcut": [
+      "(dadtime)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/womanbath_40x40.gif",
+    "name": "Bad einer Frau",
+    "shortcut": [
+      "(womanbath)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hotchocolate_40x40.gif",
+    "name": "Mom-mello",
+    "shortcut": [
+      "(hotchochite)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cupcake_40x40.gif",
+    "name": "Das ist ein Gefühl von Spaß!",
+    "shortcut": [
+      "(cupcake)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lips_40x40.gif",
+    "name": "Kussmund",
+    "shortcut": [
+      "(lips)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/janegoodall_40x40.gif",
+    "name": "Jane Goodall",
+    "shortcut": [
+      "(janegoodall)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dedmoroz_40x40.gif",
+    "name": "Matt-Assistent",
+    "shortcut": [
+      "(dedmoroz)",
+      "(mattwizard)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/auld_40x40.gif",
+    "name": "auld",
+    "shortcut": [
+      "(auld)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lang_40x40.gif",
+    "name": "lang",
+    "shortcut": [
+      "(lang)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/syne_40x40.gif",
+    "name": "Syne",
+    "shortcut": [
+      "(syne)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmaswoman_40x40.gif",
+    "name": "XMAS Frau",
+    "shortcut": [
+      "(xmaswoman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmasman_40x40.gif",
+    "name": "XMAS MAN",
+    "shortcut": [
+      "(xmasman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/antman_40x40.gif",
+    "name": "Ant-Man",
+    "shortcut": [
+      "(antman)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/amwasp_40x40.gif",
+    "name": "Wasp",
+    "shortcut": [
+      "(amwasp)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/amghost_40x40.gif",
+    "name": "Geist",
+    "shortcut": [
+      "(amghost)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hankpym_40x40.gif",
+    "name": "Hank Pym",
+    "shortcut": [
+      "(hankpym)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/amflyingant_40x40.gif",
+    "name": "Fliegende Ant",
+    "shortcut": [
+      "(amflyingant)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/amtruck_40x40.gif",
+    "name": "Truck-Fahren",
+    "shortcut": [
+      "(intruck)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/amwaspgrow_40x40.gif",
+    "name": "Wasp wachsen",
+    "shortcut": [
+      "(amwaspgrow)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/l337_40x40.gif",
+    "name": "L3-37",
+    "shortcut": [
+      "(l3-37)",
+      "(l337)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lando_40x40.gif",
+    "name": "Lando",
+    "shortcut": [
+      "(lando)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/enfynest_40x40.gif",
+    "name": "Enfys Nest",
+    "shortcut": [
+      "(enfysnest)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/qira_40x40.gif",
+    "name": "Qi'ra",
+    "shortcut": [
+      "(qi'ra)",
+      "(qira)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/beckett_40x40_1.gif",
+    "name": "Zudingen",
+    "shortcut": [
+      "(werdenett)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/solo_40x40.gif",
+    "name": "Solo",
+    "shortcut": [
+      "(solo)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/chewie_40x40.gif",
+    "name": "Chewie",
+    "shortcut": [
+      "(chewie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/penguin_40x40.gif",
+    "name": "Tanzender Pinguin",
+    "shortcut": [
+      "(penguin)",
+      "(dancingpenguin)",
+      "(penguindance)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/penguinkiss_40x40.gif",
+    "name": "Pinguin-Kuss",
+    "shortcut": [
+      "(penguinkiss)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hug_40x40.gif",
+    "name": "Umarmung",
+    "shortcut": [
+      "(hug)",
+      "(bear)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/monkey_40x40.gif",
+    "name": "Affe",
+    "shortcut": [
+      "(monkey)",
+      "(ape)",
+      "",
+      ":(|)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cat_40x40.gif",
+    "name": "Katze",
+    "shortcut": [
+      "(cat)",
+      "(@)",
+      "(meow)",
+      "(vorze)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/dog_40x40.gif",
+    "name": "Hund",
+    "shortcut": [
+      "(dog)",
+      ":o3",
+      "(&)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/koala_40x40.gif",
+    "name": "Koala",
+    "shortcut": [
+      "(koala)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/racoon_40x40.gif",
+    "name": "R vorn",
+    "shortcut": [
+      "(r",
+      "vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/panda_40x40.gif",
+    "name": "Einem neuen 8.",
+    "shortcut": [
+      "(denk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/octopus_40x40.gif",
+    "name": "Kraken",
+    "shortcut": [
+      "(kraken)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/fish_40x40.gif",
+    "name": "Fisch",
+    "shortcut": [
+      "(fish)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/whale_40x40.gif",
+    "name": "Wal",
+    "shortcut": [
+      "(whale)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/dolphin_40x40.gif",
+    "name": "Durchsingen",
+    "shortcut": [
+      "(vor)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/seal_40x40.gif",
+    "name": "Zul.",
+    "shortcut": [
+      "(seal)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bee_40x40.gif",
+    "name": "Bee",
+    "shortcut": [
+      "(bee)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/butterfly_40x40.gif",
+    "name": "Schmetterling",
+    "shortcut": [
+      "(schmetterling)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/unicornhead_40x40.gif",
+    "name": "Unicornkopf",
+    "shortcut": [
+      "(Unicornhead)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tortoise_40x40.gif",
+    "name": "Tort tortilla",
+    "shortcut": [
+      "(tort",
+      "tortilla)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/elephant_40x40.gif",
+    "name": "Elephant",
+    "shortcut": [
+      "(elephant)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/spider_40x40.gif",
+    "name": "Spider",
+    "shortcut": [
+      "(spider)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lizard_40x40.gif",
+    "name": "Echse",
+    "shortcut": [
+      "(echsen)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/snake_40x40.gif",
+    "name": "Ning.",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hedgehoghug_40x40.gif",
+    "name": "Hedgehog hug",
+    "shortcut": [
+      "(hedgehoghug)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bunnyhug_40x40.gif",
+    "name": "Hase umarmt",
+    "shortcut": [
+      "(hashug)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/foxhug_40x40.gif",
+    "name": "Fox-Umarmung",
+    "shortcut": [
+      "(foxhug)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tiger_40x40.gif",
+    "name": "Tiger",
+    "shortcut": [
+      "(tiger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lion_40x40.gif",
+    "name": "Lion",
+    "shortcut": [
+      "(lion)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/unicorn_40x40.gif",
+    "name": "Unicorn",
+    "shortcut": [
+      "(unicorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pig_40x40.gif",
+    "name": "Schwein",
+    "shortcut": [
+      "(pig)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/stingray_40x40.gif",
+    "name": "Stingray",
+    "shortcut": [
+      "(stingray)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/orangutanscratching_40x40.gif",
+    "name": "Orangtann Scratch",
+    "shortcut": [
+      "(orangottenscratch)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/orangutanwave_40x40.gif",
+    "name": "Orangktan Wave",
+    "shortcut": [
+      "(orang",
+      "abwave)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/monkeygiggle_40x40.gif",
+    "name": "Affen-Giggle",
+    "shortcut": [
+      "(monkeygiggle)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/seenoevil_40x40.gif",
+    "name": "Keinen Affen sehen",
+    "shortcut": [
+      "(seenoevil)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hearnoevil_40x40.gif",
+    "name": "Hören Sie keinen Affen",
+    "shortcut": [
+      "(he",
+      "abvil)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/speaknoevil_40x40.gif",
+    "name": "Sprechen Sie keinen Affen",
+    "shortcut": [
+      "(speaknoevil)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/snowangel_40x40.gif",
+    "name": "Schneeengel",
+    "shortcut": [
+      "(snowangel)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/matreshka_40x40.gif",
+    "name": "Skiing Toy",
+    "shortcut": [
+      "(matreshka)",
+      "(skiingtoy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/polarbear_40x40.gif",
+    "name": "Eisbär",
+    "shortcut": [
+      "(polarbear)",
+      "(polarbearhug)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/movinghome_40x40.gif",
+    "name": "Nach Hause",
+    "shortcut": [
+      "(movinghome)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bug_40x40.gif",
+    "name": "Bug",
+    "shortcut": [
+      "(bug)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cricket_40x40.gif",
+    "name": "Bens",
+    "shortcut": [
+      "(vorz)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sloth_40x40.gif",
+    "name": "Faultier",
+    "shortcut": [
+      "(sloth)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/snail_40x40.gif",
+    "name": "Schnecke",
+    "shortcut": [
+      "(Schleim)",
+      "(sn)",
+      "(SN)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/donkey_40x40.gif",
+    "name": "Esel",
+    "shortcut": [
+      "(esel)",
+      "(gadha)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lovebites_40x40.gif",
+    "name": "Liebesgße",
+    "shortcut": [
+      "(lovebites)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/red_40x40.gif",
+    "name": "Rot vor Wut",
+    "shortcut": [
+      "(red)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hendance_40x40.gif",
+    "name": "Tanzende Hen",
+    "shortcut": [
+      "(hendance)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rockchick_40x40.gif",
+    "name": "Rock-Chick",
+    "shortcut": [
+      "(rockchick)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lamb_40x40.gif",
+    "name": "Frühlingsspringen",
+    "shortcut": [
+      "(lamb)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hedgehog_40x40.gif",
+    "name": "Hedgehog",
+    "shortcut": [
+      "(hedgehog)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/heidy_40x40.gif",
+    "name": "Squirrel",
+    "shortcut": [
+      "(squirrel)",
+      "(heidy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bunny_40x40.gif",
+    "name": "Hase",
+    "shortcut": [
+      "(has)",
+      "(lovebunny)",
+      "(vor)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/acorn_40x40.gif",
+    "name": "Acorn",
+    "shortcut": [
+      "(acorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hungrycat_40x40.gif",
+    "name": "Hungrige Katze",
+    "shortcut": [
+      "(hungrycat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ganesh_40x40.gif",
+    "name": "Ganesh",
+    "shortcut": [
+      "(ganesh)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/batsmile_40x40.gif",
+    "name": "Bat smiley",
+    "shortcut": [
+      "(batsmile)",
+      "(bat)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/batcry_40x40.gif",
+    "name": "Fledermausruf",
+    "shortcut": [
+      "(batcry)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/werewolfhowl_40x40.gif",
+    "name": "Wereer howl",
+    "shortcut": [
+      "(werekhowl)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/snegovik_40x40.gif",
+    "name": "snegovik",
+    "shortcut": [
+      "(snegovik)",
+      "(snowbuddie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/reindeer_40x40.gif",
+    "name": "Rentier",
+    "shortcut": [
+      "(reindeer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/gingerkeepfit_40x40.gif",
+    "name": "Lebkuchen fit halten",
+    "shortcut": [
+      "(gingerkeepfit)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yotm_40x40.gif",
+    "name": "Jahr des Affen",
+    "shortcut": [
+      "(yotm)",
+      "(mokeyyear)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yotfr_40x40.gif",
+    "name": "Jahr des Brandungsfsters",
+    "shortcut": [
+      "(yotfr)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yotd_40x40.gif",
+    "name": "Jahr des Hunds",
+    "shortcut": [
+      "(yotd)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/yotp_40x40.gif",
+    "name": "Jahr des Schweins",
+    "shortcut": [
+      "(yotp)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/porg_40x40.gif",
+    "name": "Porg",
+    "shortcut": [
+      "(porg)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/porgsurprised_40x40.gif",
+    "name": "Porg überrascht",
+    "shortcut": [
+      "(porgsurprised)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/chewbacca_40x40.gif",
+    "name": "Chewbacca",
+    "shortcut": [
+      "(chewbacca)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/chewie_40x40_1.gif",
+    "name": "Chewie",
+    "shortcut": [
+      "(chewie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/sun_40x40.gif",
+    "name": "Sonne",
+    "shortcut": [
+      "(sun)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/rain_40x40.gif",
+    "name": "Regnen",
+    "shortcut": [
+      "(rain)",
+      "(london)",
+      "(st)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/snowflake_40x40.gif",
+    "name": "Snowflake",
+    "shortcut": [
+      "(snowflake)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fire_40x40.gif",
+    "name": "Fire",
+    "shortcut": [
+      "(fire)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/rainbow_40x40.gif",
+    "name": "Regenbogen",
+    "shortcut": [
+      "(rainbow)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/star_40x40.gif",
+    "name": "Stern",
+    "shortcut": [
+      "(star)",
+      "(*)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/heart_40x40.gif",
+    "name": "Herz",
+    "shortcut": [
+      "(heart)",
+      "<3"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/brokenheart_40x40.gif",
+    "name": "Gebrochenes Herz",
+    "shortcut": [
+      "(brokenheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmasheart_40x40.gif",
+    "name": "Xmas Herz",
+    "shortcut": [
+      "(xmasheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sparklingheart_40x40.gif",
+    "name": "Funkelndes Herz",
+    "shortcut": [
+      "(sparklingheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/growingheart_40x40.gif",
+    "name": "Wachsendes Herz",
+    "shortcut": [
+      "(growingheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/twohearts_40x40.gif",
+    "name": "Zwei Herzen",
+    "shortcut": [
+      "(twohearts)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/iheartu_40x40.gif",
+    "name": "Ich herze Sie",
+    "shortcut": [
+      "(iheartu)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cactuslove_40x40.gif",
+    "name": "Love von Love",
+    "shortcut": [
+      "(love)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/avocadolove_40x40.gif",
+    "name": "Love von Ihnen",
+    "shortcut": [
+      "(oderlove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/greatpear_40x40.gif",
+    "name": "Großartige Birne",
+    "shortcut": [
+      "(greatpear)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/coffee_40x40.gif",
+    "name": "Kaffee",
+    "shortcut": [
+      "(coffee)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/redwine_40x40.gif",
+    "name": "Roter Wein",
+    "shortcut": [
+      "(redwine)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/drink_40x40.gif",
+    "name": "Cocktail",
+    "shortcut": [
+      "(drink)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/beer_40x40.gif",
+    "name": "Bier",
+    "shortcut": [
+      "(beer)",
+      "(Bausteiner)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/champagne_40x40.gif",
+    "name": "Champagner",
+    "shortcut": [
+      "(vorn)",
+      "(funkelnd)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cheers_40x40.gif",
+    "name": "Heiter",
+    "shortcut": [
+      "(cheers)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/chai_40x40.gif",
+    "name": "Tee",
+    "shortcut": [
+      "(chai)",
+      "(tea)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/apple_40x40.gif",
+    "name": "Apple",
+    "shortcut": [
+      "(apple)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/orange_40x40.gif",
+    "name": "Orange",
+    "shortcut": [
+      "(orange)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lemon_40x40.gif",
+    "name": "Abt.",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/banana_40x40.gif",
+    "name": "Banane",
+    "shortcut": [
+      "(banane)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/watermelon_40x40.gif",
+    "name": "Wassermelon",
+    "shortcut": [
+      "(watermelon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/grapes_40x40.gif",
+    "name": "Vordingen",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/strawberry_40x40.gif",
+    "name": "Durchdingen",
+    "shortcut": [
+      "(be)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cherries_40x40.gif",
+    "name": "Kirschen",
+    "shortcut": [
+      "(Cherries)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/peach_40x40.gif",
+    "name": "Pfirsich",
+    "shortcut": [
+      "(Pfirsich)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/pineapple_40x40.gif",
+    "name": "Ananas",
+    "shortcut": [
+      "(ananasle)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/aubergine_40x40.gif",
+    "name": "Eiplant",
+    "shortcut": [
+      "(aubergine)",
+      "(eiplant)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/croissant_40x40.gif",
+    "name": "Einem neuen 8.",
+    "shortcut": [
+      "(denk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cheese_40x40.gif",
+    "name": "Käse",
+    "shortcut": [
+      "(cheese)",
+      "(stink)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/chickenleg_40x40.gif",
+    "name": "12-8-",
+    "shortcut": [
+      "(chickenleg)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/burger_40x40.gif",
+    "name": "Burger",
+    "shortcut": [
+      "(burger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fries_40x40.gif",
+    "name": "Fres",
+    "shortcut": [
+      "(fries)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/pizza_40x40.gif",
+    "name": "Pizza",
+    "shortcut": [
+      "(pi)",
+      "(pizza)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/noodles_40x40.gif",
+    "name": "nesseln",
+    "shortcut": [
+      "(noodles)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/icecream_40x40.gif",
+    "name": "Eissahne",
+    "shortcut": [
+      "(icec",
+      "über",
+      "den)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cakeslice_40x40.gif",
+    "name": "Tortenschnitt",
+    "shortcut": [
+      "(verzinslichen)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cake_40x40.gif",
+    "name": "Torte",
+    "shortcut": [
+      "(cake)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cookies_40x40.gif",
+    "name": "Cookies",
+    "shortcut": [
+      "(Cookies)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/pie_40x40.gif",
+    "name": "Kreis",
+    "shortcut": [
+      "(pie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/laddu_40x40.gif",
+    "name": "Süß",
+    "shortcut": [
+      "(laddu)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/tandoorichicken_40x40.gif",
+    "name": "Tandoori Chicken",
+    "shortcut": [
+      "(tandoori)",
+      "(tantrarichicken)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/turkey_40x40.gif",
+    "name": "Tanzende Thanksgiving-Türkei",
+    "shortcut": [
+      "(turkey)",
+      "(turkeydance)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/car_40x40.gif",
+    "name": "Auto",
+    "shortcut": [
+      "(car)",
+      "(au)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/truck_40x40.gif",
+    "name": "Truck",
+    "shortcut": [
+      "(truck)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/ambulance_40x40.gif",
+    "name": "Ambulance",
+    "shortcut": [
+      "(ambulance)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/policecar_40x40.gif",
+    "name": "Autos der Bundespoliziste",
+    "shortcut": [
+      "(policecar)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/taxi_40x40.gif",
+    "name": "Taxi",
+    "shortcut": [
+      "(taxi)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmascar_40x40.gif",
+    "name": "Xmas Car",
+    "shortcut": [
+      "(xmascar)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/scooter_40x40.gif",
+    "name": "Ming",
+    "shortcut": [
+      "(vorz)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/pushbike_40x40.gif",
+    "name": "Push-Fahrrad",
+    "shortcut": [
+      "(pushschiebe)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/motorbike_40x40.gif",
+    "name": "Ungeres",
+    "shortcut": [
+      "(vor)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/steamtrain_40x40.gif",
+    "name": "Steam train",
+    "shortcut": [
+      "(steamtrain)",
+      "(train)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/rickshaw_40x40.gif",
+    "name": "Rikscha",
+    "shortcut": [
+      "(rickshaw)",
+      "(rikshaw)",
+      "(ricksha)",
+      ""
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/plane_40x40.gif",
+    "name": "Flugzeug",
+    "shortcut": [
+      "(plane)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/launch_40x40.gif",
+    "name": "Start durch ein Land (Launch)",
+    "shortcut": [
+      "(launch)",
+      "(vorn)",
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/millenniumfalcon_40x40.gif",
+    "name": "Denkkk",
+    "shortcut": [
+      "(vornfalcon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/xwing_40x40.gif",
+    "name": "X-wing",
+    "shortcut": [
+      "(xwing)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/tiefighter_40x40.gif",
+    "name": "TIE",
+    "shortcut": [
+      "(tiefighter)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bb8_40x40.gif",
+    "name": "BB-8",
+    "shortcut": [
+      "(bb8)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bb9e_40x40.gif",
+    "name": "BB-9E",
+    "shortcut": [
+      "(bb9e)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/island_40x40.gif",
+    "name": "Insel",
+    "shortcut": [
+      "(island)",
+      "(ip)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/desert_40x40.gif",
+    "name": "Wüste",
+    "shortcut": [
+      "(desert)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xmastree_40x40.gif",
+    "name": "Weihnachtsbaum",
+    "shortcut": [
+      "(xmastree)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/parislove_40x40_1.gif",
+    "name": "Paris love",
+    "shortcut": [
+      "(parislove)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/statueofliberty_40x40.gif",
+    "name": "Einem neuen, einem neuen, einem oder zwei anderen Menschen",
+    "shortcut": [
+      "(zureofli",
+      "spoy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/noviygod_40x40.gif",
+    "name": "Rotes Quadrat",
+    "shortcut": [
+      "(redsquare)",
+      "(noviygod)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/house_40x40.gif",
+    "name": "Haus",
+    "shortcut": [
+      "(house)",
+      "(home)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/gift_40x40.gif",
+    "name": "Geschenk",
+    "shortcut": [
+      "(gift)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/lovegift_40x40.gif",
+    "name": "Geschenk mit Liebe",
+    "shortcut": [
+      "(lovegift)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ring_40x40.gif",
+    "name": "Klingeln",
+    "shortcut": [
+      "(ring)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/soccerball_40x40.gif",
+    "name": "Fußball",
+    "shortcut": [
+      "(soccerball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/basketball_40x40.gif",
+    "name": "Basketball",
+    "shortcut": [
+      "(basketball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/americanfootball2_40x40.gif",
+    "name": "American Football",
+    "shortcut": [
+      "(americanfootball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/americanfootball_40x40.gif",
+    "name": "Football Eyes",
+    "shortcut": [
+      "(footballeyes)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/baseball_40x40.gif",
+    "name": "Baseball",
+    "shortcut": [
+      "(baseball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tennisball_40x40.gif",
+    "name": "Tennisball",
+    "shortcut": [
+      "(tennisball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rugbyball_40x40.gif",
+    "name": "Neuseeland-Ball",
+    "shortcut": [
+      "(zuzball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/eightball_40x40.gif",
+    "name": "Pool acht Ball",
+    "shortcut": [
+      "(eightball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bowlingball_40x40.gif",
+    "name": "Einem Ball",
+    "shortcut": [
+      "(zuzball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/flaginhole_40x40.gif",
+    "name": "Kennzeichnen in Hole",
+    "shortcut": [
+      "(flaginhole)",
+      "(golfball)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/lacrosse_40x40.gif",
+    "name": "Denk",
+    "shortcut": [
+      "(denk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/trophy_40x40.gif",
+    "name": "Pokal",
+    "shortcut": [
+      "(trophy)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/goldmedal_40x40.gif",
+    "name": "Goldmedaille",
+    "shortcut": [
+      "(goldmedal)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/silvermedal_40x40.gif",
+    "name": "Silbermedaille",
+    "shortcut": [
+      "(silvermedal)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bronzemedal_40x40.gif",
+    "name": "Bronzemedaille",
+    "shortcut": [
+      "(bronzemedal)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ribbonyellow_40x40.gif",
+    "name": "Gelbes Menüband",
+    "shortcut": [
+      "(yellowribbon)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bell_40x40.gif",
+    "name": "Glocke",
+    "shortcut": [
+      "(bell)",
+      "(ghanta)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/dhakkan_40x40.gif",
+    "name": "Narren",
+    "shortcut": [
+      "(dhakkan)",
+      "(fool)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/key_40x40.gif",
+    "name": "Schlüssel",
+    "shortcut": [
+      "(key)",
+      "(success)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/wfh_40x40.gif",
+    "name": "Arbeite von zu Hause",
+    "shortcut": [
+      "(wfh)",
+      "(@h)",
+      "(@H)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/letsmeet_40x40.gif",
+    "name": "Letsmeet",
+    "shortcut": [
+      "(letsmeet)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/computer_40x40.gif",
+    "name": "Computer",
+    "shortcut": [
+      "(computer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/phone_40x40.gif",
+    "name": "Telefon",
+    "shortcut": [
+      "(mp)",
+      "(ph)",
+      "(phone)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/whosthis_40x40.gif",
+    "name": "Wer ist das!?",
+    "shortcut": [
+      "(whosthis)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/unsee_40x40.gif",
+    "name": "Das ist nicht zu sehen",
+    "shortcut": [
+      "(unsee)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/brb_40x40.gif",
+    "name": "Komme gleich wieder",
+    "shortcut": [
+      "(brb)",
+      "(berightback)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/holdon_40x40.gif",
+    "name": "Dran bleiben",
+    "shortcut": [
+      "(holdon)",
+      "(sanduhr)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/canyoutalk_40x40.gif",
+    "name": "Kannst Du reden",
+    "shortcut": [
+      "(canyoutalk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/time_40x40.gif",
+    "name": "Zeit",
+    "shortcut": [
+      "(time)",
+      "(uhr)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/games_40x40_1.gif",
+    "name": "Spiele",
+    "shortcut": [
+      "(games)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/movie_40x40.gif",
+    "name": "Film",
+    "shortcut": [
+      "(film)",
+      "(movie)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/camera_40x40.gif",
+    "name": "Kamera",
+    "shortcut": [
+      "(camera)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/tubelight_40x40.gif",
+    "name": "Tubelight",
+    "shortcut": [
+      "(tubelight)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/webheart_40x40.gif",
+    "name": "Netzherz",
+    "shortcut": [
+      "(webheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/evergreentree_40x40.gif",
+    "name": "Sich immergrüner Baum",
+    "shortcut": [
+      "(evergreentree)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/deciduoustree_40x40.gif",
+    "name": "Ciduous tree",
+    "shortcut": [
+      "(deciduoustree)",
+      "(treedeciduous)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/seedling_40x40.gif",
+    "name": "Startwert",
+    "shortcut": [
+      "(seedling)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/windturbine_40x40.gif",
+    "name": "Wind und Wetter",
+    "shortcut": [
+      "(wind",
+      "aus)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/fallingleaf_40x40.gif",
+    "name": "Fallende Blätter",
+    "shortcut": [
+      "(fallingleaf)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/flower_40x40.gif",
+    "name": "Blume",
+    "shortcut": [
+      "(blume)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sunflower_40x40.gif",
+    "name": "Ungeres",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/cherryblossom_40x40.gif",
+    "name": "Kirschblüte",
+    "shortcut": [
+      "(kirschblossom)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tulip_40x40.gif",
+    "name": "Abt.",
+    "shortcut": [
+      "(vorn)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/rose_40x40.gif",
+    "name": "Rose",
+    "shortcut": [
+      "(rose)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/wiltedflower_40x40_1.gif",
+    "name": "Verwelkte Blume",
+    "shortcut": [
+      "(wiltedflower)",
+      "(w)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/mistletoe_40x40.gif",
+    "name": "Mistletoe",
+    "shortcut": [
+      "(mistletoe)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/goodluck_40x40.gif",
+    "name": "Goodluck",
+    "shortcut": [
+      "(goodluck)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/umbrella_40x40.gif",
+    "name": "Schirm",
+    "shortcut": [
+      "(umbrella)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/recycle_40x40.gif",
+    "name": "Papierkorb",
+    "shortcut": [
+      "(recycle)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/tumbleweed_40x40.gif",
+    "name": "Tumbleweed",
+    "shortcut": [
+      "(tumbleweed)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/speechbubble_40x40.gif",
+    "name": "Sprechblase",
+    "shortcut": [
+      "(speechbubble)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/mail_40x40.gif",
+    "name": "Sie haben E-Mail",
+    "shortcut": [
+      "(mail)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/loveletter_40x40.gif",
+    "name": "Love-Buchstabe",
+    "shortcut": [
+      "(loveletter)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/cash_40x40.gif",
+    "name": "Kohle",
+    "shortcut": [
+      "(cash)",
+      "($)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/diamond_40x40.gif",
+    "name": "Raute",
+    "shortcut": [
+      "(diamond)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/bomb_40x40.gif",
+    "name": "Bombe",
+    "shortcut": [
+      "(bomb)",
+      "(explosion)",
+      "(explode)",
+      "@="
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/music_40x40.gif",
+    "name": "Musik",
+    "shortcut": [
+      "(music)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/whatsgoingon_40x40.gif",
+    "name": "Was ist los?",
+    "shortcut": [
+      "(whatsgoingon)",
+      "(!!?)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/golmaal_40x40.gif",
+    "name": "Verwirrung",
+    "shortcut": [
+      "(golmaal)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/kya_40x40.gif",
+    "name": "Wie geht's!",
+    "shortcut": [
+      "(kya)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/oye_40x40.gif",
+    "name": "Oye",
+    "shortcut": [
+      "(oye)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/abe_40x40.gif",
+    "name": "Abe",
+    "shortcut": [
+      "(abe)",
+      "(abey)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/mumheart_40x40.gif",
+    "name": "Eines der Herzen Von Ihnen",
+    "shortcut": [
+      "(desheart)",
+      "(momheart)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/confidential_40x40.gif",
+    "name": "Vertraulich",
+    "shortcut": [
+      "(confidential)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/piggybank_40x40.gif",
+    "name": "Piggy bank",
+    "shortcut": [
+      "(piggybank)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sparkler_40x40.gif",
+    "name": "Sparkler",
+    "shortcut": [
+      "(sparkler)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/fireworks_40x40.gif",
+    "name": "Feuerwerk",
+    "shortcut": [
+      "(fireworks)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/holi_40x40.gif",
+    "name": "Holi",
+    "shortcut": [
+      "(holi)",
+      "(rang)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/eid_40x40.gif",
+    "name": "Eid",
+    "shortcut": [
+      "(eid)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/screenshots/fa12330/emoticons/diya_anim.gif",
+    "name": "Tealight",
+    "shortcut": [
+      "(diwali)",
+      "(diya)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/dreidel_40x40.gif",
+    "name": "Dreidel",
+    "shortcut": [
+      "(dreidel)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/hanukkah_40x40.gif",
+    "name": "Hanukkah",
+    "shortcut": [
+      "(hanukkah)",
+      "(menorah)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/2714_heavycheckmark.png",
+    "name": "Häkchen",
+    "shortcut": [
+      "(häkchen)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/274c_crossmark.png",
+    "name": "Kreuzzeichen",
+    "shortcut": [
+      "(Crossmark)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/access_40x40.png",
+    "name": "Zugriff",
+    "shortcut": [
+      "(access)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/bing_40x40.gif",
+    "name": "Bing",
+    "shortcut": [
+      "(bing)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/drunk_40x40.gif",
+    "name": "Betrunken",
+    "shortcut": [
+      "(drunk)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/excel_40x40.png",
+    "name": "Excel",
+    "shortcut": [
+      "(excel)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/finger_40x40.gif",
+    "name": "Finger",
+    "shortcut": [
+      "(finger)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/groupme_40x40.gif",
+    "name": "Groupme",
+    "shortcut": [
+      "(groupme)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/internetexplorer_40x40_1.gif",
+    "name": "internetexplorer",
+    "shortcut": [
+      "(internetexplorer)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/llsshock_40x40.gif",
+    "name": "Llsshock",
+    "shortcut": [
+      "(llsshock)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/microsoft_40x40.gif",
+    "name": "Microsoft",
+    "shortcut": [
+      "(microsoft)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/mooning_40x40.gif",
+    "name": "Monden",
+    "shortcut": [
+      "(Monding)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/neil_40x40.gif",
+    "name": "Neil",
+    "shortcut": [
+      "(neil)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/oliver_40x40.gif",
+    "name": "Oliver",
+    "shortcut": [
+      "(oliver)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/onedrive_40x40.png",
+    "name": "OneDrive",
+    "shortcut": [
+      "(onedrive)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/onenote_40x40.png",
+    "name": "OneNote",
+    "shortcut": [
+      "(onenote)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/ontheloo_40x40.gif",
+    "name": "ontheloo",
+    "shortcut": [
+      "(ontheloo)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/outlook_40x40.png",
+    "name": "Outlook",
+    "shortcut": [
+      "(outlook)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/poolparty_40x40.gif",
+    "name": "Poolparty",
+    "shortcut": [
+      "(poolparty)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/poop_40x40.gif",
+    "name": "poop",
+    "shortcut": [
+      "(poop)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/powerpoint_40x40.png",
+    "name": "PowerPoint",
+    "shortcut": [
+      "(powerpoint)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/publisher_40x40.png",
+    "name": "Herausgeber",
+    "shortcut": [
+      "(Publisher)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/santamooning_40x40.gif",
+    "name": "Santamooning",
+    "shortcut": [
+      "(santamooning)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/sharepoint_40x40.png",
+    "name": "SharePoint",
+    "shortcut": [
+      "(sharepoint)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/sheep_40x40.gif",
+    "name": "Sheep",
+    "shortcut": [
+      "(sheep)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skill_40x40.gif",
+    "name": "Peter",
+    "shortcut": [
+      "(peter)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/skype_40x40.png",
+    "name": "Skype",
+    "shortcut": [
+      "(skype)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/skypebiz_40x40.gif",
+    "name": "skypebiz",
+    "shortcut": [
+      "(skypebiz)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/smoke_40x40.gif",
+    "name": "Qualm",
+    "shortcut": [
+      "(vorz)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/tauri_40x40.gif",
+    "name": "tauri",
+    "shortcut": [
+      "(tauri)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/win10_40x40.gif",
+    "name": "win10",
+    "shortcut": [
+      "(win10)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa100xx/word_40x40.png",
+    "name": "Wort",
+    "shortcut": [
+      "(word)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/wtf_40x40.gif",
+    "name": "wtf",
+    "shortcut": [
+      "(wtf)"
+    ]
+  },
+  {
+    "image": "https://az705183.vo.msecnd.net/onlinesupportmedia/onlinesupport/media/skype/fa300xx/xbox_40x40.gif",
+    "name": "Xbox",
+    "shortcut": [
+      "(xbox)"
+    ]
+  }
+]
