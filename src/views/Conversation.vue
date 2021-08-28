@@ -1,32 +1,39 @@
 <template>
-  Conversation with {{ id }}
-  <div id="conversation" >
-    <div v-for="message in conversation.MessageList" v-bind:key="message.id" class="p-5">
+    <div v-if="conversation">
+    Conversation with {{ id }}
+    <div id="conversation" >
+      <div v-for="message in conversation.MessageList" v-bind:key="message.id" class="p-5">
+        <Message :message="message" :userId="userId"></Message>
 
-      <div v-if="message.messagetype == 'Text' || message.messagetype == 'RichText'" class="flex-col">
-        <div
-        class="flex p-2 bg-white rounded-xl shadow-md"
-        v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId, 'text-right': message.from == userId, 'text-left': message.from != userId }">
-          {{ message.content }}<br>{{ message.id }}
+        <!--
+        <div v-if="message.messagetype == 'Text' || message.messagetype == 'RichText'" class="flex-col">
+          <div
+          class="flex p-2 bg-white rounded-xl shadow-md"
+          v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId, 'text-right': message.from == userId, 'text-left': message.from != userId }">
+            {{ message.content }}<br>{{ message.id }}
+          </div>
+          -->
+          <!--<div>{{ message.id }}</div>-->
+          <!--
         </div>
-        <!--<div>{{ message.id }}</div>-->
+        <div v-else-if="message.messagetype == 'Event/Call'" class="text-center">
+          {{ xml = parseCallContent(message.content) }}
+          <span v-if="xml.type == 'started'">Anruf begonnen</span>
+          <span v-else-if="xml.type == 'ended'">Anruf beendet</span>
+          <span v-else>Anruf<br>{{ xml }}</span>
+          <br>
+        </div>
+        <div v-else>{{ message.messagetype }} </div>
+        -->
+        <!--
+        <div v-if="message.from == userId" class="text-right">{{ message.content }}</div>
+        <div v-else class="text-left">{{ message.content }}</div>
+        -->
       </div>
-      <div v-else-if="message.messagetype == 'Event/Call'" class="text-center">
-        {{ xml = parseCallContent(message.content) }}
-        <span v-if="xml.type == 'started'">Anruf begonnen</span>
-        <span v-else-if="xml.type == 'ended'">Anruf beendet</span>
-        <span v-else>Anruf<br>{{ xml }}</span>
-        <br>
-      </div>
-      <div v-else>{{ message.messagetype }} </div>
-      <!--
-      <div v-if="message.from == userId" class="text-right">{{ message.content }}</div>
-      <div v-else class="text-left">{{ message.content }}</div>
-      -->
     </div>
-  </div>
 
-  <!--<div v-for="message in conversation.MessageList" v-bind:key="message.id"><Message :message="message"></Message></div>-->
+    <!--<div v-for="message in conversation.MessageList" v-bind:key="message.id"><Message :message="message"></Message></div>-->
+  </div>
 </template>
 
 <script lang="ts">

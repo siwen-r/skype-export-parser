@@ -31,11 +31,6 @@ export interface Message {
   from: string;
   properties: any | null;
   amsreferences: any | null;
-  options: SkypeContentOptions;
-}
-
-export interface SkypeContentOptions {
-  partlist: Partlist | undefined
 }
 
 export interface Partlist {
