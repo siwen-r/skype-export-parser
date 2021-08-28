@@ -1,20 +1,23 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/parser">Parser</router-link>
+    <router-link to="/">Home</router-link>
   </div>
   <router-view></router-view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import HelloWorld from './views/HelloWorld.vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-    HelloWorld
+  methods: {
+    async loadDemoData() {
+    const runtimeConfig: any = await fetch("/messages.json");
+    this.$store.commit('setExport', await runtimeConfig.json());
+    }
+  },
+  mounted() {
+    this.loadDemoData();
   }
 })
 </script>

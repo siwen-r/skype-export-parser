@@ -84,19 +84,12 @@ export default defineComponent({
     },
     loaded(event: any) {
       var fileString = event.target.result;
-      return this.parseSkypeExport(JSON.parse(fileString));
+      return this.$store.commit('setExport', JSON.parse(fileString));
     },
     errorHandler(event: any) {
       console.log("Error Handler:");
       console.log(event.target.error.name);
-    },
-    async loadDemoData() {
-      const runtimeConfig: any = await fetch("/messages.json");
-      this.parseSkypeExport(await runtimeConfig.json());
-    },
-  },
-  mounted () {
-    this.loadDemoData()
+    }
   }
 });
 </script>
