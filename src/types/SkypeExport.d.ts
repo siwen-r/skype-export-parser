@@ -45,3 +45,24 @@ export interface Part {
   name: string | null;
   duration: string | null | undefined;
 }
+
+export interface Quote {
+  author: string
+  authorname: string
+  timestamp: string
+  conversation: string
+  messageid: string
+  cuid: string
+  content: string
+}
+
+export interface legacyquote {
+  content: string
+}
+
+export interface EM {
+  a: string
+  ts_ms: string
+  ts: string
+  t: string
+}
