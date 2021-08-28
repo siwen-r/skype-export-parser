@@ -11,7 +11,6 @@
   <div>Conversations</div>
   <div v-for="con in conversations" v-bind:key="con.id">
     <router-link :to="`/conversation/${con.id}`"><div class="font-black">{{ con.displayName }} ({{ con.id }})</div></router-link>
-    <!--<div v-for="message in con.MessageList" v-bind:key="message.id"><Message :message="message"></Message></div>-->
   </div>
 </template>
 

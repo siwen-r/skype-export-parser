@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from "./views/Home.vue"
-import SkypeConversation from "./views/SkypeConversation.vue"
+import SkypeConversation from "./views/Conversation.vue"
 
 export default createRouter({
   history: createWebHistory(),
