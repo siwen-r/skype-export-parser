@@ -2,7 +2,7 @@
     <div v-if="conversation">
     Conversation with {{ id }}
     <div id="conversation" >
-      <div v-for="message in conversation.MessageList" v-bind:key="message.id" class="p-5">
+      <div v-for="message in conversationMessageList" v-bind:key="message.id" class="p-5">
         <Message :message="message" :userId="userId"></Message>
 
         <!--
@@ -37,10 +37,9 @@
 </template>
 
 <script lang="ts">
-import { Conversation } from '@/types/SkypeExport';
+import { Conversation, Message as MessageType } from '@/types/SkypeExport';
 import { defineComponent } from 'vue'
 import Message from "../components/Message.vue"
-import { SkypeContentOptions } from '../types/SkypeContentOptions'
 
 export default defineComponent({
   name: 'SkypeConversation',
@@ -50,71 +49,29 @@ export default defineComponent({
   computed: {
     id() { return this.$route.params.id; },
     conversation(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
+    conversationMessageList(): MessageType[] { return this.conversation?.MessageList || [] },
+    // this does not work because the data will be edited in a message and e_m will be removed
+    // here it would be better to this all as pre-process when loading the data into the store
+    filteredConversationMessageList(): MessageType[] {
+      const newList: MessageType[] = []
+
+      for (var element of this.conversationMessageList) {
+
+        // it might be able to this over the e_m attribute ts_ms
+        if (element.content.match(/<e_m(.*)<\/e_m>/g) == null) newList.push(element)
+        else {
+          // is edited
+          if (!newList.some(message => message.content === element.content)) newList.push(element)
+        }
+      }
+
+      console.log('origin: ' + this.conversationMessageList.length)
+      console.log('new: ' + newList.length)
+
+      return newList;
+    },
     userId() { return this.$store.state.userId; },
   },
-  methods: {
-    getXMLRoot(xml: string): HTMLElement {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString( `<xml>${xml}</xml>`, "application/xml");
-
-      return doc.documentElement;
-    },
-    parseXML(xml: string) {
-      const parser = new DOMParser();
-      const doc = parser.parseFromString( `<xml>${xml}</xml>`, "application/xml");
-
-      const options: SkypeContentOptions = { partlist: undefined };
-
-      // parts
-      if (doc.documentElement.getElementsByTagName('partlist').length > 0) {
-        const parts = [];
-        for (var j = 0; j < doc.documentElement.getElementsByTagName('partlist')[0].getElementsByTagName('part').length; j++) {
-
-          let duration = undefined
-          if (doc.documentElement.getElementsByTagName('partlist')[0].getElementsByTagName('part')[j].getElementsByTagName('duration').length > 0)
-            duration = doc.documentElement.getElementsByTagName('partlist')[0].getElementsByTagName('part')[j].getElementsByTagName('duration')[0].textContent
-
-          var part = {
-            identity: doc.documentElement.getElementsByTagName('partlist')[0].getElementsByTagName('part')[j].getAttribute('identity'),
-            name: doc.documentElement.getElementsByTagName('partlist')[0].getElementsByTagName('part')[j].getElementsByTagName('name')[0].textContent,
-            duration: duration
-          }
-          parts.push(part)
-        }
-
-        const partlist = {
-          type: doc.documentElement.getElementsByTagName('partlist')[0].getAttribute('type') ,
-          alt: doc.documentElement.getElementsByTagName('partlist')[0].getAttribute('alt'),
-          callId: doc.documentElement.getElementsByTagName('partlist')[0].getAttribute('callId'),
-          part: parts
-        }
-        options.partlist = partlist;
-      }
-
-      return options
-    },
-    parseCallContent(xml: string) {
-      const xmlRoot = this.getXMLRoot(xml);
-      const xmlPartlist = xmlRoot.getElementsByTagName('partlist')[0];
-
-      const parts = [];
-      for (var j = 0; j < xmlPartlist.getElementsByTagName('part').length; j++) {
-
-        let duration = undefined
-        if (xmlPartlist.getElementsByTagName('part')[j].getElementsByTagName('duration').length > 0)
-          duration = xmlPartlist.getElementsByTagName('part')[j].getElementsByTagName('duration')[0].textContent
-
-        var part = {
-          identity: xmlPartlist.getElementsByTagName('part')[j].getAttribute('identity'),
-          name: xmlPartlist.getElementsByTagName('part')[j].getElementsByTagName('name')[0].textContent,
-          duration: duration
-        }
-        parts.push(part)
-      }
-
-      return { type: xmlPartlist.getAttribute('type'), alt: xmlPartlist.getAttribute('alt'), callId: xmlPartlist.getAttribute('callId'), part: parts };
-    }
-  }
 })
 </script>
 

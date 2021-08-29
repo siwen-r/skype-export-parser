@@ -47,22 +47,23 @@ export interface Part {
 }
 
 export interface Quote {
-  author: string
-  authorname: string
-  timestamp: string
-  conversation: string
-  messageid: string
-  cuid: string
-  content: string
+  author: string | null
+  authorname: string | null
+  timestamp: string | null
+  conversation: string | null
+  messageid: string | null
+  cuid: string | null
+  legacyquote: LegacyQuote[]
+  content: string | null
 }
 
-export interface legacyquote {
-  content: string
+export interface LegacyQuote {
+  content: string | null
 }
 
 export interface EM {
-  a: string
-  ts_ms: string
-  ts: string
-  t: string
+  a: string | null
+  ts_ms: string | null
+  ts: string | null
+  t: string | null
 }
