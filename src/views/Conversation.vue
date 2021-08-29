@@ -2,8 +2,8 @@
     <div v-if="conversation">
     Conversation with {{ id }}
     <div id="conversation" >
-      <div v-for="message in conversationMessageList" v-bind:key="message.id" class="p-5">
-        <Message :message="message" :userId="userId"></Message>
+      <div v-for="(item) in conversationMessageList" v-bind:key="item.id" class="p-5">
+        <Message :message="item" :userId="userId"></Message>
 
         <!--
         <div v-if="message.messagetype == 'Text' || message.messagetype == 'RichText'" class="flex-col">
@@ -43,6 +43,11 @@ import Message from "../components/Message.vue"
 
 export default defineComponent({
   name: 'SkypeConversation',
+  data() {
+    return {
+      limit: 10
+    }
+  },
   components: {
     Message
   },
@@ -58,7 +63,7 @@ export default defineComponent({
       for (var element of this.conversationMessageList) {
 
         // it might be able to this over the e_m attribute ts_ms
-        if (element.content.match(/<e_m(.*)<\/e_m>/g) == null) newList.push(element)
+        if (!element.em) newList.push(element)
         else {
           // is edited
           if (!newList.some(message => message.content === element.content)) newList.push(element)
@@ -72,6 +77,9 @@ export default defineComponent({
     },
     userId() { return this.$store.state.userId; },
   },
+  mounted() {
+    this.$store.commit('parseConversation', this.$route.params.id)
+  }
 })
 </script>
 

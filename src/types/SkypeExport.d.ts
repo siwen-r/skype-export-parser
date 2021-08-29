@@ -11,6 +11,8 @@ export interface Conversation {
   properties: ConversationProperties;
   threadProperties: any;
   MessageList: Message[];
+  // other
+  parsed: Boolean;
 }
 
 export interface ConversationProperties {
@@ -29,8 +31,19 @@ export interface Message {
   content: string;
   conversationid: string;
   from: string;
-  properties: any | null;
+  properties: MessageProperties | null;
   amsreferences: any | null;
+  // in case of an Event/Call
+  partlist: Partlist | undefined;
+  // in case of a text Message
+  quote: Quote | undefined;
+  em: EM | undefined;
+}
+
+export interface MessageProperties {
+  edittime: string | undefined
+  deletetime: string | undefined
+  isserversidegenerated: string | undefined
 }
 
 export interface Partlist {
