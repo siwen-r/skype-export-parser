@@ -16,7 +16,7 @@ export default defineComponent({
   methods: {
     async loadDemoData() {
       if (!this.isConversation) {
-        const runtimeConfig: any = await fetch("/messages.json");
+        const runtimeConfig: any = await fetch("/demo/messages.json");
         this.$store.commit('setExport', await runtimeConfig.json());
       }
     }
