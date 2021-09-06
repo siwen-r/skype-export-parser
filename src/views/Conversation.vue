@@ -1,8 +1,12 @@
 <template>
     <div v-if="conversation">
     Conversation with {{ id }}
+    <div v-if="Math.ceil(conversationSize / limit) > 0">
+      <button v-if="page > 1" class="pr-5" v-on:click="page -= 1">&#60;</button>
+      <button v-if="page < Math.ceil(conversationSize / limit)" class="pl-5" v-on:click="page += 1">&#62;</button>
+    </div>
     <div id="conversation" >
-      <div v-for="(item) in conversationMessageList" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
+      <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
     </div>
   </div>
 </template>
@@ -16,36 +20,26 @@ export default defineComponent({
   name: 'SkypeConversation',
   data() {
     return {
-      limit: 10
+      limit: 10,
+      page: 1,
     }
   },
   components: {
     Message
   },
   computed: {
+    callculatePage() {
+      const message = this.conversationMessageList;
+
+      if(!message) return 1;
+      return (message.length / this.limit);
+    },
+    pageOffset() { return (this.page - 1) * this.limit; },
+
     id() { return this.$route.params.id; },
     conversation(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
+    conversationSize(): number { return this.conversation?.MessageList.length || 1 },
     conversationMessageList(): MessageType[] { return this.conversation?.MessageList || [] },
-    // this does not work because the data will be edited in a message and e_m will be removed
-    // here it would be better to this all as pre-process when loading the data into the store
-    filteredConversationMessageList(): MessageType[] {
-      const newList: MessageType[] = []
-
-      for (var element of this.conversationMessageList) {
-
-        // it might be able to this over the e_m attribute ts_ms
-        if (!element.em) newList.push(element)
-        else {
-          // is edited
-          if (!newList.some(message => message.content === element.content)) newList.push(element)
-        }
-      }
-
-      console.log('origin: ' + this.conversationMessageList.length)
-      console.log('new: ' + newList.length)
-
-      return newList;
-    },
     userId() { return this.$store.state.userId; },
   },
   mounted() {

@@ -1,6 +1,6 @@
 // vuex.d.ts
 import { Store } from 'vuex'
-import { Conversation, SkypeExport } from '@/types/SkypeExport'
+import { Conversation, SkypeExport, Message } from '@/types/SkypeExport'
 
 declare module '@vue/runtime-core' {
   // declare your own store states
@@ -16,5 +16,8 @@ declare module '@vue/runtime-core' {
   // provide typings for `this.$store`
   interface ComponentCustomProperties {
     $store: Store<State>
+    limit: number
+    page: number
+    conversationMessageList: Message[]
   }
 }

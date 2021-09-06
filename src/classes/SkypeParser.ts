@@ -26,7 +26,12 @@ export class SkypeParser {
         message.quote = this.parseQuoteContent(message.content);
         message.em = this.parseEM(message.content);
 
-        message.content = message.content.replace(/<quote((.|\s)*)<\/quote>/g, '').replace(/<e_m(.*)<\/e_m>/g, '').replace('\n', ' ').trim()
+        //message.content = message.content.replace(/<quote((.|\s)*)<\/quote>/g, '').replace(/<e_m(.*)<\/e_m>/g, '').replace('\n', ' ').trim()
+        // causes the internal error (to much recursion) e.g.: 1592136914802
+        message.content = message.content.replace(/<quote((.|\s)*)<\/quote>/g, '')
+        message.content = message.content.replace(/<e_m(.*)<\/e_m>/g, '')
+        message.content = message.content.replace('\n', ' ')
+        message.content = message.content.trim()
       }
     } catch (e) {
       // ignore for now
