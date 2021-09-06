@@ -1,11 +1,13 @@
 <template>
   <div v-if="message.partlist && message.partlist.type == 'ended'">Anruf Beendet {{ callDuration ? ` ${callDuration} Sekunden` : '' }}</div>
   <div v-else-if="message.partlist && message.partlist.type == 'started'">Anruf Gestartet</div>
-  <div v-else-if="message.messagetype == 'Text' || message.messagetype == 'RichText'" v-bind:class="{ 'text-right': message.from == userId, 'text-left': message.from != userId }">
+  <div v-else-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && !isServerGenerated" v-bind:class="{ 'text-right': message.from == userId, 'text-left': message.from != userId }">
     <div v-if="message.quote">{{ message.quote.content.replaceAll('<', '') }}</div>
     {{ message.content }}<span v-if="message.em"> (edited)</span>
     <div v-if="timestamp">{{ message.originalarrivaltime }}</div>
   </div>
+  <!-- produces a big gap in the dom, could maybe done a level higher or the css needs to be on this level -->
+  <div v-else-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && isServerGenerated"></div>
   <div v-else>{{ message.id }}</div>
 </template>
 
@@ -30,6 +32,7 @@ export default defineComponent({
   computed: {
     // does not work because the
     callDuration() { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
+    isServerGenerated() { return this.message.properties?.isserversidegenerated === 'True' || false }
   }
 })
 </script>
