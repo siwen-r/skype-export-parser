@@ -1,14 +1,20 @@
 <template>
-    <div v-if="conversation">
+  <div v-if="conversation">
+    Conversation with {{ id }}
+    <div v-for="(item) in conversationMessageList" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
+  </div>
+  <!--
+  <div v-if="conversation">
     Conversation with {{ id }}
     <div v-if="Math.ceil(conversationSize / limit) > 0">
       <button v-if="page > 1" class="pr-5" v-on:click="page -= 1">&#60;</button>
       <button v-if="page < Math.ceil(conversationSize / limit)" class="pl-5" v-on:click="page += 1">&#62;</button>
     </div>
-    <div id="conversation" >
+    <div id="conversation">
       <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
     </div>
   </div>
+  -->
 </template>
 
 <script lang="ts">
@@ -52,9 +58,5 @@ export default defineComponent({
 * {
   max-width: 1000px;
   margin: 0 auto;
-}
-
-#conversation {
-  background-color: #eff8ff;
 }
 </style>

@@ -2,8 +2,8 @@
   <div v-if="message.partlist && message.partlist.type == 'ended'">Anruf Beendet {{ callDuration ? ` ${callDuration} Sekunden` : '' }}</div>
   <div v-else-if="message.partlist && message.partlist.type == 'started'">Anruf Gestartet</div>
   <div v-else-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && !isServerGenerated" v-bind:class="{ 'text-right': message.from == userId, 'text-left': message.from != userId }">
-    <div v-if="message.quote">{{ message.quote.content.replaceAll('<', '') }}</div>
-    {{ message.content }}<span v-if="message.em"> (edited)</span>
+    <!--<div v-if="message.quote">{{ message.quote.content.replaceAll('<', '') }}</div>-->
+    <span v-html="message.content"></span><span v-if="message.em"> (edited)</span>
     <div v-if="timestamp">{{ message.originalarrivaltime }}</div>
   </div>
   <!-- produces a big gap in the dom, could maybe done a level higher or the css needs to be on this level -->
