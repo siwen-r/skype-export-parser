@@ -1,6 +1,7 @@
 <template>
   <div v-if="message.partlist && message.partlist.type == 'ended'">Anruf Beendet {{ callDuration ? ` ${callDuration} Sekunden` : '' }}</div>
   <div v-else-if="message.partlist && message.partlist.type == 'started'">Anruf Gestartet</div>
+  <div v-else-if="message.partlist && message.partlist.type == 'missed'">Anruf verpasst</div>
   <div v-else-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && !isServerGenerated" v-bind:class="{ 'text-right': message.from == userId, 'text-left': message.from != userId }">
     <!--<div v-if="message.quote">{{ message.quote.content.replaceAll('<', '') }}</div>-->
     <span v-html="message.content"></span><span v-if="message.em"> (edited)</span>
@@ -8,7 +9,39 @@
   </div>
   <!-- produces a big gap in the dom, could maybe done a level higher or the css needs to be on this level -->
   <div v-else-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && isServerGenerated"></div>
-  <div v-else>{{ message.id }}</div>
+  <div v-else-if="message.messagetype == 'RichText/Media_AudioMsg'">
+    Audiomessage
+    <div v-if="message.amsreferences">{{ message.amsreferences }}</div>
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/Media_GenericFile'">
+    Generic File
+    <div v-if="message.amsreferences">{{ message.amsreferences }}</div>
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/UriObject'">
+    URI Object
+    <div v-if="message.amsreferences">
+      <!-- will result in a long loading time -> needs to be lazy load or load when in viewport
+      <div v-for="(item) in message.amsreferences" v-bind:key="item">
+        <img :src="`http://localhost:3000/demo/media/${item}.1.jpg`" alt="404 BILD NOT FOUND" style="max-width:100px;max-height:100px;">
+      </div>
+    </div>-->
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/Media_Video'">
+    Video
+    <div v-if="message.amsreferences">{{ message.amsreferences }}</div>
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/Media_Album'">
+    Album
+    <div v-if="message.properties">{{ message.properties?.albumId }}</div>
+    <div v-if="message.amsreferences">{{ message.amsreferences }}</div>
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/Media_CallRecording'">
+    Ton aufnahme
+    <div v-if="message.amsreferences">{{ message.amsreferences }}</div>
+  </div>
+  <div v-else-if="message.messagetype == 'RichText/Media_FlikMsg'">File</div>
+  <div v-else-if="message.messagetype == 'Poll'">Poll</div>
+  <div v-else>MISSING: {{ message.id }} {{ message.messagetype }}</div>
 </template>
 
 <script lang="ts">

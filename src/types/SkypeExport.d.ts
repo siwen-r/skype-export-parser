@@ -32,7 +32,7 @@ export interface Message {
   conversationid: string;
   from: string;
   properties: MessageProperties | null;
-  amsreferences: any | null;
+  amsreferences: string[] | null;
   // in case of an Event/Call
   partlist: Partlist | undefined;
   // in case of a text Message
@@ -44,6 +44,7 @@ export interface MessageProperties {
   edittime: string | undefined
   deletetime: string | undefined
   isserversidegenerated: string | undefined
+  albumId: string | undefined
 }
 
 export interface Partlist {
