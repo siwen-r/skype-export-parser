@@ -56,8 +56,5 @@ export default defineComponent({
 </script>
 
 <style scoped>
-* {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+
 </style>

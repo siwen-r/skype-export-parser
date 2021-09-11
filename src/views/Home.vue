@@ -1,12 +1,10 @@
 <template>
   <div class="flex justify-between">
     <div class="w-1/4 pl-5 relative" id="sidebar">
-      <div>
       <div class="font-bold text-lg">Export Details</div>
       <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ user }}</div></div>
       <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
       <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
-      </div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2">
           <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[0].originalarrivaltime) }}</div></div>
@@ -16,8 +14,11 @@
         </div>
       </div>
     </div>
-    <div class="flex items-center justify-center w-3/4">
-      <div>No Conversation select</div>
+    <div class="w-3/4">
+      <div v-if="!conversationId" id="empty-conversation" class="flex items-center justify-center w-3/4">
+        <div>No Conversation select</div>
+      </div>
+      <div v-else class="flex items-start justify-center"><ConversationComponent :id="conversationId" /></div>
     </div>
   </div>
 </template>
@@ -25,16 +26,19 @@
 <script lang="ts">
 import { Conversation } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
-import Message from "../components/Message.vue"
 import { UserIcon, ClockIcon } from '@heroicons/vue/solid'
+//import ConversationComponent from '../components/Conversation.vue'
+import ConversationComponent from './Conversation.vue'
 
 export default defineComponent({
   name: "SkypeExportParser",
-  components: { Message, UserIcon, ClockIcon },
+  components: { UserIcon, ClockIcon, ConversationComponent },
   computed: {
+    conversationId() { return this.$route.params.id; },
     user() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
-    conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0); },
+    // TODO can maybe some option in some kind of settings, if they should be shown or not
+    conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0 && !element.id.endsWith('@cast.skype') && !element.id.endsWith('calllogs') && !element.id.endsWith('@thread.skype') && !element.id.endsWith('@encrypted.skype')); },
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); }
