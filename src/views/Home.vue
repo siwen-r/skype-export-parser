@@ -1,55 +1,44 @@
 <template>
-  <!-- can in some sort of intro or header
-  <input id="skype-upload" type="file" ref="skypeImport" @change="loadSkypeUpload" />
-  <br>
-  -->
-  <div>userId: {{ userId }}</div>
-  <div>exportDate: {{ exportDate }}</div>
-  <hr/>
-  <div>Metics</div>
-  <div>MessageTypes: {{ messagetypes }}</div>
-  <div>ConversationPartners: {{ conversationPartners }}</div>
-  <hr/>
-  <div>Conversations</div>
-  <div v-for="con in conversations" v-bind:key="con.id">
-    <router-link :to="`/conversation/${con.id}`"><div class="font-black">{{ con.displayName }} ({{ con.id }})</div></router-link>
+  <div class="flex justify-between">
+    <div class="w-1/4 pl-5 relative" id="sidebar">
+      <div>
+      <div class="font-bold text-lg">Export Details</div>
+      <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ user }}</div></div>
+      <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
+      <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
+      </div>
+      <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
+        <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2">
+          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[0].originalarrivaltime) }}</div></div>
+          <router-link :to="`/conversation/${con.id}`" class="font-bold"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
+          <!--<div>Messages: {{ con.MessageList.length }}</div>-->
+          <div class="truncate" v-html="`${con.MessageList[ 0 ].displayName ? `${con.MessageList[ 0 ].displayName}:`: ''} ${con.MessageList[ 0 ].content}`"></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center w-3/4">
+      <div>No Conversation select</div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Conversation, SkypeExport } from '@/types/SkypeExport';
+import { Conversation } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import Message from "../components/Message.vue"
+import { UserIcon, ClockIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   name: "SkypeExportParser",
-  components: {
-    Message
-  },
+  components: { Message, UserIcon, ClockIcon },
   computed: {
-    userId() { return this.$store.state.userId; },
+    user() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
-    conversations(): Conversation[] { return this.$store.state.conversations; },
-    messagetypes() {
-      const set = new Set();
-      for(const con of this.conversations) {
-        for(const message of con.MessageList) {
-          set.add(message.messagetype)
-        }
-      }
-
-      return Array.from(set)
-    },
-    conversationPartners() {
-      const set = new Set();
-      for(const con of this.conversations) {
-        set.add(con.displayName)
-      }
-
-      return Array.from(set)
-    }
+    conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0); },
   },
   methods: {
+    dateToLocal(date: string) { return new Date(date).toLocaleString(); }
+    /*
     loadSkypeUpload(event: any) {
       const files = event.target.files;
 
@@ -91,6 +80,7 @@ export default defineComponent({
       console.log("Error Handler:");
       console.log(event.target.error.name);
     }
+    */
   }
 });
 </script>
@@ -99,4 +89,13 @@ export default defineComponent({
 * {
   text-align: left;
 }
+
+#conversaions {
+  height: calc(100vh - 213px);
+}
+
+#empty-conversation {
+  height: calc(100vh - 80px);
+}
+
 </style>

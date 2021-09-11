@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between p-2">
+  <header class="flex justify-between p-5">
     <div class="flex justify-start">
       <router-link to="/"><img src="skype.svg" alt="skype logo"></router-link>
       <router-link to="/" class="text-3xl font-black pl-2">Export Parser</router-link>
@@ -21,7 +21,7 @@ export default defineComponent({
   components: { UserIcon },
   computed: {
     isConversation() { return this.$store.state.conversations.length > 0 },
-    user() { return this.$store.state.userId }
+    user() { return this.$store.state.userId; }
   },
   methods: {
     async loadDemoData() {
@@ -51,8 +51,7 @@ export default defineComponent({
        url('./fonts/roboto-slab-v13-latin-regular.svg#RobotoSlab') format('svg'); /* Legacy iOS */
 }
 
-* {
-  background-color: #eff8ff;
-  text-align: center;
+#app {
+  height: 100%;
 }
 </style>

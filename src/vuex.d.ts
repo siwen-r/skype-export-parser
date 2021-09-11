@@ -22,5 +22,11 @@ declare module '@vue/runtime-core' {
     // app.vue
     isConversation: boolean
     loadDemoData: any
+
+    // Home.vue
+    conversations: Conversation[]
+    updateProgress: any
+    loaded: any
+    errorHandler: any
   }
 }
