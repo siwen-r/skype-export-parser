@@ -1,6 +1,8 @@
 <template>
+  <!-- can in some sort of intro or header
   <input id="skype-upload" type="file" ref="skypeImport" @change="loadSkypeUpload" />
   <br>
+  -->
   <div>userId: {{ userId }}</div>
   <div>exportDate: {{ exportDate }}</div>
   <hr/>

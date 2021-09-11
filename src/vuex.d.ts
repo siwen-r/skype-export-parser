@@ -19,5 +19,8 @@ declare module '@vue/runtime-core' {
     limit: number
     page: number
     conversationMessageList: Message[]
+    // app.vue
+    isConversation: boolean
+    loadDemoData: any
   }
 }

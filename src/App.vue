@@ -1,17 +1,27 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link>
-  </div>
+  <header class="flex justify-between p-2">
+    <div class="flex justify-start">
+      <router-link to="/"><img src="skype.svg" alt="skype logo"></router-link>
+      <router-link to="/" class="text-3xl font-black pl-2">Export Parser</router-link>
+    </div>
+    <div class="flex justify-end">
+      <div class="font-black self-center pr-2">{{ user }}</div>
+      <UserIcon class="h-7 w-7 self-center" />
+    </div>
+  </header>
   <router-view></router-view>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { UserIcon } from '@heroicons/vue/solid'
 
 export default defineComponent({
   name: 'App',
+  components: { UserIcon },
   computed: {
-    isConversation() { return this.$store.state.conversations.length > 0 }
+    isConversation() { return this.$store.state.conversations.length > 0 },
+    user() { return this.$store.state.userId }
   },
   methods: {
     async loadDemoData() {
