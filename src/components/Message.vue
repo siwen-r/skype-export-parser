@@ -20,11 +20,11 @@
   <div v-else-if="message.messagetype == 'RichText/UriObject'">
     URI Object
     <div v-if="message.amsreferences">
-      <!-- will result in a long loading time -> needs to be lazy load or load when in viewport
+      <!-- will result in a long loading time -> needs to be lazy load or load when in viewport -->
       <div v-for="(item) in message.amsreferences" v-bind:key="item">
-        <img :src="`http://localhost:3000/demo/media/${item}.1.jpg`" alt="404 BILD NOT FOUND" style="max-width:100px;max-height:100px;">
+        <img :src="`http://localhost:3000/demo/media/${getImage(item, message.content)}`" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy">
       </div>
-    </div>-->
+    </div>
   </div>
   <div v-else-if="message.messagetype == 'RichText/Media_Video'">
     Video
@@ -57,15 +57,24 @@ export default defineComponent({
   },
   data() {
     return {
-      call: undefined as Partlist | undefined,
-      quote: undefined as Quote | undefined,
-      em: undefined as EM | undefined
+      image: false
     }
   },
   computed: {
     // does not work because the
     callDuration() { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
     isServerGenerated() { return this.message.properties?.isserversidegenerated === 'True' || false }
+  },
+  methods: {
+    getImage(imageId: string, content: any) {
+      if (content.includes('Picture')) {
+        const ret = /png|gif|jpe?g|heic|tiff?|bmp|eps|raw/i;
+        const type = content.match(ret) || [];
+
+        imageId += '.1'
+        return imageId + ((type.size === 0 || type === '' || type[0] === undefined) ? '' : `.${type[0]}`)
+      }
+    }
   }
 })
 </script>
