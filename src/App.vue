@@ -1,12 +1,12 @@
 <template>
   <header class="flex justify-between p-5">
     <div class="flex justify-start">
-      <router-link to="/"><img src="skype.svg" alt="skype logo"></router-link>
+      <router-link to="/"><img src="http://localhost:3000/skype.svg" alt="skype logo"></router-link>
       <router-link to="/" class="text-3xl font-black pl-2">Export Parser</router-link>
     </div>
     <div class="flex justify-end">
-      <div class="font-black self-center pr-2">{{ user }}</div>
-      <UserIcon class="h-7 w-7 self-center" />
+      <div v-if="user" class="font-black self-center pr-2">{{ user }}</div>
+      <UserIcon v-if="user" class="h-7 w-7 self-center" />
     </div>
   </header>
   <router-view></router-view>
