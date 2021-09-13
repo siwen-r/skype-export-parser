@@ -18,7 +18,14 @@
       <div v-if="!conversationId" id="empty-conversation" class="flex items-center justify-center w-3/4">
         <div>No Conversation select</div>
       </div>
-      <div v-else class="flex items-start justify-center"><ConversationComponent :id="conversationId" /></div>
+      <div v-else id="empty-conversation" class="overscroll-auto overflow-auto w-full">
+        <div class="text-left fixed w-full h-20 max-h-20 bg-white">
+          <div class="flex justify-between font-bold text-xl">{{ conversationById.displayName }}</div>
+        </div>
+        <div class="mt-20 text-center">
+          <ConversationComponent :id="conversationId"/>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -26,19 +33,19 @@
 <script lang="ts">
 import { Conversation } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
-import { UserIcon, ClockIcon } from '@heroicons/vue/solid'
-//import ConversationComponent from '../components/Conversation.vue'
+import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
 import ConversationComponent from './Conversation.vue'
 
 export default defineComponent({
   name: "SkypeExportParser",
-  components: { UserIcon, ClockIcon, ConversationComponent },
+  components: { UserIcon, ClockIcon, ConversationComponent, SortAscendingIcon, SortDescendingIcon },
   computed: {
     conversationId() { return this.$route.params.id; },
     user() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
     // TODO can maybe some option in some kind of settings, if they should be shown or not
     conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0 && !element.id.endsWith('@cast.skype') && !element.id.endsWith('calllogs') && !element.id.endsWith('@thread.skype') && !element.id.endsWith('@encrypted.skype')); },
+    conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); }
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); }
@@ -101,5 +108,4 @@ export default defineComponent({
 #empty-conversation {
   height: calc(100vh - 80px);
 }
-
 </style>

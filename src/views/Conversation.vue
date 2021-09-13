@@ -1,10 +1,9 @@
 <template>
   <div v-if="conversation">
-    Conversation with {{ id }}
+    <!--<div>Conversation with {{ id }}</div>-->
     <!--<div v-for="(item) in conversationMessageList" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>-->
-    <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
+    <!--<div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>-->
   </div>
-  <!--
   <div v-if="conversation">
     Conversation with {{ id }}
     <div v-if="Math.ceil(conversationSize / limit) > 0">
@@ -15,7 +14,6 @@
       <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
     </div>
   </div>
-  -->
 </template>
 
 <script lang="ts">
