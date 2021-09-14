@@ -30,10 +30,10 @@
 </template>
 
 <script lang="ts">
-import { Conversation, Message } from '@/types/SkypeExport';
+import { Conversation } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
-import ConversationComponent from './Conversation.vue'
+import ConversationComponent from '../components/Conversation.vue'
 
 export default defineComponent({
   name: "SkypeExportParser",
