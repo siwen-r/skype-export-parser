@@ -26,6 +26,7 @@ declare module '@vue/runtime-core' {
     // Home.vue
     conversations: Conversation[]
     conversationId: string
+    conversationById: Conversation | undefined
     updateProgress: any
     loaded: any
     errorHandler: any

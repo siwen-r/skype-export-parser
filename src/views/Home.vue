@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-between">
-    <div class="w-1/4 pl-5 relative" id="sidebar">
+    <div class="w-1/4 pl-5 relative pr-5" id="sidebar">
       <div class="font-bold text-lg">Export Details</div>
       <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ user }}</div></div>
       <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
@@ -9,7 +9,6 @@
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2">
           <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[0].originalarrivaltime) }}</div></div>
           <router-link :to="`/conversation/${con.id}`" class="font-bold"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
-          <!--<div>Messages: {{ con.MessageList.length }}</div>-->
           <div class="truncate" v-html="`${con.MessageList[ 0 ].displayName ? `${con.MessageList[ 0 ].displayName}:`: ''} ${con.MessageList[ 0 ].content}`"></div>
         </div>
       </div>
@@ -18,12 +17,12 @@
       <div v-if="!conversationId" id="empty-conversation" class="flex items-center justify-center w-3/4">
         <div>No Conversation select</div>
       </div>
-      <div v-else id="empty-conversation" class="overscroll-auto overflow-auto w-full">
+      <div v-else id="empty-conversation" class="flex flex-col overscroll-auto overflow-auto w-full">
         <div class="text-left fixed w-full h-20 max-h-20 bg-white">
           <div class="flex justify-between font-bold text-xl">{{ conversationById.displayName }}</div>
         </div>
-        <div class="mt-20 text-center">
-          <ConversationComponent :id="conversationId"/>
+        <div class="mt-20 text-center flex-1 overflow-y-auto shadow-inner">
+          <ConversationComponent />
         </div>
       </div>
     </div>
@@ -31,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { Conversation } from '@/types/SkypeExport';
+import { Conversation, Message } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
 import ConversationComponent from './Conversation.vue'
@@ -45,7 +44,7 @@ export default defineComponent({
     exportDate() { return this.$store.state.exportDate; },
     // TODO can maybe some option in some kind of settings, if they should be shown or not
     conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0 && !element.id.endsWith('@cast.skype') && !element.id.endsWith('calllogs') && !element.id.endsWith('@thread.skype') && !element.id.endsWith('@encrypted.skype')); },
-    conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); }
+    conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); }
