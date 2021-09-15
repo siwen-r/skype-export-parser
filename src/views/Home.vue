@@ -21,7 +21,7 @@
         <div class="text-left fixed w-full h-20 max-h-20 bg-white">
           <div class="flex justify-between font-bold text-xl">{{ conversationById.displayName }}</div>
         </div>
-        <div class="mt-20 text-center flex-1 overflow-y-auto shadow-inner">
+        <div class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5">
           <ConversationComponent />
         </div>
       </div>

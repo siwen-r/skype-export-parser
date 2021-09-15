@@ -1,5 +1,7 @@
 <template>
-    <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id" class="p-5"><Message :message="item" :userId="userId"></Message></div>
+    <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id">
+      <Message :message="item" :userId="userId"></Message>
+    </div>
 </template>
 
 <script lang="ts">
@@ -11,7 +13,7 @@ export default defineComponent({
   name: 'SkypeConversation',
   data() {
     return {
-      limit: 100,
+      limit: 500,
       page: 1,
     }
   },

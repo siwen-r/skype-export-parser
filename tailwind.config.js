@@ -3,6 +3,15 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    boxShadow: {
+      inner: 'inset 0 4px 8px 0 rgba(0, 0, 0, 0.06)',
+    },
+    minWidth: {
+      '1/4': '25%'
+    },
+    maxWidth: {
+      '1/2': '50%'
+    }
   },
   variants: {
     extend: {},

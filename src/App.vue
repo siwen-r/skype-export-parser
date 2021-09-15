@@ -57,4 +57,8 @@ export default defineComponent({
 .skype {
   color: #00AFF0;
 }
+
+.skype-background {
+  background-color: #00AFF0;
+}
 </style>
