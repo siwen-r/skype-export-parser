@@ -34,7 +34,7 @@ export default defineComponent({
     conversation(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
     conversationMessageList(): MessageType[] { return this.conversation?.MessageList || [] },
   },
-  mounted() {
+  beforeUpdate() {
     this.$store.commit('parseConversation', this.$route.params.id)
   }
 })
