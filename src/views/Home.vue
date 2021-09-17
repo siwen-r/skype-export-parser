@@ -7,7 +7,7 @@
       <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2">
-          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[0].originalarrivaltime) }}</div></div>
+          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ 0 ].originalarrivaltime) }}</div></div>
           <router-link :to="`/conversation/${con.id}`" class="font-bold"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
           <div class="truncate" v-html="`${con.MessageList[ 0 ].displayName ? `${con.MessageList[ 0 ].displayName}:`: ''} ${con.MessageList[ 0 ].content}`"></div>
         </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { Conversation } from '@/types/SkypeExport';
+import { Conversation, Message } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
 import ConversationComponent from '../components/Conversation.vue'

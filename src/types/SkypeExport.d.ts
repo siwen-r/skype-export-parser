@@ -38,6 +38,8 @@ export interface Message {
   // in case of a text Message
   quote: Quote | undefined;
   em: EM | undefined;
+  // others
+  parsed: boolean | undefined;
 }
 
 export interface MessageProperties {

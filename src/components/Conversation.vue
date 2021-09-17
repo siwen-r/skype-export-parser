@@ -1,6 +1,6 @@
 <template>
-    <div v-for="(item) in conversationMessageList.filter((element, index) => index >= pageOffset && index < (pageOffset + limit))" v-bind:key="item.id">
-      <Message :message="item" :userId="userId"></Message>
+    <div id="conversaation-inner-container">
+      <div v-for="(item) in messages" v-bind:key="item.id"><Message :message="item" :userId="userId"></Message></div>
     </div>
 </template>
 
@@ -33,9 +33,28 @@ export default defineComponent({
     userId() { return this.$store.state.userId; },
     conversation(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
     conversationMessageList(): MessageType[] { return this.conversation?.MessageList || [] },
+    messages(): MessageType[] { return this.$store.getters.getMessages({ conversationId: this.$route.params.id, limit: this.limit, offset: (this.page - 1) }) }
+  },
+  methods: {
+    /*
+    scrollToButtom() {
+      const el = document.getElementById('conversaation-inner-container');
+      console.log(el);
+      if(el == null) return;
+
+      el.scrollTo(0, el.scrollHeight);
+      el.scrollTop = el.scrollHeight;
+    }
+    */
   },
   beforeUpdate() {
-    this.$store.commit('parseConversation', this.$route.params.id)
+    // this.$store.commit('parseConversation', this.$route.params.id)
+  },
+  mounted() {
+    // this.scrollToButtom();
+  },
+  updated() {
+    // this.scrollToButtom();
   }
 })
 </script>

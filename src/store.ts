@@ -27,7 +27,10 @@ export default createStore({
       state.userId = skype.userId
       state.exportDate = skype.exportDate
       state.conversations = skype.conversations
-      state.conversations.forEach(element => element.parsed = false);
+
+      for (const conversation of state.conversations) {
+        conversation.parsed = false;
+      }
 
       // parse everything in better format
       //const parser = new SkypeParser();
@@ -41,6 +44,33 @@ export default createStore({
         state.conversations[index].MessageList = state.conversations[index].MessageList.map(element => parser.parseMessage(element))
         state.conversations[index].parsed = true
       }
+    }
+  },
+  getters: {
+    //@ts-ignore
+    getMessages: (state, getters) => ({ conversationId, limit, offset }) => {
+      const conversation = state.conversations.find(element => element.id == conversationId)
+      if(!conversation) return []
+
+      const parser = new SkypeParser();
+      const messages = conversation.MessageList.filter((element, index) => index >= offset && index < (offset + limit));
+      for(let i = 0; i < messages.length; i++) {
+        if(!(messages[i].parsed)) {
+          messages[i] = parser.parseMessage(messages[i]);
+          messages[i].parsed = true;
+        }
+      }
+
+      return messages.reverse();
+    },
+    getLatestMessage: (state, getters) => (conversationId: string) => {
+      const conversation = state.conversations.find(element => element.id == conversationId)
+      if (!conversation) return null;
+
+      const messages = conversation?.MessageList.filter(element => element.messagetype == 'Text' || element.messagetype == 'RichText' );
+      if (messages.length == 0) return null;
+
+      return messages[0]; // 0 because that is unless it is reversed 0 is the latest element
     }
   }
 })
