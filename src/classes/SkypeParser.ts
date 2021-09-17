@@ -1,4 +1,6 @@
 import { Conversation, LegacyQuote, Message } from "@/types/SkypeExport";
+import EmojiListSkype from "../assets/skype-smilies.json"
+import EmojiListSkypeBetter from "../assets/skype-emojipedia.json"
 
 export class SkypeParser {
 
@@ -26,12 +28,12 @@ export class SkypeParser {
         message.quote = this.parseQuoteContent(message.content);
         message.em = this.parseEM(message.content);
 
-        /*
         message.content = message.content.replaceAll(/\r\n|\n|\r]/g, '') // FIX replaces all line breaks even those inside the actual message
         message.content = message.content.replace(/<quote (.*)<\/quote>/g, '')
         message.content = message.content.replace(/<e_m(.*)<\/e_m>/g, '')
         message.content = message.content.trim()
-        */
+
+        message.content = this.parseSkypeEmoji(message.content);
       }
     } catch (e) {
       // ignore for now
@@ -97,5 +99,20 @@ export class SkypeParser {
         t: xmlEM.getAttribute('a')
       }
     } else return undefined
+  }
+
+  private parseSkypeEmoji(xml: string) {
+    const xmlRoot = this.getXMLRoot(xml);
+    let retval = xml;
+
+    for (var j = 0; j < xmlRoot.getElementsByTagName('ss').length; j++) {
+      // TODO move them to a local system (first has with transparent background but no shortcut annotation and two has no transparent background but shrotcut annotation)
+      let emoji = EmojiListSkypeBetter.find(element => element.shortcut == xmlRoot.getElementsByTagName('ss')[j].textContent);
+      if(!emoji) emoji = EmojiListSkype.find(element => element.shortcut == xmlRoot.getElementsByTagName('ss')[j].textContent);
+
+      if (emoji) retval = retval.replaceAll(`<ss type="${xmlRoot.getElementsByTagName('ss')[j].getAttribute('type')}">${xmlRoot.getElementsByTagName('ss')[j].textContent}</ss>`, `<img class="inline" src="${emoji.image}" alt="${emoji.name}" height="25px" width="25px" loading="lazy">`)
+    }
+
+    return retval;
   }
 }
