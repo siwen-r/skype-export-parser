@@ -81,7 +81,27 @@
   },
   {
     "name": "Kissing Face",
-    "shortcut": "",
+    "shortcut": "(kiss)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kissing-face_1f617.png"
+  },
+  {
+    "name": "Kissing Face",
+    "shortcut": ":*",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kissing-face_1f617.png"
+  },
+  {
+    "name": "Kissing Face",
+    "shortcut": ":-*",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kissing-face_1f617.png"
+  },
+  {
+    "name": "Kissing Face",
+    "shortcut": ":=*",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kissing-face_1f617.png"
+  },
+  {
+    "name": "Kissing Face",
+    "shortcut": "(xo)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kissing-face_1f617.png"
   },
   {
@@ -266,7 +286,7 @@
   },
   {
     "name": "Face with Monocle",
-    "shortcut": "",
+    "shortcut": "(facewithmonocle)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/face-with-monocle_1f9d0.png"
   },
   {
@@ -276,7 +296,27 @@
   },
   {
     "name": "Slightly Frowning Face",
-    "shortcut": "",
+    "shortcut": ":(",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/slightly-frowning-face_1f641.png"
+  },
+  {
+    "name": "Slightly Frowning Face",
+    "shortcut": ":-(",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/slightly-frowning-face_1f641.png"
+  },
+  {
+    "name": "Slightly Frowning Face",
+    "shortcut": ":=(",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/slightly-frowning-face_1f641.png"
+  },
+  {
+    "name": "Slightly Frowning Face",
+    "shortcut": "(sad)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/slightly-frowning-face_1f641.png"
+  },
+  {
+    "name": "Slightly Frowning Face",
+    "shortcut": ":<:-<",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/slightly-frowning-face_1f641.png"
   },
   {
@@ -301,7 +341,7 @@
   },
   {
     "name": "Pleading Face",
-    "shortcut": "",
+    "shortcut": "(pleadingface)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/pleading-face_1f97a.png"
   },
   {
@@ -336,7 +376,12 @@
   },
   {
     "name": "Loudly Crying Face",
-    "shortcut": "",
+    "shortcut": "(sob)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/loudly-crying-face_1f62d.png"
+  },
+  {
+    "name": "Loudly Crying Face",
+    "shortcut": "(loudlycrying)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/loudly-crying-face_1f62d.png"
   },
   {
@@ -351,7 +396,7 @@
   },
   {
     "name": "Disappointed Face",
-    "shortcut": "",
+    "shortcut": "(disappointed)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/disappointed-face_1f61e.png"
   },
   {
@@ -396,7 +441,7 @@
   },
   {
     "name": "Smiling Face with Horns",
-    "shortcut": "",
+    "shortcut": "(devil)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/smiling-face-with-horns_1f608.png"
   },
   {
@@ -466,7 +511,7 @@
   },
   {
     "name": "Smiling Cat with Heart-Eyes",
-    "shortcut": "",
+    "shortcut": "(hearteyescat)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/smiling-cat-with-heart-eyes_1f63b.png"
   },
   {
@@ -486,7 +531,7 @@
   },
   {
     "name": "Crying Cat",
-    "shortcut": "",
+    "shortcut": "(sadcat)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/crying-cat_1f63f.png"
   },
   {
@@ -511,7 +556,7 @@
   },
   {
     "name": "Kiss Mark",
-    "shortcut": "",
+    "shortcut": "(lips)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/kiss-mark_1f48b.png"
   },
   {
@@ -1496,7 +1541,7 @@
   },
   {
     "name": "Genie",
-    "shortcut": "",
+    "shortcut": "(genie)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/genie_1f9de.png"
   },
   {
@@ -2116,7 +2161,17 @@
   },
   {
     "name": "Monkey",
-    "shortcut": "",
+    "shortcut": "(monkey)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/monkey_1f412.png"
+  },
+  {
+    "name": "Monkey",
+    "shortcut": "(ape)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/monkey_1f412.png"
+  },
+  {
+    "name": "Monkey",
+    "shortcut": ":(|)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/monkey_1f412.png"
   },
   {
@@ -2131,7 +2186,17 @@
   },
   {
     "name": "Dog",
-    "shortcut": "",
+    "shortcut": "(dog)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/dog_1f415.png"
+  },
+  {
+    "name": "Dog",
+    "shortcut": ":o3",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/dog_1f415.png"
+  },
+  {
+    "name": "Dog",
+    "shortcut": "(&)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/dog_1f415.png"
   },
   {
@@ -2161,7 +2226,22 @@
   },
   {
     "name": "Cat",
-    "shortcut": "",
+    "shortcut": "(cat)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/cat_1f408.png"
+  },
+  {
+    "name": "Cat",
+    "shortcut": "(@)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/cat_1f408.png"
+  },
+  {
+    "name": "Cat",
+    "shortcut": "(meow)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/cat_1f408.png"
+  },
+  {
+    "name": "Cat",
+    "shortcut": "(kitty)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/cat_1f408.png"
   },
   {
@@ -2425,8 +2505,18 @@
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/bird_1f426.png"
   },
   {
-    "name": "Penguin",
-    "shortcut": "",
+    "name": "Dancing Penguin",
+    "shortcut": "(penguin)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/penguin_1f427.png"
+  },
+  {
+    "name": "Dancing Penguin",
+    "shortcut": "(dancingpenguin)",
+    "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/penguin_1f427.png"
+  },
+  {
+    "name": "Dancing Penguin",
+    "shortcut": "(penguindance)",
     "image": "https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/penguin_1f427.png"
   },
   {
