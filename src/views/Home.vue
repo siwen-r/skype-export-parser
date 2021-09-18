@@ -21,7 +21,7 @@
         <div class="text-left fixed w-full h-20 max-h-20 bg-white">
           <div class="flex justify-between font-bold text-xl">{{ conversationById.displayName }}</div>
         </div>
-        <div class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5">
+        <div id="conversation-container" class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
           <ConversationComponent />
         </div>
       </div>
@@ -30,7 +30,7 @@
 </template>
 
 <script lang="ts">
-import { Conversation, Message } from '@/types/SkypeExport';
+import { Conversation } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
 import ConversationComponent from '../components/Conversation.vue'

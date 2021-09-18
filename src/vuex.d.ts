@@ -16,6 +16,10 @@ declare module '@vue/runtime-core' {
   // provide typings for `this.$store`
   interface ComponentCustomProperties {
     $store: Store<State>
+    $refs: {
+      [key: string]: HTMLElement|any,
+    },
+
     limit: number
     page: number
     conversationMessageList: Message[]
@@ -24,6 +28,7 @@ declare module '@vue/runtime-core' {
     loadDemoData: any
 
     // Home.vue
+    conversation: Conversation
     conversations: Conversation[]
     conversationId: string
     conversationById: Conversation | undefined
