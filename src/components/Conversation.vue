@@ -9,7 +9,7 @@
 </template>
 
 <script lang="ts">
-import { Conversation, Message as MessageType } from '@/types/SkypeExport';
+import { Message as MessageType } from '@/types/SkypeExport';
 import { defineComponent } from 'vue'
 import Message from "../components/Message.vue"
 import { ChevronDoubleDownIcon, ChevronDoubleUpIcon } from '@heroicons/vue/solid'
@@ -24,18 +24,7 @@ export default defineComponent({
     }
   },
   computed: {
-    callculatePage() {
-      const message = this.conversationMessageList;
-
-      if(!message) return 1;
-      return (message.length / this.limit);
-    },
-    pageOffset() { return (this.page - 1) * this.limit; },
-
-    id() { return this.$route.params.id; },
     userId() { return this.$store.state.userId; },
-    conversation(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
-    conversationMessageList(): MessageType[] { return this.conversation?.MessageList || [] },
     messages(): MessageType[] { return this.$store.getters.getMessages({ conversationId: this.$route.params.id, limit: this.limit, offset: (this.page - 1) }) },
   },
   methods: {
