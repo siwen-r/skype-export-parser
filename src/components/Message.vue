@@ -1,5 +1,6 @@
 <template>
-  <div class="pt-2 pb-2">
+  <div>
+  <!--<div class="pt-2 pb-2">-->
     <!-- calls -->
     <div v-if="message.messagetype == 'Event/Call'" class="text-center">
       <div class="text-gray-300">{{ dateToLocal(message.originalarrivaltime) }}</div>
@@ -28,7 +29,6 @@
     <div v-else-if="message.messagetype == 'RichText/UriObject'" class="flex" v-bind:class="{ 'text-right': message.from == userId, 'justify-end': message.from == userId, 'text-left': message.from != userId, 'justify-start': message.from != userId }">
       <div class="flex flex-col w-full">
         <div v-if="message.amsreferences" class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
-          <!-- will result in a long loading time -> needs to be lazy load or load when in viewport -->
           <img v-for="(item, index) in message.amsreferences" v-bind:key="index" :src="`http://localhost:3000/demo/media/${getImage(item, message.content)}`" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
         </div>
         <div class="text-gray-300">
