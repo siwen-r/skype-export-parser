@@ -30,47 +30,31 @@ export default createStore({
 
       for (const conversation of state.conversations) {
         conversation.parsed = false;
+        conversation.MessageList.reverse();
       }
 
       // parse everything in better format
       //const parser = new SkypeParser();
       //state.conversations = state.conversations.map(element => parser.parseConversation(element));
     },
-    parseConversation(state, id: string) {
-      const parser = new SkypeParser();
-
-      const index = state.conversations.findIndex((element) => element.id == id);
-      if(index >= 0 && !state.conversations[index].parsed) {
-        state.conversations[index].MessageList = state.conversations[index].MessageList.map(element => parser.parseMessage(element))
-        state.conversations[index].parsed = true
-      }
-    }
   },
   getters: {
-    //@ts-ignore
-    getMessages: (state, getters) => ({ conversationId, limit, offset }) => {
+    getMessages: (state, getters) => (conversationId: string) => {
       const conversation = state.conversations.find(element => element.id == conversationId)
-      if(!conversation) return []
+      if (!conversation) return []
+      if (conversation.parsed) return conversation.MessageList
 
       const parser = new SkypeParser();
-      const messages = conversation.MessageList.filter((element, index) => index >= offset && index < (offset + limit));
-      for(let i = 0; i < messages.length; i++) {
-        if(!(messages[i].parsed)) {
-          messages[i] = parser.parseMessage(messages[i]);
-          messages[i].parsed = true;
-        }
-      }
+      conversation.MessageList = conversation.MessageList.map(element => {
+        if (element.parsed) return element
+        const tmp = parser.parseMessage(element);
+        tmp.parsed = true;
 
-      return messages.reverse();
-    },
-    getLatestMessage: (state, getters) => (conversationId: string) => {
-      const conversation = state.conversations.find(element => element.id == conversationId)
-      if (!conversation) return null;
+        return tmp;
+      })
 
-      const messages = conversation?.MessageList.filter(element => element.messagetype == 'Text' || element.messagetype == 'RichText' );
-      if (messages.length == 0) return null;
-
-      return messages[0]; // 0 because that is unless it is reversed 0 is the latest element
+      conversation.parsed = true
+      return conversation.MessageList;
     }
   }
 })

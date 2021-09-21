@@ -13,7 +13,7 @@
     <div v-if="(message.messagetype == 'Text' || message.messagetype == 'RichText') && message.content != ''" class="flex" v-bind:class="{ 'text-right': message.from == userId, 'justify-end': message.from == userId, 'text-left': message.from != userId, 'justify-start': message.from != userId }">
       <div class="flex flex-col w-full">
         <div class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
-          <div class="skype-background rounded-t-lg p-5 max-w-1/2" v-bind:class="{ 'rounded-l-lg': message.from == userId, 'rounded-r-lg': message.from != userId }">
+          <div class="skype-background rounded-t-lg p-5 max-w-1/2 text-left break-words" v-bind:class="{ 'rounded-l-lg': message.from == userId, 'rounded-r-lg': message.from != userId }">
             <span v-html="message.content"></span>
           </div>
         </div>

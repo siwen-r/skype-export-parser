@@ -6,10 +6,11 @@
       <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
       <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
-        <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2">
-          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ 0 ].originalarrivaltime) }}</div></div>
+        <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
+          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
           <router-link :to="`/conversation/${con.id}`" class="font-bold"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
-          <div class="truncate" v-html="`${con.MessageList[ 0 ].displayName ? `${con.MessageList[ 0 ].displayName}:`: ''} ${con.MessageList[ 0 ].content}`"></div>
+          <!--<div class="truncate" v-html="`${con.MessageList[ con.MessageList.length - 1 ].displayName ? `${con.MessageList[ con.MessageList.length - 1 ].displayName}:`: ''} ${getMessageContent(con.MessageList[ con.MessageList.length - 1 ])}`"></div>-->
+          <div class="truncate">{{ getMessageContent(con.MessageList[ con.MessageList.length - 1 ]) }}</div>
         </div>
       </div>
     </div>
@@ -30,7 +31,7 @@
 </template>
 
 <script lang="ts">
-import { Conversation } from '@/types/SkypeExport';
+import { Conversation, Message } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
 import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
 import ConversationComponent from '../components/Conversation.vue'
@@ -47,7 +48,15 @@ export default defineComponent({
     conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
   },
   methods: {
-    dateToLocal(date: string) { return new Date(date).toLocaleString(); }
+    dateToLocal(date: string) { return new Date(date).toLocaleString(); },
+    getMessageContent(message: Message) {
+      let content = '';
+      if (message.messagetype == "Event/Call") content = "Anruf"
+      if (message.messagetype == 'Text' || message.messagetype == 'RichText') content = message.content
+      if (message.messagetype == 'RichText/UriObject') content = "Bild"
+
+      return content;
+    }
     /*
     loadSkypeUpload(event: any) {
       const files = event.target.files;
@@ -106,5 +115,9 @@ export default defineComponent({
 
 #empty-conversation {
   height: calc(100vh - 80px);
+}
+
+.conversation-list-container {
+  min-height: 90px;
 }
 </style>

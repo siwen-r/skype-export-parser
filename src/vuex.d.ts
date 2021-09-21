@@ -27,6 +27,10 @@ declare module '@vue/runtime-core' {
     isConversation: boolean
     loadDemoData: any
 
+    // conversation
+    messages: Message[]
+    loadConversation(): Promise<void>
+
     // Home.vue
     conversation: Conversation
     conversations: Conversation[]
