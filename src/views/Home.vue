@@ -2,14 +2,13 @@
   <div class="flex justify-between">
     <div class="w-1/4 pl-5 relative pr-5" id="sidebar">
       <div class="font-bold text-lg">Export Details</div>
-      <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ user }}</div></div>
+      <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ userId }}</div></div>
       <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
       <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
           <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
-          <router-link :to="`/conversation/${con.id}`" class="font-bold"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
-          <!--<div class="truncate" v-html="`${con.MessageList[ con.MessageList.length - 1 ].displayName ? `${con.MessageList[ con.MessageList.length - 1 ].displayName}:`: ''} ${getMessageContent(con.MessageList[ con.MessageList.length - 1 ])}`"></div>-->
+          <router-link :to="`/conversation/${con.id}`" class="font-bold" v-bind:class="{ 'skype': con.id == conversationId }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
           <div class="truncate">{{ getMessageContent(con.MessageList[ con.MessageList.length - 1 ]) }}</div>
         </div>
       </div>
@@ -41,7 +40,7 @@ export default defineComponent({
   components: { UserIcon, ClockIcon, ConversationComponent, SortAscendingIcon, SortDescendingIcon },
   computed: {
     conversationId() { return this.$route.params.id; },
-    user() { return this.$store.state.userId; },
+    userId() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
     // TODO can maybe some option in some kind of settings, if they should be shown or not
     conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0 && !element.id.endsWith('@cast.skype') && !element.id.endsWith('calllogs') && !element.id.endsWith('@thread.skype') && !element.id.endsWith('@encrypted.skype')); },
