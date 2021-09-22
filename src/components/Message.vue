@@ -1,6 +1,5 @@
 <template>
-  <div>
-  <!--<div class="pt-2 pb-2">-->
+  <div class="pt-1 pb-1">
     <!-- calls -->
     <div v-if="message.messagetype == 'Event/Call'" class="text-center">
       <div class="text-gray-300">{{ dateToLocal(message.originalarrivaltime) }}</div>

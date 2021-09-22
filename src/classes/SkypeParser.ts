@@ -34,6 +34,7 @@ export class SkypeParser {
         message.content = message.content.trim()
 
         message.content = this.parseSkypeEmoji(message.content);
+        message.parsed = true;
       }
     } catch (e) {
       // ignore for now

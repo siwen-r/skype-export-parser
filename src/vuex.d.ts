@@ -10,7 +10,13 @@ declare module '@vue/runtime-core' {
     raw: SkypeExport | undefined
     userId: string | undefined
     exportDate: string | Date | undefined,
-    conversations: Conversation[]
+    conversations: Conversation[],
+    conversationLoading: {
+      loading: boolean,
+      status: number
+    },
+    messageTypesFilter: string[],
+    conversationFilter: string[]
   }
 
   // provide typings for `this.$store`
@@ -27,17 +33,11 @@ declare module '@vue/runtime-core' {
     isConversation: boolean
     loadDemoData: any
 
-    // conversation
-    messages: Message[]
-    loadConversation(): Promise<void>
-
     // Home.vue
-    conversation: Conversation
+    conversation: Conversation | undefined
     conversations: Conversation[]
     conversationId: string
     conversationById: Conversation | undefined
-    updateProgress: any
-    loaded: any
-    errorHandler: any
+    getConversation(conversationId: string): any
   }
 }

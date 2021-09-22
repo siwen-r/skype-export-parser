@@ -8,21 +8,25 @@
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
           <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
-          <router-link :to="`/conversation/${con.id}`" class="font-bold" v-bind:class="{ 'skype': con.id == conversationId }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></router-link>
+          <div class="font-bold" @click="getConversation(con.id)" v-bind:class="{ 'skype': con.id == (conversation?.id | undefined) }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></div>
           <div class="truncate">{{ getMessageContent(con.MessageList[ con.MessageList.length - 1 ]) }}</div>
         </div>
       </div>
     </div>
     <div class="w-3/4">
-      <div v-if="!conversationId" id="empty-conversation" class="flex items-center justify-center w-3/4">
+      <div v-if="!conversation" id="empty-conversation" class="flex items-center justify-center w-3/4">
         <div>No Conversation select</div>
       </div>
       <div v-else id="empty-conversation" class="flex flex-col overscroll-auto overflow-auto w-full">
         <div class="text-left fixed w-full h-20 max-h-20 bg-white">
-          <div class="flex justify-between font-bold text-xl">{{ conversationById.displayName }}</div>
+          <div class="flex justify-between font-bold text-xl">{{ conversation.displayName }}</div>
         </div>
-        <div id="conversation-container" class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
-          <ConversationComponent />
+        <div v-if="conversation" id="conversation-container" class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
+          <div class="pr-20 pl-20 relative">
+            <div v-for="(item) in conversation.MessageList" v-bind:key="item.id"><MessageComponent :message="item" :userId="userId"></MessageComponent></div>
+            <div v-if="conversation.MessageList.length != 0" id="scroll-top" v-on:click="scrollTop()"><ChevronDoubleUpIcon class="h-10 w-10 rounded-md border p-1" /></div>
+            <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
+          </div>
         </div>
       </div>
     </div>
@@ -32,18 +36,22 @@
 <script lang="ts">
 import { Conversation, Message } from '@/types/SkypeExport';
 import { defineComponent } from 'vue';
-import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon } from '@heroicons/vue/solid'
-import ConversationComponent from '../components/Conversation.vue'
+import { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon, ChevronDoubleDownIcon, ChevronDoubleUpIcon } from '@heroicons/vue/solid'
+import MessageComponent from '../components/Message.vue'
 
 export default defineComponent({
   name: "SkypeExportParser",
-  components: { UserIcon, ClockIcon, ConversationComponent, SortAscendingIcon, SortDescendingIcon },
+  components: { UserIcon, ClockIcon, SortAscendingIcon, SortDescendingIcon, ChevronDoubleDownIcon, ChevronDoubleUpIcon, MessageComponent },
+  data() {
+    return {
+      conversation: undefined
+    }
+  },
   computed: {
-    conversationId() { return this.$route.params.id; },
     userId() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
-    // TODO can maybe some option in some kind of settings, if they should be shown or not
-    conversations(): Conversation[] { return this.$store.state.conversations.filter(element => element.MessageList.length > 0 && !element.id.endsWith('@cast.skype') && !element.id.endsWith('calllogs') && !element.id.endsWith('@thread.skype') && !element.id.endsWith('@encrypted.skype')); },
+    conversations(): Conversation[] { return this.$store.state.conversations; },
+    conversationId() { return this.$route.params.id; },
     conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
   },
   methods: {
@@ -55,6 +63,19 @@ export default defineComponent({
       if (message.messagetype == 'RichText/UriObject') content = "Bild"
 
       return content;
+    },
+    scrollTop() {
+      const element = document.getElementById('conversation-container');
+      if(element) element.scrollTop = 0;
+    },
+    scrollBottom() {
+      const element = document.getElementById('conversation-container');
+      if(element) element.scrollTop = element.scrollHeight;
+    },
+    async getConversation(conversationId: string) {
+      if (!conversationId) return;
+
+      this.conversation = this.$store.state.conversations.find(element => element.id == conversationId);
     }
     /*
     loadSkypeUpload(event: any) {
@@ -118,5 +139,22 @@ export default defineComponent({
 
 .conversation-list-container {
   min-height: 90px;
+}
+
+#conversation-container {
+  height: calc(100vh - 80px);
+}
+
+#scroll-top {
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  transform: translateY(156px);
+}
+
+#scroll-bottom {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 </style>

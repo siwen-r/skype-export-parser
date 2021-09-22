@@ -12,10 +12,12 @@ export default createStore({
       userId: undefined,
       exportDate: undefined,
       conversations: [],
-      skypeEmojis: [
-        // https://support.skype.com/de/faq/FA12330/wie-sieht-die-vollstandige-liste-der-emoticons-aus
-
-      ]
+      conversationLoading: {
+        loading: false,
+        status: 0
+      },
+      messageTypesFilter: [ 'Event/Call', 'RichText/UriObject', 'Text', 'RichText' ],
+      conversationFilter: [ '@cast.skype', 'calllogs', '@thread.skype', '@encrypted.skype' ]
     }
   },
   mutations: {
@@ -26,35 +28,17 @@ export default createStore({
       state.raw = skype
       state.userId = skype.userId
       state.exportDate = skype.exportDate
-      state.conversations = skype.conversations
 
-      for (const conversation of state.conversations) {
+      // filter everything out and parse all the messages
+      const parser = new SkypeParser();
+      const conversationNew = skype.conversations.filter(element => element.MessageList.length > 0 && !state.conversationFilter.some(filter => element.id.endsWith(filter)));
+      for (const conversation of conversationNew) {
         conversation.parsed = false;
-        conversation.MessageList.reverse();
+        conversation.MessageList = conversation.MessageList.filter(element => state.messageTypesFilter.some(type => type == element.messagetype) ).map(element => parser.parseMessage(element)).reverse();
       }
 
-      // parse everything in better format
-      //const parser = new SkypeParser();
-      //state.conversations = state.conversations.map(element => parser.parseConversation(element));
+      state.conversations = conversationNew.filter(element => element.MessageList.length > 0);
     },
   },
-  getters: {
-    getMessages: (state, getters) => (conversationId: string) => {
-      const conversation = state.conversations.find(element => element.id == conversationId)
-      if (!conversation) return []
-      if (conversation.parsed) return conversation.MessageList
-
-      const parser = new SkypeParser();
-      conversation.MessageList = conversation.MessageList.map(element => {
-        if (element.parsed) return element
-        const tmp = parser.parseMessage(element);
-        tmp.parsed = true;
-
-        return tmp;
-      })
-
-      conversation.parsed = true
-      return conversation.MessageList;
-    }
-  }
+  getters: {}
 })
