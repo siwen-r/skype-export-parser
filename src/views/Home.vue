@@ -8,7 +8,7 @@
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
           <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
-          <div class="font-bold" @click="getConversation(con.id)" v-bind:class="{ 'skype': con.id == (conversation?.id | undefined) }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></div>
+          <div class="font-bold cursor-pointer" @click="getConversation(con.id)" v-bind:class="{ 'skype': ( conversation ? con.id == conversation.id : false ) }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></div>
           <div class="truncate">{{ getMessageContent(con.MessageList[ con.MessageList.length - 1 ]) }}</div>
         </div>
       </div>
@@ -51,8 +51,6 @@ export default defineComponent({
     userId() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
     conversations(): Conversation[] { return this.$store.state.conversations; },
-    conversationId() { return this.$route.params.id; },
-    conversationById(): Conversation | undefined { return this.$store.state.conversations.find(element => element.id == this.$route.params.id); },
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },

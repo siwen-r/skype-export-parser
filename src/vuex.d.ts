@@ -36,8 +36,6 @@ declare module '@vue/runtime-core' {
     // Home.vue
     conversation: Conversation | undefined
     conversations: Conversation[]
-    conversationId: string
-    conversationById: Conversation | undefined
     getConversation(conversationId: string): any
   }
 }
