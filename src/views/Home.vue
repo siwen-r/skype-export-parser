@@ -23,7 +23,7 @@
         </div>
         <div v-if="conversation" id="conversation-container" class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
           <div class="pr-20 pl-20 relative">
-            <div v-for="(item) in conversation.MessageList" v-bind:key="item.id"><MessageComponent :message="item" :userId="userId"></MessageComponent></div>
+            <div v-for="(item, index) in conversation.MessageList /* .slice(0,20) */" v-bind:key="item.id"><MessageComponent :message="item" :userId="userId" :index="index"></MessageComponent></div>
             <div v-if="conversation.MessageList.length != 0" id="scroll-top" v-on:click="scrollTop()"><ChevronDoubleUpIcon class="h-10 w-10 rounded-md border p-1" /></div>
             <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
           </div>
@@ -75,49 +75,6 @@ export default defineComponent({
 
       this.conversation = this.$store.state.conversations.find(element => element.id == conversationId);
     }
-    /*
-    loadSkypeUpload(event: any) {
-      const files = event.target.files;
-
-      if (files) {
-        var reader = new FileReader();
-        reader.readAsText(files[0], "UTF-8");
-
-        // Handle progress, success, and errors
-        reader.onprogress = this.updateProgress;
-        reader.onload = this.loaded;
-        reader.onerror = this.errorHandler;
-      } else {
-        console.log("No file uploaded");
-      }
-    },
-    parseSkypeExport(content: SkypeExport) {
-      this.$store.commit('setExport', content);
-    },
-    updateProgress(event: any) {
-      console.log(event.lengthComputable);
-
-      if (event.lengthComputable) {
-        console.log(event.loaded);
-        console.log(event.total);
-
-        // evt.loaded and evt.total are ProgressEvent properties
-        var loaded = event.loaded / event.total;
-        if (loaded < 1) {
-          // Increase the prog bar length
-          // style.width = (loaded * 200) + "px";
-        }
-      }
-    },
-    loaded(event: any) {
-      var fileString = event.target.result;
-      return this.$store.commit('setExport', JSON.parse(fileString));
-    },
-    errorHandler(event: any) {
-      console.log("Error Handler:");
-      console.log(event.target.error.name);
-    }
-    */
   }
 });
 </script>

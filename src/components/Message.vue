@@ -28,7 +28,8 @@
     <div v-else-if="message.messagetype == 'RichText/UriObject'" class="flex" v-bind:class="{ 'text-right': message.from == userId, 'justify-end': message.from == userId, 'text-left': message.from != userId, 'justify-start': message.from != userId }">
       <div class="flex flex-col w-full">
         <div v-if="message.amsreferences" class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
-          <img v-for="(item, index) in message.amsreferences" v-bind:key="index" :src="`http://localhost:3000/demo/media/${getImage(item, message.content)}`" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
+          <!--<img v-for="(item, imageIndex) in message.amsreferences" v-bind:key="imageIndex" :id="`image-${index}-${imageIndex}`" :src="`http://localhost:3000/demo/media/${getImage(item, message.content)}`" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">-->
+          <img v-for="(item, imageIndex) in message.amsreferences" v-bind:key="imageIndex" :id="`image-${index}-${imageIndex}`" :imagename="`${item}.1`" :src="loadImage(`${item}.1`, `image-${index}-${imageIndex}`)" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
         </div>
         <div class="text-gray-300">
           <span>{{ message.from }}</span>
@@ -47,6 +48,7 @@ import { Message } from '@/types/SkypeExport'
 export default defineComponent({
   name: 'Message',
   props: {
+    index: { type: Number, required: true },
     message: { type: Object as PropType<Message>, required: true }, // https://philipdevblog.hashnode.dev/vue-3-typescript-props-with-types
     userId: { type: String, required: true },
     timestamp: { type: Boolean, default: false }
@@ -59,19 +61,11 @@ export default defineComponent({
   computed: {
     // does not work because the
     callDuration() { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
-    isServerGenerated() { return this.message.properties?.isserversidegenerated === 'True' || false }
+    isServerGenerated() { return this.message.properties?.isserversidegenerated === 'True' || false },
+    files() { return this.$store.state.filelist }
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },
-    getImage(imageId: string, content: any) {
-      if (content.includes('Picture')) {
-        const ret = /png|gif|jpe?g|heic|tiff?|bmp|eps|raw/i;
-        const type = content.match(ret) || [];
-
-        imageId += '.1'
-        return imageId + ((type.size === 0 || type === '' || type[0] === undefined) ? '' : `.${type[0]}`)
-      }
-    },
     convertCallDuration(seconds: string) {
       const parts = seconds.split('\.');
       if (parts.length != 2) return parts;
@@ -81,7 +75,32 @@ export default defineComponent({
       var hours = Math.floor(num / 3600);
       var minutes = num % 60;
       return hours + ":" + minutes;
-    }
+    },
+    // https://scotch.io/tutorials/use-the-html5-file-api-to-work-with-files-locally-in-the-browser 
+    loadImage(imageId: string, id: string) {
+      let image = document.getElementById(id)
+      if (image) image.src = 'https://via.placeholder.com/200'
+
+      // when the file is read it triggers the onload event above.
+      for (let i = 0; i < this.files.length; i++) {
+        if (this.files[i].name.startsWith(imageId)) {
+
+          // TODO maybe their is a shortcut? https://stackoverflow.com/questions/40348570/uncaught-domexception-failed-to-execute-readasdataurl-on-filereader-the-ob#40364478
+          // generate a new FileReader object
+          let reader = new FileReader();
+
+          // inject an image with the src url
+          reader.onload = ((event: any) => {
+
+            let image = document.getElementById(id)
+            if (image) image.src = event.target.result;
+
+          })
+
+          reader.readAsDataURL(this.files[i])
+        }
+      }
+    },
   }
 })
 </script>

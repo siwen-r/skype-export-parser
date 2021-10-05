@@ -8,6 +8,7 @@ declare module '@vue/runtime-core' {
     count: number,
 
     raw: SkypeExport | undefined
+    filelist: FileList | undefined
     userId: string | undefined
     exportDate: string | Date | undefined,
     conversations: Conversation[],
@@ -32,6 +33,11 @@ declare module '@vue/runtime-core' {
     // app.vue
     isConversation: boolean
     loadDemoData: any
+
+    loaded: any,
+    updateProgress: any
+    errorHandler: any
+    loadFile(file: File): any
 
     // Home.vue
     conversation: Conversation | undefined
