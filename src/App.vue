@@ -1,7 +1,8 @@
 <template>
   <header class="flex justify-between p-5">
-    <div class="flex justify-start">
-      <router-link to="/" class="text-3xl font-black pl-2"><span class="skype">Skype</span> Export Parser</router-link>
+    <div class="flex justify-start text-3xl font-black pl-2">
+      <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
+      <span v-if="!production" class="text-red-700	font-black rounded-b-lg pl-2">DEV MODE</span>
     </div>
     <div v-if="isConversation" class="flex justify-end">
       <div v-if="user" class="font-black self-center pr-2">{{ user }}</div>
@@ -24,15 +25,10 @@ export default defineComponent({
   computed: {
     isConversation() { return this.$store.state.conversations.length > 0 },
     user() { return this.$store.state.userId; },
-    files() { return this.$store.state.filelist }
+    files() { return this.$store.state.filelist },
+    production() { return import.meta.env.PROD },
   },
   methods: {
-    async loadDemoData() {
-      if (!this.isConversation) {
-        const runtimeConfig: any = await fetch("/demo/messages.json");
-        this.$store.commit('setExport', await runtimeConfig.json());
-      }
-    },
     loadData(event: any) {
       const files: FileList = event.target.files;
 
@@ -81,7 +77,8 @@ export default defineComponent({
     },
   },
   mounted() {
-    // this.loadDemoData();
+    this.$store.dispatch('loadDemoData')
+    //this.loadDemoData()
   }
 })
 </script>

@@ -43,5 +43,8 @@ declare module '@vue/runtime-core' {
     conversation: Conversation | undefined
     conversations: Conversation[]
     getConversation(conversationId: string): any
+
+    // Message.vue
+    files: FileList | undefined
   }
 }

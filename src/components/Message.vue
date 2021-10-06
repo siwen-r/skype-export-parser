@@ -28,8 +28,7 @@
     <div v-else-if="message.messagetype == 'RichText/UriObject'" class="flex" v-bind:class="{ 'text-right': message.from == userId, 'justify-end': message.from == userId, 'text-left': message.from != userId, 'justify-start': message.from != userId }">
       <div class="flex flex-col w-full">
         <div v-if="message.amsreferences" class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
-          <!--<img v-for="(item, imageIndex) in message.amsreferences" v-bind:key="imageIndex" :id="`image-${index}-${imageIndex}`" :src="`http://localhost:3000/demo/media/${getImage(item, message.content)}`" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">-->
-          <img v-for="(item, imageIndex) in message.amsreferences" v-bind:key="imageIndex" :id="`image-${index}-${imageIndex}`" :imagename="`${item}.1`" :src="loadImage(`${item}.1`, `image-${index}-${imageIndex}`)" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
+          <img v-for="(item, imageIndex) in message.amsreferences" v-bind:key="imageIndex" :id="`image-${index}-${imageIndex}`" :imagename="`${item}.1`" :src="loadImage(`${item}.1`, `image-${index}-${imageIndex}`, message.content)" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
         </div>
         <div class="text-gray-300">
           <span>{{ message.from }}</span>
@@ -60,9 +59,9 @@ export default defineComponent({
   },
   computed: {
     // does not work because the
-    callDuration() { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
+    callDuration(): any { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
     isServerGenerated() { return this.message.properties?.isserversidegenerated === 'True' || false },
-    files() { return this.$store.state.filelist }
+    files(): FileList | undefined { return this.$store.state.filelist }
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },
@@ -76,10 +75,10 @@ export default defineComponent({
       var minutes = num % 60;
       return hours + ":" + minutes;
     },
-    // https://scotch.io/tutorials/use-the-html5-file-api-to-work-with-files-locally-in-the-browser 
-    loadImage(imageId: string, id: string) {
-      let image = document.getElementById(id)
-      if (image) image.src = 'https://via.placeholder.com/200'
+    // https://scotch.io/tutorials/use-the-html5-file-api-to-work-with-files-locally-in-the-browser
+    loadImage(imageId: string, id: string, content: string) {
+      if (!import.meta.env.PROD) return this.getImageURL(imageId, content)
+      if (!this.files) return;
 
       // when the file is read it triggers the onload event above.
       for (let i = 0; i < this.files.length; i++) {
@@ -93,12 +92,24 @@ export default defineComponent({
           reader.onload = ((event: any) => {
 
             let image = document.getElementById(id)
+            //@ts-ignore
             if (image) image.src = event.target.result;
 
           })
 
           reader.readAsDataURL(this.files[i])
         }
+      }
+    },
+    /**
+     * Is used for development purpose, to pre load the data, which is provided by the server
+     */
+    getImageURL(imageId: string, content: any) {
+      if (content.includes('Picture')) {
+        const ret = /png|gif|jpe?g|heic|tiff?|bmp|eps|raw/i;
+        const type = content.match(ret) || [];
+
+        return "/demo/media/" + imageId + ((type.size === 0 || type === '' || type[0] === undefined) ? '' : `.${type[0]}`)
       }
     },
   }

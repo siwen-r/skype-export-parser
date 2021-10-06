@@ -35,11 +35,24 @@ export default createStore({
       const conversationNew = skype.conversations.filter(element => element.MessageList.length > 0 && !state.conversationFilter.some(filter => element.id.endsWith(filter)));
       for (const conversation of conversationNew) {
         conversation.parsed = false;
-        conversation.MessageList = conversation.MessageList.filter(element => state.messageTypesFilter.some(type => type == element.messagetype) ).map(element => parser.parseMessage(element)) //.reverse();
+        conversation.MessageList = conversation.MessageList.filter(element => state.messageTypesFilter.some(type => type == element.messagetype) ).map(element => parser.parseMessage(element));
+        if (import.meta.env.PROD) conversation.MessageList = conversation.MessageList.reverse();
+
       }
 
       state.conversations = conversationNew.filter(element => element.MessageList.length > 0);
     },
+  },
+  actions: {
+    async loadDemoData({commit}) {
+      if (import.meta.env.PROD) return; // in case the application is in production
+      if (!import.meta.env.VITE_DEMO_FOLDER) { // in case the demo folder is not set
+        console.log('ENV "VITE_DEMO_FOLDER" is not set!')
+        return;
+      }
+      const runtimeConfig: any = await fetch(`${import.meta.env.VITE_DEMO_FOLDER}/messages.json`);
+      commit('setExport', await runtimeConfig.json());
+    }
   },
   getters: {}
 })

@@ -23,7 +23,7 @@
         </div>
         <div v-if="conversation" id="conversation-container" class="mt-20 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
           <div class="pr-20 pl-20 relative">
-            <div v-for="(item, index) in conversation.MessageList /* .slice(0,20) */" v-bind:key="item.id"><MessageComponent :message="item" :userId="userId" :index="index"></MessageComponent></div>
+            <div v-for="(item, index) in messageList" v-bind:key="item.id"><MessageComponent :message="item" :userId="userId" :index="index"></MessageComponent></div>
             <div v-if="conversation.MessageList.length != 0" id="scroll-top" v-on:click="scrollTop()"><ChevronDoubleUpIcon class="h-10 w-10 rounded-md border p-1" /></div>
             <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
           </div>
@@ -51,6 +51,12 @@ export default defineComponent({
     userId() { return this.$store.state.userId; },
     exportDate() { return this.$store.state.exportDate; },
     conversations(): Conversation[] { return this.$store.state.conversations; },
+    messageList() {
+      let con = this.conversation?.MessageList || [];
+
+      if (!import.meta.env.PROD) return con.slice(0, 20);
+      return con;
+    }
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },
