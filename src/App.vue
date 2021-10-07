@@ -1,8 +1,12 @@
 <template>
   <header class="flex justify-between p-5">
-    <div class="flex justify-start text-3xl font-black pl-2">
-      <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
-      <span v-if="!production" class="text-red-700	font-black rounded-b-lg pl-2">DEV MODE</span>
+    <div class="flex justify-start items-end">
+      <router-link to="/"><span class="skype text-3xl font-black pl-2">Skype</span> Export Parser</router-link>
+      <span v-if="!production" class="text-red-700 text-3xl font-black rounded-b-lg pl-2">DEV MODE</span>
+    </div>
+    <div v-if="isConversation" class="flex items-end">
+      Parse different Skype Export:
+      <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/>
     </div>
     <div v-if="isConversation" class="flex justify-end">
       <div v-if="user" class="font-black self-center pr-2">{{ user }}</div>

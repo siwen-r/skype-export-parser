@@ -35,9 +35,7 @@ export default createStore({
       const conversationNew = skype.conversations.filter(element => element.MessageList.length > 0 && !state.conversationFilter.some(filter => element.id.endsWith(filter)));
       for (const conversation of conversationNew) {
         conversation.parsed = false;
-        conversation.MessageList = conversation.MessageList.filter(element => state.messageTypesFilter.some(type => type == element.messagetype) ).map(element => parser.parseMessage(element));
-        if (import.meta.env.PROD) conversation.MessageList = conversation.MessageList.reverse();
-
+        conversation.MessageList = conversation.MessageList.filter(element => state.messageTypesFilter.some(type => type == element.messagetype) ).map(element => parser.parseMessage(element)).reverse();
       }
 
       state.conversations = conversationNew.filter(element => element.MessageList.length > 0);
