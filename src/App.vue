@@ -1,8 +1,8 @@
 <template>
   <header class="flex justify-between p-5">
-    <div class="flex justify-start items-end">
-      <router-link to="/"><span class="skype text-3xl font-black pl-2">Skype</span> Export Parser</router-link>
-      <span v-if="!production" class="text-red-700 text-3xl font-black rounded-b-lg pl-2">DEV MODE</span>
+    <div class="flex justify-start items-end font-black text-3xl">
+      <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
+      <span v-if="!production" class="text-red-700 rounded-b-lg pl-2">DEV MODE</span>
     </div>
     <div v-if="isConversation" class="flex items-end">
       Parse different Skype Export:
@@ -14,8 +14,33 @@
     </div>
   </header>
   <div v-if="isConversation"><router-view></router-view></div>
-  <div v-else>
-    <input type="file" id="filepicker" name="fileList" webkitdirectory multiple @change="loadData"/>
+  <div v-else class="flex justify-center text-left">
+    <div class="flex flex-col pt-10">
+      <div class="text-2xl skype font-black">7 Steps to prepare the Skype Export</div>
+      <ul class="list-inside list-decimal mt-2">
+        <li>Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
+        <li>
+          Choose Export Option wich fit your preferences
+          <ul class="list-inside list-disc pl-5">
+            <li>Conversation: Contains all messages and conversation</li>
+            <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
+          </ul>
+        </li>
+        <li>Supmit the request</li>
+        <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
+        <li class="disclousre-marker pt-5">Continue when the Export is finished:</li>
+        <li>Download the Export</li>
+        <li>Extract all files into a new folder</li>
+        <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
+      </ul>
+      <div class="flex justify-center">
+        <div class="flex items-end mt-10">
+          <span class="font-black skype">Parse Skype Export:</span>
+          <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/>
+        </div>
+      </div>
+      <div class="pt-4"><span class="font-black text-red-700">Notice</span>: At no time messages or other media data will be send to a server. Every processing will be done inside your Browser localy.</div>
+    </div>
   </div>
 </template>
 
@@ -111,5 +136,19 @@ export default defineComponent({
 
 .skype-background {
   background-color: #00AFF0;
+}
+
+ul li {
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+ul li::marker {
+  color: #00AFF0;
+  font-weight: bold;
+}
+
+.disclousre-marker {
+  list-style-type: disclosure-open;
 }
 </style>
