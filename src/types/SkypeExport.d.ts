@@ -40,6 +40,8 @@ export interface Message {
   em: EM | undefined;
   // others
   parsed: boolean | undefined;
+  // for images
+  images: FileListEntity[] | undefined;
 }
 
 export interface MessageProperties {
@@ -82,4 +84,10 @@ export interface EM {
   ts_ms: string | null
   ts: string | null
   t: string | null
+}
+
+export interface FileListEntity {
+  name: string,
+  blob: string
+  type: string
 }

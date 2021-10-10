@@ -16,7 +16,7 @@
   <div v-if="isConversation"><router-view></router-view></div>
   <div v-else class="flex justify-center text-left">
     <div class="flex flex-col pt-10">
-      <div class="text-2xl skype font-black">7 Steps to prepare the Skype Export</div>
+      <div class="text-2xl skype font-black">Instruction to get the Skype Export</div>
       <ul class="list-inside list-decimal mt-2">
         <li>Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
         <li>
@@ -58,12 +58,11 @@ export default defineComponent({
     production() { return import.meta.env.PROD },
   },
   methods: {
-    loadData(event: any) {
+    async loadData(event: any) {
       const files: FileList = event.target.files;
 
-      for (let i=0; i<files.length; i++) { if (files[i].name === 'messages.json') this.loadFile(files[i]); }
-
-      this.$store.state.filelist = files;
+      await this.$store.commit('setFileList', files); // needs to be executed before loadFile
+      for (let i=0; i<files.length; i++) {  if (files[i].name === 'messages.json') this.loadFile(files[i]); }
     },
     loadFile(file: File) {
       var reader = new FileReader();
@@ -107,7 +106,6 @@ export default defineComponent({
   },
   mounted() {
     this.$store.dispatch('loadDemoData')
-    //this.loadDemoData()
   }
 })
 </script>

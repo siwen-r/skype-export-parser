@@ -11,17 +11,17 @@ export class SkypeParser {
     return doc.documentElement;
   }
 
-  public parseConversation(conversation: Conversation) {
-    conversation.MessageList = this.parseMessages(conversation.MessageList);
+  public parseConversation(conversation: Conversation, fileList: FileList) {
+    conversation.MessageList = this.parseMessages(conversation.MessageList, fileList);
 
     return conversation;
   }
 
-  public parseMessages(messages: Message[]) {
-    return messages.map(element => this.parseMessage(element));
+  public parseMessages(messages: Message[], fileList: FileList) {
+    return messages.map(element => this.parseMessage(element, fileList));
   }
 
-  public parseMessage(message: Message) {
+  public parseMessage(message: Message, fileList: FileList) {
     try {
       if (message.messagetype == 'Event/Call') { message.partlist = this.parseCallContent(message.content); }
       if (message.messagetype == 'Text' || message.messagetype == 'RichText') {
@@ -35,6 +35,10 @@ export class SkypeParser {
 
         message.content = this.parseSkypeEmoji(message.content);
         message.parsed = true;
+      }
+      if (message.messagetype == 'RichText/UriObject') {
+        message.images = [];
+        for (let reference of message.amsreferences) { message.images.push(fileList.find(element => element.name.startsWith(reference)) ) }
       }
     } catch (e) {
       // ignore for now

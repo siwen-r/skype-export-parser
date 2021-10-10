@@ -25,3 +25,11 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+# References
+
+* https://support.skype.com/en/faq/FA34893/how-long-are-files-and-data-available-in-skype
+* https://support.skype.com/en/faq/FA34894/how-do-i-export-or-delete-my-skype-data
+* https://secure.skype.com/de/data-export
+* https://support.skype.com/en/faq/FA12330/what-is-the-full-list-of-emoticons
+* https://emojipedia.org/skype/1.2/
