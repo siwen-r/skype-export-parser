@@ -54,7 +54,6 @@ export default defineComponent({
   computed: {
     isConversation() { return this.$store.state.conversations.length > 0 },
     user() { return this.$store.state.userId; },
-    files() { return this.$store.state.filelist },
     production() { return import.meta.env.PROD },
   },
   methods: {

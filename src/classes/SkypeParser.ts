@@ -1,4 +1,4 @@
-import { Conversation, LegacyQuote, Message } from "@/types/SkypeExport";
+import { Conversation, FileListEntity, LegacyQuote, Message } from "@/types/SkypeExport";
 import EmojiListSkype from "../assets/skype-smilies.json"
 import EmojiListSkypeBetter from "../assets/skype-emojipedia.json"
 
@@ -11,17 +11,17 @@ export class SkypeParser {
     return doc.documentElement;
   }
 
-  public parseConversation(conversation: Conversation, fileList: FileList) {
+  public parseConversation(conversation: Conversation, fileList: FileListEntity[]) {
     conversation.MessageList = this.parseMessages(conversation.MessageList, fileList);
 
     return conversation;
   }
 
-  public parseMessages(messages: Message[], fileList: FileList) {
+  public parseMessages(messages: Message[], fileList: FileListEntity[]) {
     return messages.map(element => this.parseMessage(element, fileList));
   }
 
-  public parseMessage(message: Message, fileList: FileList) {
+  public parseMessage(message: Message, fileList: FileListEntity[]) {
     try {
       if (message.messagetype == 'Event/Call') { message.partlist = this.parseCallContent(message.content); }
       if (message.messagetype == 'Text' || message.messagetype == 'RichText') {
@@ -38,7 +38,10 @@ export class SkypeParser {
       }
       if (message.messagetype == 'RichText/UriObject') {
         message.images = [];
-        for (let reference of message.amsreferences) { message.images.push(fileList.find(element => element.name.startsWith(reference)) ) }
+        for (let reference of message.amsreferences || []) {
+          const file = fileList.find((element: FileListEntity) => element.name.startsWith(reference));
+          if (file) message.images.push(file);
+        }
       }
     } catch (e) {
       // ignore for now

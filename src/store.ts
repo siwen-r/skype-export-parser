@@ -9,7 +9,7 @@ export default createStore({
     return {
       count: 0,
       raw: undefined,
-      filelist: [],
+      fileList: [],
       userId: undefined,
       exportDate: undefined,
       conversations: [],
@@ -42,9 +42,9 @@ export default createStore({
     },
     async setFileList(state, fileList: FileList) {
 
-      state.fileList = []
+      state.fileList = new Array();
       for(let i = 0; i < fileList.length; i++) {
-        // https://stackoverflow.com/questions/40348570/uncaught-domexception-failed-to-execute-readasdataurl-on-filereader-the-ob#40364478
+        // easy way to get a in the dom viewable image: https://stackoverflow.com/questions/40348570/uncaught-domexception-failed-to-execute-readasdataurl-on-filereader-the-ob#40364478
         state.fileList.push({ name: fileList[i].name, blob: URL.createObjectURL(fileList[i]), type: fileList[i].type })
       }
     }

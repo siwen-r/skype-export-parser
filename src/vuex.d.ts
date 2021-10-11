@@ -1,7 +1,6 @@
 // vuex.d.ts
 import { Store } from 'vuex'
-import { Conversation, SkypeExport, Message } from '@/types/SkypeExport'
-import { FileListEntity } from './types/FileListEntity'
+import { Conversation, SkypeExport, Message, FileListEntity } from '@/types/SkypeExport'
 
 declare module '@vue/runtime-core' {
   // declare your own store states
@@ -9,7 +8,7 @@ declare module '@vue/runtime-core' {
     count: number,
 
     raw: SkypeExport | undefined
-    filelist: FileListEntity[] | []
+    fileList: FileListEntity[] | []
     userId: string | undefined
     exportDate: string | Date | undefined,
     conversations: Conversation[],
@@ -43,6 +42,7 @@ declare module '@vue/runtime-core' {
     // Home.vue
     conversation: Conversation | undefined
     conversations: Conversation[]
+    gallery: boolean
     getConversation(conversationId: string): any
 
     // Message.vue
