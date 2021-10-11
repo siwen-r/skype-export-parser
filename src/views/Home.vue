@@ -18,7 +18,7 @@
         <div>No Conversation select</div>
       </div>
       <div v-else id="empty-conversation" class="flex flex-col w-full">
-        <div class="flex flex-col text-left fixed w-full h-24 bg-white ">
+        <div class="flex flex-col text-left fixed w-full h-24 ">
           <div class="flex justify-between font-bold text-xl">{{ conversation.displayName }}</div>
           <div class="flex justify-around space-x-10 p-8 font-bold w-3/4">
             <div @click="gallery = false" class="cursor-pointer" v-bind:class="{ 'skype': !gallery }">Chat</div>
