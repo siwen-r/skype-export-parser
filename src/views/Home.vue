@@ -32,7 +32,7 @@
             <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
           </div>
         </div>
-        <div v-if="gallery" id="conversation-container" class="flex flex-row flex-wrap mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5">
+        <div v-if="gallery" id="conversation-container" class="flex flex-row justify-center flex-wrap mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5">
           <div v-for="(messages, indexMessage) in imageList" v-bind:key="indexMessage">
             <img v-for="(item, index) in messages.images" v-bind:key="index" :imagename="`${item.name}`" :src="item.blob" alt="404 BILD NOT FOUND" loading="lazy" class="galleryimage p-2">
           </div>
