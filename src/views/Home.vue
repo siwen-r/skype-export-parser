@@ -1,4 +1,14 @@
 <template>
+  <header class="flex justify-between p-5">
+    <div class="flex justify-start items-end font-black text-3xl">
+      <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
+      <span v-if="!production" class="text-red-700 rounded-b-lg pl-2">DEV MODE</span>
+    </div>
+    <div v-if="isConversation" class="flex justify-end">
+      <div v-if="user" class="font-black self-center pr-2">{{ user }}</div>
+      <UserIcon v-if="user" class="h-7 w-7 self-center" />
+    </div>
+  </header>
   <div class="flex justify-between">
     <div class="w-1/4 pl-5 relative pr-5" id="sidebar">
       <div class="font-bold text-lg">Export Details</div>
@@ -62,7 +72,10 @@ export default defineComponent({
     exportDate() { return this.$store.state.exportDate; },
     conversations(): Conversation[] { return this.$store.state.conversations; },
     messageList() { return this.conversation?.MessageList || []; },
-    imageList() {return this.conversation?.MessageList.filter((element: Message) => element.messagetype === 'RichText/UriObject') || [] }
+    imageList() {return this.conversation?.MessageList.filter((element: Message) => element.messagetype === 'RichText/UriObject') || [] },
+    isConversation() { return this.$store.state.conversations.length > 0 },
+    user() { return this.$store.state.userId; },
+    production() { return import.meta.env.PROD },
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },
