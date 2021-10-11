@@ -1,30 +1,29 @@
 <template>
-  <div class="flex justify-center text-left">
-    <div class="flex flex-col pt-10">
-      <div class="text-2xl skype font-black">Instruction to get the Skype Export</div>
-      <ul class="list-inside list-decimal mt-2">
-        <li>Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
-        <li>
-          Choose Export Option wich fit your preferences
-          <ul class="list-inside list-disc pl-5">
-            <li>Conversation: Contains all messages and conversation</li>
-            <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
-          </ul>
-        </li>
-        <li>Supmit the request</li>
-        <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
-        <li class="disclousre-marker pt-5">Continue when the Export is finished:</li>
-        <li>Download the Export</li>
-        <li>Extract all files into a new folder</li>
-        <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
-      </ul>
-      <div class="flex justify-center">
-        <div class="flex items-end mt-10">
-          <span class="font-black skype">Parse Skype Export:</span>
-          <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/>
-        </div>
+  <div class="flex justify-center text-center mt-14">
+    <div>
+      <div class="skype font-black text-3xl">Skype Export Parser</div>
+      <div>View your current and past <span class="skype font-black">Skype</span> conversations</div>
+      <div class="mt-12">Upload Skype Export: <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/></div>
+      <div>Disclaimer & Notice</div>
+      <div class="text-left mt-14">
+        <ul class="list-inside list-decimal mt-2">
+          <li class="disclousre-marker list-outside">Export Instruction</li>
+          <li>Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
+          <li>
+            Choose Export Option wich fit your preferences
+            <ul class="list-inside list-disc pl-5">
+              <li>Conversation: Contains all messages and conversation</li>
+              <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
+            </ul>
+          </li>
+          <li>Supmit the request</li>
+          <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
+          <li class="disclousre-marker mt-5">Continue when the Export is finished:</li>
+          <li>Download the Export</li>
+          <li>Extract all files into a new folder</li>
+          <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
+        </ul>
       </div>
-      <div class="pt-4"><span class="font-black text-red-700">Notice</span>: At no time messages or other media data will be send to a server. Every processing will be done inside your Browser localy.</div>
     </div>
   </div>
 </template>
