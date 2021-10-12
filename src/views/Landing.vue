@@ -1,29 +1,36 @@
 <template>
-  <div class="flex justify-center text-center mt-14">
-    <div>
+  <div class="mt-14">
+    <div class="text-center">
       <div class="skype font-black text-3xl">Skype Export Parser</div>
       <div>View your current and past <span class="skype font-black">Skype</span> conversations</div>
-      <div class="mt-12">Upload Skype Export: <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/></div>
-      <div>Disclaimer & Notice</div>
-      <div class="text-left mt-14">
-        <ul class="list-inside list-decimal mt-2">
-          <li class="disclousre-marker list-outside">Export Instruction</li>
-          <li>Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
-          <li>
-            Choose Export Option wich fit your preferences
-            <ul class="list-inside list-disc pl-5">
-              <li>Conversation: Contains all messages and conversation</li>
-              <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
-            </ul>
-          </li>
-          <li>Supmit the request</li>
-          <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
-          <li class="disclousre-marker mt-5">Continue when the Export is finished:</li>
-          <li>Download the Export</li>
-          <li>Extract all files into a new folder</li>
-          <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
-        </ul>
+      <div class="mt-12">
+        Skype Export Parser is a third party privacy focused website which enables you to view all conversation in your Skype Export.
+        To view them you only need to provide and upload a Skype Export.
+        The processing and storing of data will be done localy, in your Browser and no data will be send over the internet.
       </div>
+      <div class="mt-12">Upload Skype Export: <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/></div>
+    </div>
+    <div class="text-left mt-14">
+      <ul v-if="!instruction" class="list-inside list-decimal mt-2">
+        <li class="disclosure-marker-closed list-outside font-black cursor-pointer" @click="instruction = true">Instruction</li>
+      </ul>
+      <ul v-else class="list-inside list-decimal mt-2">
+        <li class="disclosure-marker-open list-outside font-black cursor-pointer" @click="instruction = false">Instruction</li>
+        <li value="1">Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
+        <li>
+          Choose Export Option wich fit your preferences
+          <ul class="list-inside list-disc pl-5">
+            <li>Conversation: Contains all messages and conversation</li>
+            <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
+          </ul>
+        </li>
+        <li>Supmit the request</li>
+        <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
+        <li class="disclosure-marker-open mt-5">Continue when the Export is finished:</li>
+        <li value="5">Download the Export</li>
+        <li>Extract all files into a new folder</li>
+        <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -35,7 +42,9 @@ export default defineComponent({
   name: "SkypeExportParser",
   components: {  },
   data() {
-    return {}
+    return {
+      instruction: false
+    }
   },
   computed: {},
   methods: {
@@ -99,7 +108,11 @@ ul li::marker {
   font-weight: bold;
 }
 
-.disclousre-marker {
+.disclosure-marker-closed {
+  list-style-type: disclosure-closed;
+}
+
+.disclosure-marker-open {
   list-style-type: disclosure-open;
 }
 </style>

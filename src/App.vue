@@ -1,6 +1,16 @@
 <template>
-  <div v-if="isConversation"><Home/></div>
-  <div v-else><Landing/></div>
+  <div class="flex flex-col h-screen">
+    <div class="flex-1">
+      <div v-if="isConversation"><Home/></div>
+      <div v-else class="page-centered"><Landing/></div>
+    </div>
+    <footer class="flex-shrink-0 mt-10 mb-2">
+      <div class="page-centered flex justify-between items-center">
+        <div>Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way.</div>
+        <font-awesome-icon :icon="['fab', 'github']" />
+      </div>
+    </footer>
+  </div>
 </template>
 
 <script lang="ts">
@@ -44,5 +54,10 @@ export default defineComponent({
 
 .skype-background {
   background-color: #00AFF0;
+}
+
+.page-centered {
+  max-width: 800px;
+  margin: auto;
 }
 </style>
