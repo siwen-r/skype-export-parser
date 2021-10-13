@@ -1,15 +1,18 @@
 <template>
   <div class="flex flex-col h-screen">
-    <div class="flex-1">
+    <header class="flex justify-between p-5">
+      <div v-if="isConversation" class="flex justify-start items-end font-black text-3xl">
+        <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
+        <span v-if="!production" class="text-red-700 rounded-b-lg pl-2">DEV MODE</span>
+      </div>
+      <div v-else></div>
+      <font-awesome-icon :icon="['fab', 'github']" />
+    </header>
+    <div class="flex-1 mb-10">
       <div v-if="isConversation"><Home/></div>
       <div v-else class="page-centered"><Landing/></div>
     </div>
-    <footer class="flex-shrink-0 mt-10 mb-2">
-      <div class="page-centered flex justify-between items-center">
-        <div>Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way.</div>
-        <font-awesome-icon :icon="['fab', 'github']" />
-      </div>
-    </footer>
+    <footer v-if="!isConversation" class="flex-shrink-0 mb-2 page-centered">Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way.</footer>
   </div>
 </template>
 

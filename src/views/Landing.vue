@@ -12,10 +12,10 @@
     </div>
     <div class="text-left mt-14">
       <ul v-if="!instruction" class="list-inside list-decimal mt-2">
-        <li class="disclosure-marker-closed list-outside font-black cursor-pointer" @click="instruction = true">Instruction</li>
+        <li class="disclosure-marker-closed list-outside text-center cursor-pointer" @click="instruction = true">Instruction</li>
       </ul>
       <ul v-else class="list-inside list-decimal mt-2">
-        <li class="disclosure-marker-open list-outside font-black cursor-pointer" @click="instruction = false">Instruction</li>
+        <li class="disclosure-marker-open list-outside text-center skype text-2xl font-bold cursor-pointer" @click="instruction = false">Instruction</li>
         <li value="1">Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
         <li>
           Choose Export Option wich fit your preferences
