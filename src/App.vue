@@ -7,6 +7,7 @@
       </div>
       <div v-else></div>
       <div class="space-x-3">
+        <font-awesome-icon v-if="isConversation" class="cursor-pointer" size="2x" :icon="['fas', 'upload']" @click="this.$store.commit('clearData')" />
         <font-awesome-icon class="cursor-pointer" size="2x" :icon="['fab', 'github']" />
         <font-awesome-icon class="cursor-pointer" size="2x" v-if="dark" :icon="['fas', 'sun']" @click="updateDarkMode('light')" />
         <font-awesome-icon class="cursor-pointer" size="2x" v-else :icon="['fas', 'moon']" @click="updateDarkMode('dark')" />
@@ -34,7 +35,8 @@ export default defineComponent({
     }
   },
   computed: {
-    isConversation() { return this.$store.state.conversations.length > 0 }
+    isConversation() { return this.$store.state.conversations.length > 0 },
+    production() { return import.meta.env.PROD }
   },
   methods: {
     // https://tailwindcss.com/docs/dark-mode

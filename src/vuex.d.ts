@@ -5,8 +5,6 @@ import { Conversation, SkypeExport, Message, FileListEntity } from '@/types/Skyp
 declare module '@vue/runtime-core' {
   // declare your own store states
   interface State {
-    count: number,
-
     raw: SkypeExport | undefined
     fileList: FileListEntity[] | []
     userId: string | undefined
