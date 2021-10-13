@@ -15,7 +15,8 @@ module.exports = {
   },
   variants: {
     extend: {
-      textOpacity: ['dark']
+      borderWidth: ['dark'],
+      textColor: ['dark']
     }
   },
   plugins: [],

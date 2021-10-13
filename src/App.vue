@@ -2,11 +2,15 @@
   <div class="flex flex-col h-screen">
     <header class="flex justify-between p-5">
       <div v-if="isConversation" class="flex justify-start items-end font-black text-3xl">
-        <router-link to="/"><span class="skype">Skype</span> Export Parser</router-link>
+        <span class="skype">Skype </span>Export Parser
         <span v-if="!production" class="text-red-700 rounded-b-lg pl-2">DEV MODE</span>
       </div>
       <div v-else></div>
-      <font-awesome-icon :icon="['fab', 'github']" />
+      <div class="space-x-3">
+        <font-awesome-icon class="cursor-pointer" size="2x" :icon="['fab', 'github']" />
+        <font-awesome-icon class="cursor-pointer" size="2x" v-if="dark" :icon="['fas', 'sun']" @click="updateDarkMode('light')" />
+        <font-awesome-icon class="cursor-pointer" size="2x" v-else :icon="['fas', 'moon']" @click="updateDarkMode('dark')" />
+      </div>
     </header>
     <div class="flex-1 mb-10">
       <div v-if="isConversation"><Home/></div>
@@ -24,11 +28,33 @@ import Landing from './views/Landing.vue'
 export default defineComponent({
   name: 'App',
   components: { Home, Landing },
+  data() {
+    return {
+      dark: false
+    }
+  },
   computed: {
-    isConversation() { return this.$store.state.conversations.length > 0 },
+    isConversation() { return this.$store.state.conversations.length > 0 }
+  },
+  methods: {
+    // https://tailwindcss.com/docs/dark-mode
+    isDarkTheme() { return localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches) },
+    updateDarkMode(theme: string) {
+      localStorage.theme = theme;
+      this.setDarkMode(theme === 'dark' ? true : false)
+    },
+    setDarkMode(dark: boolean) {
+      // https://tailwindcss.com/docs/dark-mode
+      this.dark = dark
+      if (dark)  document.documentElement.classList.add('dark')
+      else document.documentElement.classList.remove('dark')
+    }
   },
   mounted() {
-    this.$store.dispatch('loadDemoData')
+    this.$store.dispatch('loadDemoData');
+
+    this.dark = this.isDarkTheme();
+    this.setDarkMode(this.dark)
   }
 })
 </script>

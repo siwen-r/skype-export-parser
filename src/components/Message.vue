@@ -2,7 +2,7 @@
   <div class="pt-1 pb-1">
     <!-- calls -->
     <div v-if="message.messagetype == 'Event/Call'" class="text-center">
-      <div class="text-gray-300">{{ dateToLocal(message.originalarrivaltime) }}</div>
+      <div class="text-gray-300 dark:text-gray-700">{{ dateToLocal(message.originalarrivaltime) }}</div>
       <div v-if="message.partlist && message.partlist.type == 'ended'" class="font-bold">Anruf Beendet {{ callDuration ? ` ${convertCallDuration(callDuration)} Stunden` : '' }}</div>
       <div v-else-if="message.partlist && message.partlist.type == 'started'" class="font-bold">Anruf Gestartet</div>
       <div v-else-if="message.partlist && message.partlist.type == 'missed'" class="font-bold">Anruf verpasst</div>
@@ -17,7 +17,7 @@
             <span v-html="message.content"></span>
           </div>
         </div>
-        <div class="text-gray-300">
+        <div class="text-gray-300 dark:text-gray-700">
           <span>{{ message.from }}</span>
           <span v-if="message.originalarrivaltime"> at {{ dateToLocal(message.originalarrivaltime) }}</span>
         </div>
@@ -30,7 +30,7 @@
         <div v-if="message.images" class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
           <img v-for="(item, index) in message.images" v-bind:key="index" :imagename="`${item.name}`" :src="item.blob" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
         </div>
-        <div class="text-gray-300">
+        <div class="text-gray-300 dark:text-gray-700">
           <span>{{ message.from }}</span>
           <span v-if="message.originalarrivaltime"> at {{ dateToLocal(message.originalarrivaltime) }}</span>
         </div>

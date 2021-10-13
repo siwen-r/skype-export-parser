@@ -7,7 +7,7 @@
       <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
-          <div class="flex justify-start text-gray-300"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
+          <div class="flex justify-start text-gray-300 dark:text-gray-700"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
           <div class="font-bold cursor-pointer" @click="getConversation(con.id)" v-bind:class="{ 'skype': ( conversation ? con.id == conversation.id : false ) }"><div v-if="con.displayName">{{ con.displayName }}</div><div v-else>{{ con.id }}</div></div>
           <div class="truncate">{{ getMessageContent(con.MessageList[ con.MessageList.length - 1 ]) }}</div>
         </div>
@@ -18,9 +18,9 @@
         <div>No Conversation select</div>
       </div>
       <div v-else id="empty-conversation" class="flex flex-col w-full">
-        <div class="flex flex-col text-left fixed w-full h-24 ">
+        <div class="flex flex-col text-left fixed w-full h-24 dark:border-b-2">
           <div class="flex justify-between font-bold text-xl">{{ conversation.displayName }}</div>
-          <div class="flex justify-around space-x-10 p-8 font-bold w-3/4">
+          <div class="flex justify-around space-x-10 p-4 font-bold w-3/4">
             <div @click="gallery = false" class="cursor-pointer" v-bind:class="{ 'skype': !gallery }">Chat</div>
             <div @click="gallery = true" class="cursor-pointer" v-bind:class="{ 'skype': gallery }">Gallery</div>
           </div>
@@ -119,7 +119,7 @@ export default defineComponent({
 
 #scroll-top {
   position: fixed;
-  top: 30px;
+  top: 50px;
   right: 30px;
   transform: translateY(156px);
 }
