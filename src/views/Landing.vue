@@ -1,35 +1,30 @@
 <template>
   <div class="mt-14">
     <div class="text-center">
-      <div class="skype font-black text-3xl">Skype Export Parser</div>
-      <div>View your current and past <span class="skype font-black">Skype</span> conversations</div>
-      <div class="mt-12">
-        Skype Export Parser is a third party privacy focused website which enables you to view all conversation in your Skype Export.
-        To view them you only need to provide and upload a Skype Export.
-        The processing and storing of data will be done localy, in your Browser and no data will be send over the internet.
-      </div>
-      <div class="mt-12">Upload Skype Export: <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/></div>
+      <div class="skype font-black text-3xl">{{ $t('project.name') }}</div>
+      <div v-html="$t('project.catchphrase')"></div>
+      <div class="mt-12">{{ $t('project.description') }}</div>
+      <div class="mt-12">{{ $t('landing.upload.label') }} <input type="file" id="filepicker" name="fileList" class="pl-2" webkitdirectory multiple @change="loadData"/></div>
     </div>
     <div class="text-left mt-14">
       <ul v-if="!instruction" class="list-inside list-decimal mt-2">
-        <li class="disclosure-marker-closed list-outside text-center cursor-pointer" @click="instruction = true">Instruction</li>
+        <li class="disclosure-marker-closed list-outside text-center cursor-pointer" @click="instruction = true">{{ $t('landing.instruction.header') }}</li>
       </ul>
       <ul v-else class="list-inside list-decimal mt-2">
-        <li class="disclosure-marker-open list-outside text-center skype text-2xl font-bold cursor-pointer" @click="instruction = false">Instruction</li>
-        <li value="1">Sign in with your Microsoft / Skype Account under the <a href="https://go.skype.com/export" target="_blank" class="skype">Skype Export Page</a></li>
-        <li>
-          Choose Export Option wich fit your preferences
+        <li class="disclosure-marker-open list-outside text-center skype text-2xl font-bold cursor-pointer" @click="instruction = false">{{ $t('landing.instruction.header') }}</li>
+        <li value="1" v-html="$t('landing.instruction.steps.1')"></li>
+        <li>{{ $t('landing.instruction.steps.2') }}
           <ul class="list-inside list-disc pl-5">
-            <li>Conversation: Contains all messages and conversation</li>
-            <li>Files: Contains files, pictures, videos, video messages, voice mail, and call recordings</li>
+            <li>{{ $t('landing.instruction.steps.2a') }}</li>
+            <li>{{ $t('landing.instruction.steps.2b') }}</li>
           </ul>
         </li>
-        <li>Supmit the request</li>
-        <li>Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)</li>
-        <li class="disclosure-marker-open mt-5">Continue when the Export is finished:</li>
-        <li value="5">Download the Export</li>
-        <li>Extract all files into a new folder</li>
-        <li>click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export</li>
+        <li>{{ $t('landing.instruction.steps.3') }}</li>
+        <li>{{ $t('landing.instruction.steps.4') }}</li>
+        <li class="disclosure-marker-open mt-5">{{ $t('landing.instruction.steps.5top') }}</li>
+        <li value="5">{{ $t('landing.instruction.steps.5') }}</li>
+        <li>{{ $t('landing.instruction.steps.6') }}</li>
+        <li>{{ $t('landing.instruction.steps.7') }}</li>
       </ul>
     </div>
   </div>

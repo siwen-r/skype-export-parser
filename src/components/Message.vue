@@ -3,9 +3,9 @@
     <!-- calls -->
     <div v-if="message.messagetype == 'Event/Call'" class="text-center">
       <div class="text-gray-300 dark:text-gray-700">{{ dateToLocal(message.originalarrivaltime) }}</div>
-      <div v-if="message.partlist && message.partlist.type == 'ended'" class="font-bold">Anruf Beendet {{ callDuration ? ` ${convertCallDuration(callDuration)} Stunden` : '' }}</div>
-      <div v-else-if="message.partlist && message.partlist.type == 'started'" class="font-bold">Anruf Gestartet</div>
-      <div v-else-if="message.partlist && message.partlist.type == 'missed'" class="font-bold">Anruf verpasst</div>
+      <div v-if="message.partlist && message.partlist.type == 'ended'" class="font-bold">{{ $t('message.call.ended') }} {{ callDuration ? ` ${convertCallDuration(callDuration)} Stunden` : '' }}</div>
+      <div v-else-if="message.partlist && message.partlist.type == 'started'" class="font-bold">{{ $t('message.call.startet') }}</div>
+      <div v-else-if="message.partlist && message.partlist.type == 'missed'" class="font-bold">{{ $t('message.call.ignored') }}</div>
       <div v-else> {{ message }} </div>
     </div>
 
@@ -19,7 +19,7 @@
         </div>
         <div class="text-gray-300 dark:text-gray-700">
           <span>{{ message.from }}</span>
-          <span v-if="message.originalarrivaltime"> at {{ dateToLocal(message.originalarrivaltime) }}</span>
+          <span v-if="message.originalarrivaltime"> {{ $t('message.timstamp', { date: dateToLocal(message.originalarrivaltime) }) }}</span>
         </div>
       </div>
     </div>
@@ -32,7 +32,7 @@
         </div>
         <div class="text-gray-300 dark:text-gray-700">
           <span>{{ message.from }}</span>
-          <span v-if="message.originalarrivaltime"> at {{ dateToLocal(message.originalarrivaltime) }}</span>
+          <span v-if="message.originalarrivaltime"> {{ $t('message.timstamp', { date: dateToLocal(message.originalarrivaltime) }) }}</span>
         </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
 <template>
   <div class="flex justify-between">
     <div class="w-1/4 pl-5 relative pr-5" id="sidebar">
-      <div class="font-bold text-lg">Export Details</div>
+      <div class="font-bold text-lg">{{ $t('home.details.header') }}</div>
       <div class="flex justify-start"><UserIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ userId }}</div></div>
       <div class="flex justify-start"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center pl-2">{{ exportDate }}</div></div>
-      <div class="font-bold pt-5 pb-2 text-lg">Conversations</div>
+      <div class="font-bold pt-5 pb-2 text-lg">{{ $t('home.conversation.header') }}</div>
       <div id="conversaions" class="divide-y-2 divide-solid overscroll-auto overflow-auto">
         <div v-for="con in conversations" v-bind:key="con.id" class="pt-2 pb-2 conversation-list-container">
           <div class="flex justify-start text-gray-300 dark:text-gray-700"><ClockIcon class="h-5 w-5 self-center" /><div class="self-center">{{ dateToLocal(con.MessageList[ con.MessageList.length - 1 ].originalarrivaltime) }}</div></div>
@@ -15,7 +15,7 @@
     </div>
     <div class="w-3/4">
       <div v-if="!conversation" id="empty-conversation" class="flex items-center justify-center w-3/4">
-        <div>No Conversation select</div>
+        <div>{{ $t('home.conversation.empty') }}</div>
       </div>
       <div v-else id="empty-conversation" class="flex flex-col w-full">
         <div class="flex flex-col text-left fixed w-full h-24 dark:border-b-2">

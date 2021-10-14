@@ -17,7 +17,7 @@
       <div v-if="isConversation"><Home/></div>
       <div v-else class="page-centered"><Landing/></div>
     </div>
-    <footer v-if="!isConversation" class="flex-shrink-0 mb-2 page-centered">Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way.</footer>
+    <footer v-if="!isConversation" class="flex-shrink-0 mb-2 page-centered">{{ $t('footer.disclaimer') }}</footer>
   </div>
 </template>
 
