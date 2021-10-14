@@ -34,7 +34,12 @@
         </div>
         <div v-if="gallery" id="conversation-container" class="flex flex-row justify-center flex-wrap mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5">
           <div v-for="(messages, indexMessage) in imageList" v-bind:key="indexMessage">
-            <img v-for="(item, index) in messages.images" v-bind:key="index" :imagename="`${item.name}`" :src="item.blob" alt="404 BILD NOT FOUND" loading="lazy" class="galleryimage p-2">
+            <div v-for="(item, index) in messages.images" v-bind:key="index" class="relative galleryimage">
+              <img :imagename="item.name" :src="item.blob" alt="404 BILD NOT FOUND" loading="lazy" class="absolute inset-0 z-0 galleryimage p-2">
+              <a :href="item.blob" class="opacity-0 hover:opacity-80 hover:bg-black duration-300 absolute inset-0 z-10 flex justify-center items-center text-white p-1 cursor-pointer" download>
+                <font-awesome-icon size="2x" :icon="['fas', 'download']" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

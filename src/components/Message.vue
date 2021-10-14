@@ -27,8 +27,8 @@
     <!-- URI Objects e.g. Images -->
     <div v-else-if="message.messagetype == 'RichText/UriObject'" class="flex" v-bind:class="{ 'text-right': message.from == userId, 'justify-end': message.from == userId, 'text-left': message.from != userId, 'justify-start': message.from != userId }">
       <div class="flex flex-col w-full">
-        <div v-if="message.images" class="flex" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
-          <img v-for="(item, index) in message.images" v-bind:key="index" :imagename="`${item.name}`" :src="item.blob" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner" v-bind:class="{ 'pr-2': (message.from == userId && index != 0), 'pl-2': (message.from != userId && index != 0) }">
+        <div v-if="message.images" class="flex space-x-2" v-bind:class="{ 'justify-end': message.from == userId, 'justify-start': message.from != userId }">
+          <img v-for="(item, index) in message.images" v-bind:key="index" :imagename="`${item.name}`" :src="item.blob" alt="404 BILD NOT FOUND" style="max-width:200px;max-height:200px;" loading="lazy" class="rounded shadow-inner">
         </div>
         <div class="text-gray-300 dark:text-gray-700">
           <span>{{ message.from }}</span>
@@ -41,8 +41,8 @@
 </template>
 
 <script lang="ts">
+import { Message } from '@/types/SkypeExport';
 import { defineComponent, PropType } from 'vue'
-import { Message } from '@/types/SkypeExport'
 
 export default defineComponent({
   name: 'Message',
