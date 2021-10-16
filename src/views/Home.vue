@@ -25,15 +25,28 @@
             <div @click="gallery = true" class="cursor-pointer" v-bind:class="{ 'skype': gallery }">Gallery</div>
           </div>
         </div>
-        <div v-if="conversation && !gallery" id="conversation-container" class="mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5 relative">
+        <div v-if="conversation && !gallery" id="conversation-container" class="mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5 relative" ref="messageContainer">
           <div class="pr-20 pl-20 relative">
-            <div v-for="(item, index) in messageList" v-bind:key="index"><MessageComponent :message="item" :userId="userId"></MessageComponent></div>
+            <vue-eternal-loading :load="loadMessages" class="w-full" margin="200px" position="top" :container="$refs['messageContainer']">
+              <template #loading>
+                <div class="text-center py-20"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
+              </template>
+              <template #no-more><div></div></template>
+              <template #no-results>
+                <div class="text-center py-20">No messages found</div>
+              </template>
+              <template #error><div></div></template>
+            </vue-eternal-loading>
+
+            <div v-for="(item, index) in messageItems" v-bind:key="index"><MessageComponent :message="item" :userId="userId"></MessageComponent></div>
+            <!--
             <div v-if="conversation.MessageList.length != 0" id="scroll-top" v-on:click="scrollTop()"><ChevronDoubleUpIcon class="h-10 w-10 rounded-md border p-1" /></div>
+            -->
             <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
           </div>
         </div>
         <div v-if="gallery" id="conversation-container" class="flex flex-row justify-center flex-wrap mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5">
-          <div v-for="(messages, indexMessage) in imageList" v-bind:key="indexMessage">
+          <div v-for="(messages, indexMessage) in galleryItems" v-bind:key="indexMessage">
             <div v-for="(item, index) in messages.images" v-bind:key="index" class="relative galleryimage">
               <img :imagename="item.name" :src="item.blob" alt="404 BILD NOT FOUND" loading="lazy" class="absolute inset-0 z-0 galleryimage p-2">
               <a :href="item.blob" class="opacity-0 hover:opacity-80 hover:bg-black duration-300 absolute inset-0 z-10 flex justify-center items-center text-white p-1 cursor-pointer" download>
@@ -41,6 +54,20 @@
               </a>
             </div>
           </div>
+          <vue-eternal-loading :load="loadGallery" class="w-full py-20" margin="500px">
+            <template #loading>
+              <div class="text-center"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
+            </template>
+            <template #no-more>
+              <div class="text-center">No more images</div>
+            </template>
+            <template #no-results>
+              <div class="text-center">No images found</div>
+            </template>
+            <template #error>
+              <div class="text-center">Error occured</div>
+            </template>
+          </vue-eternal-loading>
         </div>
       </div>
     </div>
@@ -59,7 +86,13 @@ export default defineComponent({
   data() {
     return {
       conversation: undefined,
+      // gallery
       gallery: false,
+      galleryItems: [],
+      galleryPage: 0,
+      // messages
+      messageItems: [],
+      messagePage: 0,
     }
   },
   computed: {
@@ -93,9 +126,43 @@ export default defineComponent({
     async getConversation(conversationId: string) {
       if (!conversationId) return;
 
+      this.gallery = false
+      this.galleryItems = []
+      this.galleryPage = 0
+
+      this.messageItems = []
+      this.messagePage = 0
+
       this.conversation = undefined;
       this.conversation = this.$store.state.conversations.find(element => element.id == conversationId);
-      this.gallery = false;
+    },
+    loadGallery(action: { loaded: any, noMore: any, noResults: any, error: any }, isFirstLoad: {isFirstLoad: any}) {
+      const maxElements = 20;
+
+      if (this.imageList.length == 0) action.noResults();
+      else {
+
+        const currentElement = maxElements * this.galleryPage;
+        this.galleryPage += 1;
+
+        const elements = this.imageList.slice( currentElement, currentElement + maxElements );
+        this.galleryItems.push(...elements);
+        action.loaded(elements.length); // when elements.length == 0 -> action.noMore() (will happen automatically)
+      }
+    },
+    loadMessages(action: { loaded: any, noMore: any, noResults: any, error: any }, isFirstLoad: {isFirstLoad: any}) {
+      const maxElements = 20;
+
+      if (this.messageList.length == 0) action.noResults();
+      else {
+
+        const currentElement = maxElements * this.messagePage;
+        this.messagePage += 1;
+
+        const elements = this.messageList.slice().reverse().slice( currentElement, currentElement + maxElements ).reverse();
+        this.messageItems.unshift(...elements);
+        action.loaded(elements.length, maxElements); // when elements.length == 0 -> action.noMore() (will happen automatically)
+      }
     }
   }
 });

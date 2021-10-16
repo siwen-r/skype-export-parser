@@ -38,9 +38,16 @@ declare module '@vue/runtime-core' {
     loadFile(file: File): any
 
     // Home.vue
+    messageList: Message[]
+    imageList: Message[]
     conversation: Conversation | undefined
     conversations: Conversation[]
     gallery: boolean
+    galleryItems: Message[];
+    galleryPage: number;
+    messageItems: Message[]
+    messagePage: number;
+
     getConversation(conversationId: string): any
 
     // Message.vue

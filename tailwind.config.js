@@ -11,6 +11,9 @@ module.exports = {
     },
     maxWidth: {
       '1/2': '50%'
+    },
+    flex: {
+      'nowrap': '0 0 auto'
     }
   },
   variants: {
