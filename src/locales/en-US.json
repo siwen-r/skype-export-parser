@@ -1,0 +1,73 @@
+{
+  "skype": "Skype",
+  "project": {
+    "shortname": "Export Parser",
+    "name": "Skype Export Parser",
+    "catchphrase": "View your current and past <span class=\"skype font-black\">Skype</span> conversations",
+    "description": "Skype Export Parser is a third party privacy focused website which enables you to view all conversation in your Skype Export. To view them you only need to provide and upload a Skype Export. The processing and storing of data will be done localy, in your Browser and no data will be send over the internet."
+  },
+  "landing": {
+    "upload": {
+      "label": "Upload Skype Export: "
+    },
+    "instruction": {
+      "header": "Instruction",
+      "steps": {
+        "1": "Sign in with your Microsoft / Skype Account under the <a href=\"https://go.skype.com/export\" target=\"_blank\" class=\"skype\">Skype Export Page</a>",
+        "2": "Choose Export Option wich fit your preferences",
+        "2a": "Conversation: Contains all messages and conversation",
+        "2b": "Files: Contains files, pictures, videos, video messages, voice mail, and call recordings",
+        "3": "Submit the request",
+        "4": "Wait till the Export is finish processed by Microsoft (might take some time, depending on the amount of data)",
+        "5top": "Continue when the Export is finished:",
+        "5": "Download the Export",
+        "6": "Extract all files into a new folder",
+        "7": "click Choose Files, choose the folder and click upload when asked, to start the parsing of the skype export"
+      }
+    }
+  },
+  "footer": {
+    "disclaimer": "Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way."
+  },
+  "message": {
+    "type": {
+      "image": "Image",
+      "call": "Call"
+    },
+    "call": {
+      "startet": "call started",
+      "ended": "call ended",
+      "ignored": "missed call"
+    },
+    "timstamp": " at {date}"
+  },
+  "home": {
+    "details": {
+      "header": "Export Details"
+    },
+    "conversation": {
+      "header": "Conversations",
+      "empty": "No Conversation select"
+    }
+  },
+  "conversation": {
+    "categories": {
+      "chat": "Chat",
+      "gallery": "Gallery"
+    },
+    "gallery": {
+      "infinityScroll": {
+        "noMore": "All images loaded",
+        "noResults": "No images found",
+        "error": "Error occurred"
+      }
+    },
+    "chat": {
+      "infinityScroll": {
+        "noMore": "",
+        "noResults": "No messages found",
+        "error": ""
+      }
+    }
+  }
+}
