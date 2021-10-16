@@ -53,16 +53,5 @@ export default createStore({
       state.conversationLoading = { loading: false, status: 0 };
     }
   },
-  actions: {
-    async loadDemoData({commit}) {
-      if (import.meta.env.PROD) return; // in case the application is in production
-      if (!import.meta.env.VITE_DEMO_FOLDER) { // in case the demo folder is not set
-        console.log('ENV "VITE_DEMO_FOLDER" is not set!')
-        return;
-      }
-      const runtimeConfig: any = await fetch(`${import.meta.env.VITE_DEMO_FOLDER}/messages.json`);
-      commit('setExport', await runtimeConfig.json());
-    }
-  },
   getters: {}
 })

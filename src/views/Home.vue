@@ -103,7 +103,6 @@ export default defineComponent({
     imageList() {return this.conversation?.MessageList.filter((element: Message) => element.messagetype === 'RichText/UriObject') || [] },
     isConversation() { return this.$store.state.conversations.length > 0 },
     user() { return this.$store.state.userId; },
-    production() { return import.meta.env.PROD },
   },
   methods: {
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },

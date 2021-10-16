@@ -8,7 +8,7 @@
       <div v-else></div>
       <div class="space-x-3">
         <font-awesome-icon v-if="isConversation" class="cursor-pointer" size="2x" :icon="['fas', 'upload']" @click="this.$store.commit('clearData')" />
-        <font-awesome-icon class="cursor-pointer" size="2x" :icon="['fab', 'github']" />
+        <a href="https://github.com/siwen-r/skype-export-parser" target="_blank"><font-awesome-icon class="cursor-pointer" size="2x" :icon="['fab', 'github']" /></a>
         <font-awesome-icon class="cursor-pointer" size="2x" v-if="dark" :icon="['fas', 'sun']" @click="updateDarkMode('light')" />
         <font-awesome-icon class="cursor-pointer" size="2x" v-else :icon="['fas', 'moon']" @click="updateDarkMode('dark')" />
       </div>
@@ -53,8 +53,6 @@ export default defineComponent({
     }
   },
   mounted() {
-    this.$store.dispatch('loadDemoData');
-
     this.dark = this.isDarkTheme();
     this.setDarkMode(this.dark)
   }
