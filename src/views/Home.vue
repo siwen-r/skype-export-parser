@@ -21,8 +21,8 @@
         <div class="flex flex-col text-left fixed w-full h-24 dark:border-b-2">
           <div class="flex justify-between font-bold text-xl">{{ conversation.displayName }}</div>
           <div class="flex justify-around space-x-10 p-4 font-bold w-3/4">
-            <div @click="gallery = false" class="cursor-pointer" v-bind:class="{ 'skype': !gallery }">Chat</div>
-            <div @click="gallery = true" class="cursor-pointer" v-bind:class="{ 'skype': gallery }">Gallery</div>
+            <div @click="gallery = false" class="cursor-pointer" v-bind:class="{ 'skype': !gallery }">{{ $t('conversation.categories.chat') }}</div>
+            <div @click="gallery = true" class="cursor-pointer" v-bind:class="{ 'skype': gallery }">{{ $t('conversation.categories.gallery') }}</div>
           </div>
         </div>
         <div v-if="conversation && !gallery" id="conversation-container" class="mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5 relative" ref="messageContainer">
@@ -33,7 +33,7 @@
               </template>
               <template #no-more><div></div></template>
               <template #no-results>
-                <div class="text-center py-20">No messages found</div>
+                <div class="text-center py-20">{{ $t('conversation.chat.infinityScroll.noResults') }}</div>
               </template>
               <template #error><div></div></template>
             </vue-eternal-loading>
@@ -59,13 +59,13 @@
               <div class="text-center"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
             </template>
             <template #no-more>
-              <div class="text-center">No more images</div>
+              <div class="text-center">{{ $t('conversation.gallery.infinityScroll.noMore') }}</div>
             </template>
             <template #no-results>
-              <div class="text-center">No images found</div>
+              <div class="text-center">{{ $t('conversation.gallery.infinityScroll.noResults') }}</div>
             </template>
             <template #error>
-              <div class="text-center">Error occured</div>
+              <div class="text-center">{{ $t('conversation.gallery.infinityScroll.error') }}</div>
             </template>
           </vue-eternal-loading>
         </div>
@@ -109,9 +109,9 @@ export default defineComponent({
     dateToLocal(date: string) { return new Date(date).toLocaleString(); },
     getMessageContent(message: Message) {
       let content = '';
-      if (message.messagetype == "Event/Call") content = "Anruf"
+      if (message.messagetype == "Event/Call") content = this.$t('message.type.call')
       if (message.messagetype == 'Text' || message.messagetype == 'RichText') content = message.content
-      if (message.messagetype == 'RichText/UriObject') content = "Bild"
+      if (message.messagetype == 'RichText/UriObject') content = this.$t('message.type.image')
 
       return content;
     },

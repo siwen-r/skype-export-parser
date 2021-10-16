@@ -30,6 +30,10 @@
     "disclaimer": "Skype Export Parser is a hobby project and is not affiliated with Skype or Microsoft in any way."
   },
   "message": {
+    "type": {
+      "image": "Image",
+      "call": "Call"
+    },
     "call": {
       "startet": "call started",
       "ended": "call ended",
@@ -44,6 +48,26 @@
     "conversation": {
       "header": "Conversations",
       "empty": "No Conversation select"
+    }
+  },
+  "conversation": {
+    "categories": {
+      "chat": "Chat",
+      "gallery": "Gallery"
+    },
+    "gallery": {
+      "infinityScroll": {
+        "noMore": "All images loaded",
+        "noResults": "No images found",
+        "error": "Error occurred"
+      }
+    },
+    "chat": {
+      "infinityScroll": {
+        "noMore": "",
+        "noResults": "No messages found",
+        "error": ""
+      }
     }
   }
 }
