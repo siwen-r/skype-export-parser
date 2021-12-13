@@ -27,7 +27,7 @@
         </div>
         <div v-if="conversation && !gallery" id="conversation-container" class="mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5 relative" ref="messageContainer">
           <div class="pr-20 pl-20 relative">
-            <vue-eternal-loading :load="loadMessages" class="w-full" margin="200px" position="top" :container="$refs['messageContainer']">
+            <vue-eternal-loading :load="loadMessages" v-model:is-initial="messageInitial" class="w-full" margin="200px" position="top" :container="$refs['messageContainer']">
               <template #loading>
                 <div class="text-center py-20"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
               </template>
@@ -54,7 +54,7 @@
               </a>
             </div>
           </div>
-          <vue-eternal-loading :load="loadGallery" class="w-full py-20" margin="500px">
+          <vue-eternal-loading :load="loadGallery" v-model:is-initial="galleryInitial" class="w-full py-20" margin="500px">
             <template #loading>
               <div class="text-center"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
             </template>
@@ -90,9 +90,11 @@ export default defineComponent({
       gallery: false,
       galleryItems: [],
       galleryPage: 0,
+      galleryInitial: true,
       // messages
       messageItems: [],
       messagePage: 0,
+      messageInitial: true,
     }
   },
   computed: {
@@ -102,10 +104,9 @@ export default defineComponent({
     messageList() { return this.conversation?.MessageList || []; },
     imageList() {return this.conversation?.MessageList.filter((element: Message) => element.messagetype === 'RichText/UriObject') || [] },
     isConversation() { return this.$store.state.conversations.length > 0 },
-    user() { return this.$store.state.userId; },
   },
   methods: {
-    dateToLocal(date: string) { return new Date(date).toLocaleString(); },
+    dateToLocal(date: string | Date) { return new Date(date).toLocaleString(); },
     getMessageContent(message: Message) {
       let content = '';
       if (message.messagetype == "Event/Call") content = this.$t('message.type.call')
@@ -128,11 +129,13 @@ export default defineComponent({
       this.gallery = false
       this.galleryItems = []
       this.galleryPage = 0
-
-      this.messageItems = []
-      this.messagePage = 0
+      this.galleryInitial = true;
 
       this.conversation = undefined;
+      this.messageItems = [];
+      this.messagePage = 0;
+      this.messageInitial = true;
+
       this.conversation = this.$store.state.conversations.find(element => element.id == conversationId);
     },
     loadGallery(action: { loaded: any, noMore: any, noResults: any, error: any }, isFirstLoad: {isFirstLoad: any}) {
