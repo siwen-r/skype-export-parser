@@ -102,10 +102,9 @@ export default defineComponent({
     messageList() { return this.conversation?.MessageList || []; },
     imageList() {return this.conversation?.MessageList.filter((element: Message) => element.messagetype === 'RichText/UriObject') || [] },
     isConversation() { return this.$store.state.conversations.length > 0 },
-    user() { return this.$store.state.userId; },
   },
   methods: {
-    dateToLocal(date: string) { return new Date(date).toLocaleString(); },
+    dateToLocal(date: string | Date) { return new Date(date).toLocaleString(); },
     getMessageContent(message: Message) {
       let content = '';
       if (message.messagetype == "Event/Call") content = this.$t('message.type.call')
