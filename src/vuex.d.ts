@@ -45,7 +45,9 @@ declare module '@vue/runtime-core' {
     gallery: boolean
     galleryItems: Message[];
     galleryPage: number;
+    galleryInitial: boolean;
     messageItems: Message[]
+    messageInitial: boolean;
     messagePage: number;
 
     getConversation(conversationId: string): any
