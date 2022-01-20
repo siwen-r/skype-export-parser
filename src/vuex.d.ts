@@ -38,6 +38,7 @@ declare module '@vue/runtime-core' {
     loadFile(file: File): any
 
     // Home.vue
+    userId: string | undefined
     messageList: Message[]
     imageList: Message[]
     conversation: Conversation | undefined
@@ -49,8 +50,14 @@ declare module '@vue/runtime-core' {
     messageItems: Message[]
     messageInitial: boolean;
     messagePage: number;
+    exportDate: string | undefined | Date
 
     getConversation(conversationId: string): any
+    dateToLocal(date: string | Date): string
+    getMessageContent(message: Message): string
+    scrollTop(): void
+    loadGallery(action: { loaded: any, noMore: any, noResults: any, error: any }, isFirstLoad: {isFirstLoad: any}): void
+    loadMessages(action: { loaded: any, noMore: any, noResults: any, error: any }, isFirstLoad: {isFirstLoad: any}): void
 
     // Message.vue
     files: FileList | undefined

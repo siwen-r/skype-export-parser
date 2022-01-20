@@ -26,8 +26,10 @@
           </div>
         </div>
         <div v-if="conversation && !gallery" id="conversation-container" class="mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5 relative" ref="messageContainer">
+          <div v-for="(item, index) in messageItems" v-bind:key="index"><MessageComponent :message="item" :userId="userId || ''"></MessageComponent></div>
+
           <div class="pr-20 pl-20 relative">
-            <vue-eternal-loading :load="loadMessages" v-model:is-initial="messageInitial" class="w-full" margin="200px" position="top" :container="$refs['messageContainer']">
+            <vue-eternal-loading :load="loadMessages" v-model:is-initial="messageInitial" class="w-full" margin="200px" position="bottom" :container="$refs['messageContainer']">
               <template #loading>
                 <div class="text-center py-20"><font-awesome-icon :icon="['fas', 'sync']" spin /></div>
               </template>
@@ -38,11 +40,10 @@
               <template #error><div></div></template>
             </vue-eternal-loading>
 
-            <div v-for="(item, index) in messageItems" v-bind:key="index"><MessageComponent :message="item" :userId="userId"></MessageComponent></div>
-            <!--
             <div v-if="conversation.MessageList.length != 0" id="scroll-top" v-on:click="scrollTop()"><ChevronDoubleUpIcon class="h-10 w-10 rounded-md border p-1" /></div>
-            -->
+            <!--
             <div v-if="conversation.MessageList.length != 0" id="scroll-bottom" v-on:click="scrollBottom()"><ChevronDoubleDownIcon class="h-10 w-10 rounded-md border p-1" /></div>
+            -->
           </div>
         </div>
         <div v-if="gallery" id="conversation-container" class="flex flex-row justify-center flex-wrap mt-24 text-center flex-1 overflow-y-auto shadow-inner p-5">
@@ -98,7 +99,7 @@ export default defineComponent({
     }
   },
   computed: {
-    userId() { return this.$store.state.userId; },
+    userId() { return this.$store.state.userId || ''; },
     exportDate() { return this.$store.state.exportDate; },
     conversations(): Conversation[] { return this.$store.state.conversations; },
     messageList() { return this.conversation?.MessageList || []; },
@@ -161,8 +162,10 @@ export default defineComponent({
         const currentElement = maxElements * this.messagePage;
         this.messagePage += 1;
 
-        const elements = this.messageList.slice().reverse().slice( currentElement, currentElement + maxElements ).reverse();
-        this.messageItems.unshift(...elements);
+        const elements = this.messageList.slice( currentElement, currentElement + maxElements );
+        //const elements = this.messageList.slice().reverse().slice( currentElement, currentElement + maxElements ).reverse();
+        //this.messageItems.unshift(...elements);
+        this.messageItems.push(...elements);
         action.loaded(elements.length, maxElements); // when elements.length == 0 -> action.noMore() (will happen automatically)
       }
     }

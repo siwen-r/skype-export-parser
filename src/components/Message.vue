@@ -57,7 +57,7 @@ export default defineComponent({
     callDuration(): any { return this.message.partlist?.part?.find(element => this.userId.endsWith(element?.identity || ''))?.duration || undefined }, // Their might be a prefix in the userId
   },
   methods: {
-    dateToLocal(date: string) { return new Date(date).toLocaleString(); },
+    dateToLocal(date: string | Date) { return new Date(date).toLocaleString(); },
     convertCallDuration(seconds: string) {
       const parts = seconds.split('\.');
       if (parts.length != 2) return parts;
